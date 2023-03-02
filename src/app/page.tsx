@@ -1,13 +1,12 @@
+import {Footer, Header, Slider} from '../components/imports';
 
-
-import Footer from '@/components/footer'
-import Slider from '@/components/slider'
 
 
 
 export default function Home() {
   return (
     <>
+    <Header/>
       <Slider />
       <Footer />
 
