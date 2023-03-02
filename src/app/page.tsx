@@ -1,10 +1,13 @@
-import {Footer, Header, Banner} from '../components/imports';
+import { Footer, Header, Banner, CategoryBox, ProductBox, Cta } from '../components/imports';
 
 export default function Home() {
   return (
     <>
-    <Header/>
+      <Header />
       <Banner />
+      <CategoryBox />
+      <ProductBox/>
+      <Cta/>
       <Footer />
 
     </>

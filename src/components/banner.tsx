@@ -5,7 +5,7 @@ import Slide1 from '../../public/images/slide-1.jpg';
 export default function Banner() {
 
     return (
-        <section className='bg-red-900 '>
+        <section className='mb-5'>
             <Image src={Slide1} alt="" className='object-cover h-full w-full' />
         </section>
     )
