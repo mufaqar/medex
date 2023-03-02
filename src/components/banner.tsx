@@ -4,7 +4,7 @@ import Slide1 from '../../public/images/slide-1.jpg';
 import Slide2 from '../../public/images/slide-2.jpg';
 import Slide3 from '../../public/images/slide-3.jpg';
 
-export default function Slider() {
+export default function Banner() {
     const settings = {
         dots: true,
         infinite: true,

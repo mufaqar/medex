@@ -1,4 +1,4 @@
-import {Footer, Header, Slider} from '../components/imports';
+import {Footer, Header, Banner} from '../components/imports';
 
 
 
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <Header/>
-      <Slider />
+      <Banner />
       <Footer />
 
     </>
