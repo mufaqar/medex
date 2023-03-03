@@ -1,4 +1,4 @@
-import { Footer, Header, Banner, CategoryBox, ProductBox, Cta } from '../components/imports';
+import { Footer, Header, Banner, CategoryBox, ProductBox, Cta, Feature_Category } from '../components/imports';
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <CategoryBox />
       <ProductBox/>
       <Cta/>
+      <Feature_Category />
       <Footer />
 
     </>
