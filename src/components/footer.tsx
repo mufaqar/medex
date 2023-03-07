@@ -10,7 +10,7 @@ export default function Footer() {
                         <h3 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 text-base lg:text-[18px] text-white lg:leading-7 font-medium'>
                             Who We Are
                         </h3>
-                        <p className="text-white text-sm lg:text-[16px]">
+                        <p className="text-white text-sm lg:text-[16px] max-w-[370px]">
                             Medex Worldwide is a global wholesaler and distributor of high quality reconditioned/refurbished ultrasound, endoscopy systems. We supply high-quality systems all over the globe. We are specialized in exporting reconditioned medical systems, to over 20 countries, from past one and half-decade Read More
                         </p>
                     </div>
@@ -58,7 +58,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <h3 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 text-base lg:text-[18px] text-white lg:leading-7 font-medium'>
-                            Who We Are
+                            Contact Info
                         </h3>
                         <ul className="text-sm lg:text-[16px] flex flex-col space-y-3">
                             <li className="flex items-baseline">
