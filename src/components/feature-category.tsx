@@ -18,16 +18,16 @@ function Feature_Category() {
                     </div>
                     <div className='grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5'>
                         {Products.map((item, index) => (
-                            <div key={index} className='mx-auto relative bg-red-600'>
+                            <div key={index} className='mx-auto relative'>
                                 <Image src={item.featured} alt="" className='object-cover' />
-                                <div className='absolute top-0 left-0 right-0 h-full p-5 text-center'>
+                                <div className='absolute top-0 left-0 right-0 bottom-0 p-5 text-center flex flex-col items-center justify-center group'>
                                     <h4>
-                                        <Link href={item.prodct_Link} className="text-lg leading-5 mb-2 text-white hover:text-blue-700 ">
+                                        <Link href={item.prodct_Link} className="text-lg leading-5 font-bold mb-2 text-white hover:text-blue-700 ">
                                             {item.title}
                                         </Link>
                                     </h4>
                                     <p>
-                                        <Link href="#" className="text-base leading-6 text-white mt-1.5 mb-1.5">
+                                        <Link href="#" className="text-base leading-6 text-white mt-1.5 mb-1.5 hidden group-hover:block">
                                             {item.category}
                                         </Link>
                                     </p>

@@ -6,9 +6,10 @@ export default function Home() {
       <Header />
       <Banner />
       <CategoryBox />
+      <ProductBox/>      
+      <Feature_Category />
       <ProductBox/>
       <Cta/>
-      <Feature_Category />
       <Footer />
 
     </>
