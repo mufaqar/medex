@@ -4,7 +4,7 @@ import React from 'react';
 export default function Contact() {
     return (
         <section className=''>
-            <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100 ">
+            <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
                 <div className="w-full">
                     <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-[32px] font-bold text-center">
                         Contact Us
