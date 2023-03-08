@@ -11,7 +11,7 @@ function Header() {
     return (
         <header className='fixed top-0 left-0 right-0 bg-white/70 z-40'>
             <nav className="">
-                <div className="hidden sm:flex flex-wrap justify-between items-center mx-auto px-4 md:px-6 py-2.5 bg-[#BF1800]">
+                <div className="hidden md:flex flex-wrap justify-between items-center mx-auto px-4 md:px-6 py-2.5 bg-[#BF1800]">
                     <ul className='flex flex-col text-sm font-medium md:flex-row md:space-x-5 md:mt-0'>
                         <li>
                             <Link href="#" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
