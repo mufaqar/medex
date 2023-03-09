@@ -86,7 +86,7 @@ function Header() {
                                 <ul className={`${dropdown ? 'block' : 'hidden'} bg-white md:absolute md:right-36 md:top-32 md:py-[15px] md:px-[30px] py-0 px-0`}>
                                     <li>
                                         <Link href="/who-we-are" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-[#BF1800] md:p-0">
-                                            who we are
+                                            Who we are
                                         </Link>
                                     </li>
                                 </ul>
