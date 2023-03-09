@@ -12,7 +12,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
+            <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
                 <div className="flex flex-wrap w-full xl:py-12  relative z-10">
                     <div className="w-full md:w-[50%] xl:w-[50%]">
                         <div className="">
