@@ -105,7 +105,7 @@ export default function Contact() {
                                 <label htmlFor="phone" className="block  opacity-70 font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer">
                                     Phone (Optional)
                                 </label>
-                                <input type="text" id="phone" name="phone" placeholder="Enter Your Phone" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm rounded placeholder-[#B3B3B3] min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
+                                <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm rounded placeholder-[#B3B3B3] min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
                             </div>
                             <div>
                                 <label htmlFor="message" className="block  opacity-70 font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer">
@@ -113,7 +113,7 @@ export default function Contact() {
                                 </label>
                                 <textarea id="message" name="message" className="px-4 py-3 flex items-center w-full rounded appearance-none transition duration-300 ease-in-out  text-[13px] lg:text-sm focus:outline-none focus:ring-0 placeholder-[#B3B3B3] border focus:bg-white focus:border-2" rows={4} placeholder="Briefly describe.."></textarea>
                             </div>
-                            <button className="text-sm lg:text-[15px] leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center tracking-[0.2px] rounded placeholder-white focus-visible:outline-none focus:outline-none h-11 md:h-[50px] bg-[#BF1800]  text-white  px-5 lg:px-6 py-4 md:py-3.5 lg:py-4 hover:text-white hover:bg-opacity-90 focus:bg-opacity-70 w-full" type="submit">
+                            <button type="submit" className="text-sm lg:text-[15px] leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center tracking-[0.2px] rounded placeholder-white focus-visible:outline-none focus:outline-none h-11 md:h-[50px] bg-[#BF1800]  text-white  px-5 lg:px-6 py-4 md:py-3.5 lg:py-4 hover:text-white hover:bg-opacity-90 focus:bg-opacity-70 w-full">
                                 Send Message
                             </button>
                         </form>
@@ -122,7 +122,7 @@ export default function Contact() {
             </div>
 
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d405010.10440433753!2d126.751814!3d37.528163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d4b3a3457a3%3A0x10e419c014a0079!2sWonmi-gu%2C%20Bucheon-si%2C%20Gyeonggi-do%2C%20South%20Korea!5e0!3m2!1sen!2sus!4v1678282798612!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" className='w-full h-[300px]'></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d405010.10440433753!2d126.751814!3d37.528163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d4b3a3457a3%3A0x10e419c014a0079!2sWonmi-gu%2C%20Bucheon-si%2C%20Gyeonggi-do%2C%20South%20Korea!5e0!3m2!1sen!2sus!4v1678282798612!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-full h-[300px]'></iframe>
             </div>
         </section>
     )
