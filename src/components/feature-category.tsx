@@ -22,7 +22,7 @@ function Feature_Category() {
                                 <Image src={item.featured} alt="" className='object-cover' />
                                 <div className='absolute top-0 left-0 right-0 bottom-0 p-5 text-center flex flex-col items-center justify-center group'>
                                     <h4>
-                                        <Link href={item.prodct_Link} className="text-lg leading-5 font-bold mb-2 text-white hover:text-blue-700 ">
+                                        <Link href={item.prodct_Link} className="text-lg leading-5 font-bold mb-2 text-white hover:text-[#BF1800] ">
                                             {item.title}
                                         </Link>
                                     </h4>

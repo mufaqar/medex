@@ -20,37 +20,37 @@ export default function Footer() {
                         </h3>
                         <ul className="text-sm lg:text-[16px] flex flex-col space-y-3">
                             <li className="flex items-baseline">
-                                <Link href="#" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="#" className="duration-200 text-white hover:text-[#BF1800]" >
                                     BOTOX AND FILLERS
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="#" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="#" className="duration-200 text-white hover:text-[#BF1800]" >
                                     CT SCAN
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="#" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="#" className="duration-200 text-white hover:text-[#BF1800]" >
                                     ENDOSCOPE
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="#" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="#" className="duration-200 text-white hover:text-[#BF1800]" >
                                     LABORATORY INSTRUMENTS
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="#" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="#" className="duration-200 text-white hover:text-[#BF1800]" >
                                     MRI
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="#" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="#" className="duration-200 text-white hover:text-[#BF1800]" >
                                     SKIN CARE LASER
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="#" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="#" className="duration-200 text-white hover:text-[#BF1800]" >
                                     ULTRASOUND SCANNER
                                 </Link>
                             </li>
@@ -62,24 +62,24 @@ export default function Footer() {
                         </h3>
                         <ul className="text-sm lg:text-[16px] flex flex-col space-y-3">
                             <li className="flex items-baseline">
-                                <Link href="https://www.google.com/maps/place/119+Sohyang-ro,+Wonmi-gu,+Bucheon,+Gyeonggi-do,+South+Korea/@37.5025335,126.7525041,15z/data=!3m1!4b1!4m2!3m1!1s0x357b7d3e1121c409:0x3743772ecbe8a8c1" target="_blank" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="https://www.google.com/maps/place/119+Sohyang-ro,+Wonmi-gu,+Bucheon,+Gyeonggi-do,+South+Korea/@37.5025335,126.7525041,15z/data=!3m1!4b1!4m2!3m1!1s0x357b7d3e1121c409:0x3743772ecbe8a8c1" target="_blank" className="duration-200 text-white hover:text-[#BF1800]" >
                                     Office: 318 Diart Gallery A Dong , Sohyang Ro 119 , Wonmi-gu,
                                     City : Bucheon-si
                                     Province : Gyeonggi-do , South Korea
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="telto:+82-10-2320-8582" target="_blank" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="telto:+82-10-2320-8582" target="_blank" className="duration-200 text-white hover:text-[#BF1800]" >
                                     Phone: +82-10-2320-8582
                                 </Link>
                             </li>
                             <li className="flex items-baseline">
-                                <p className="duration-200 text-white hover:text-blue-700" >
+                                <p className="duration-200 text-white hover:text-[#BF1800]" >
                                     Fax: +82-32-3221819
                                 </p>
                             </li>
                             <li className="flex items-baseline">
-                                <Link href="mailto:sonomedex@gmail.com" target="_blank" className="duration-200 text-white hover:text-blue-700" >
+                                <Link href="mailto:sonomedex@gmail.com" target="_blank" className="duration-200 text-white hover:text-[#BF1800]" >
                                     Email: sonomedex@gmail.com
                                 </Link>
                             </li>

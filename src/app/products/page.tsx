@@ -23,7 +23,7 @@ function Products() {
                                 <h4 className="text-sm leading-6 text-gray-400 mt-1.5 mb-1.5">
                                     {item.category}
                                 </h4>
-                                <Link href={item.prodct_Link} className="text-lg leading-5 mb-2 hover:text-blue-700 ">
+                                <Link href={item.prodct_Link} className="text-lg leading-5 mb-2 hover:text-[#BF1800] ">
                                     {item.title}
                                 </Link>
                             </div>
