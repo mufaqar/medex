@@ -103,48 +103,43 @@ function Header() {
                 {/* Mega Droupdown */}
 
                 <div className={`${megamenu ? 'block' : 'hidden'} mt-1 bg-white border-gray-200 shadow-sm border-y`}>
-                    <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-gray-500  md:grid-cols-3 md:px-6">
-                        <ul className="hidden mb-4 space-y-4 md:mb-0 md:block" aria-labelledby="mega-menu-full-image-button">
+                    <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-base text-gray-500  md:grid-cols-3 md:px-6">
+                        <ul className="hidden mb-4 space-y-4 md:mb-0 md:block">
                             <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    Online Stores
+                                <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                BOTOX AND FILLERS
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    Segmentation
+                                <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                CT SCAN
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    Marketing CRM
+                                <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                ENDOSCOPE
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    Online Stores
+                                <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                LABORATORY INSTRUMENTS
                                 </Link>
                             </li>
                         </ul>
                         <ul className="mb-4 space-y-4 md:mb-0">
                             <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    Our Blog
+                                <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                MRI
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    Terms & Conditions
+                                <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                SKIN CARE LASER
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    License
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#" className="hover:underline hover:text-blue-600">
-                                    Resources
+                                <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                ULTRASOUND SCANNER
                                 </Link>
                             </li>
                         </ul>
