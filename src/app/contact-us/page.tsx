@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Contact() {
     return (
-        <section className=''>
+        <main className=''>
             <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
                 <div className="w-full">
                     <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-[32px] font-bold text-center">
@@ -124,6 +124,6 @@ export default function Contact() {
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d405010.10440433753!2d126.751814!3d37.528163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d4b3a3457a3%3A0x10e419c014a0079!2sWonmi-gu%2C%20Bucheon-si%2C%20Gyeonggi-do%2C%20South%20Korea!5e0!3m2!1sen!2sus!4v1678282798612!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-full h-[300px]'></iframe>
             </div>
-        </section>
+        </main>
     )
 }
