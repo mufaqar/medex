@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import Featured_Img from '../../../public/images/p-1.jpg';
 
-function Page() {
+function Products() {
     return (
         <main>
             <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
@@ -36,7 +36,7 @@ function Page() {
     )
 }
 
-export default Page
+export default Products
 
 export const Products_data = [
     {

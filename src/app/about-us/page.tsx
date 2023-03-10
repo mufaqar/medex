@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Page() {
+function About() {
     return (
         <main>
             <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
@@ -55,4 +55,4 @@ function Page() {
     )
 }
 
-export default Page
+export default About
