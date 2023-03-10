@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.slick-prev {
+    z-index: 2;
+    left: 1.25rem;
+}
+
+.slick-next {
+    z-index: 2;
+    right: 1.25rem;
+}
+.slick-prev::before {
+    color: #bf1800;
+    font-size: 30px;
+}
+
+.slick-next::before {
+    color: #bf1800;
+    font-size: 30px;
+}
