@@ -40,7 +40,7 @@ function Header() {
                             </Link>
                         </li>
                     </ul>
-                    <ul className='flex flex-col text-sm font-medium md:flex-row md:space-x-8 md:mt-0'>
+                    <ul className='flex flex-col text-base font-semibold roboto md:flex-row md:space-x-8 md:mt-0'>
                         <li>
                             <Link href="mailto:sonomedex@gmail.com" target="_blank" className='flex items-center gap-2 py-2 pl-3 pr-4 text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-black md:p-0 '>
                                 <BsEnvelopeFill /> sonomedex@gmail.com
@@ -62,7 +62,7 @@ function Header() {
                         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                     </button>
                     <div className={`${navbar ? 'block' : 'hidden'} items-center justify-between w-full md:flex md:w-auto md:order-1 `}>
-                        <ul className="flex flex-col mt-4 text-base uppercase font-medium md:flex-row md:space-x-8 md:mt-0">
+                        <ul className="flex flex-col mt-4 text-base uppercase font-medium montserrat md:flex-row md:space-x-8 md:mt-0">
                             <li>
                                 <Link href="/" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-[#BF1800] md:p-0 ">
                                     Home

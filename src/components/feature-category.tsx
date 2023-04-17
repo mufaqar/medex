@@ -7,12 +7,12 @@ function Feature_Category() {
     return (
         <section>
             <div className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20'>
-                <div className='mb-8 lg:mb-12'>
+                <div className='mb-8 lg:mb-20'>
                     <div className="mb-5 text-center pb-2 lg:pb-3 xl:pb-4 lg:max-w-[450px] lg:mx-auto">
-                        <h2 className="xl:text-[25px] xl:leading-9 text-[20px] font-medium leading-8">
+                        <h2 className="xl:text-4xl xl:leading-9 text-3xl font-medium leading-8">
                             Featured Categories
                         </h2>
-                        <p className="text-sm leading-[1.85em] text-gray-500 pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3 ">
+                        <p className="text-lg leading-[1.85em] text-gray-500 pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3 ">
                             Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sed urna malesuada.
                         </p>
                     </div>

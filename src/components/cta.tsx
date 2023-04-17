@@ -3,7 +3,7 @@ import React from 'react'
 
 function Cta() {
     return (
-        <div className="text-center text-white bg-fixed bg-[url('/images/bg_cta.jpg')] bg-center sm:py-35 py-40">
+        <section className="text-center text-white bg-fixed bg-[url('/images/bg_cta.jpg')] bg-center sm:py-35 py-40">
             <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
                 <div className="flex flex-col">
                     <h4 className="text-xl uppercase mb-5">
@@ -22,7 +22,7 @@ function Cta() {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

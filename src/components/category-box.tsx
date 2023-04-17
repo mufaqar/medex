@@ -5,7 +5,7 @@ import Featured_Img from '../../public/images/med.jpg';
 
 function CategoryBox() {
     return (
-        <section className='mb-8 lg:mb-12 mx-4'>
+        <section className='mb-8 lg:mb-20 mx-4'>
             <div className='grid gap-4 grid-cols-1 sm:grid-cols-3 2xl:gap-5 '>
                 {Cate_Date.map((item, index) => (
                     <div key={index} className='mx-auto'>
