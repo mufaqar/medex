@@ -5,40 +5,37 @@ import {
   Cta,
   Feature_Category,
 } from "../components/imports";
-import { gql } from "@apollo/client";
 import { client } from "../config/client";
+import { Products, ProductsCategories } from "../config/quries";
 
-export default function Home({Posts}) {
-  console.log("🚀 ~ file: index.js:12 ~ Home ~ Posts:", Posts)
+export default function Home({AllProducts,AllCategories}) {
+  console.log("🚀 ~ file: index.js:12 ~ Home ~ Posts:", AllCategories)
   return (
     <>
       <Banner />
       <CategoryBox />
-      <ProductBox />
-      <Feature_Category />
-      <ProductBox />
+      <ProductBox products={AllProducts.slice(0,5)} />
+      <Feature_Category categories={AllCategories.slice(0,5)}/>
+      <ProductBox products={AllProducts.slice(5,10)}/>
       <Cta />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const GET_POSTS = gql`
-    query AllPosts {
-      posts {
-        nodes {
-          id
-        }
-      }
-    }
-  `;
   const response = await client.query({
-    query: GET_POSTS,
+    query: Products,
   });
-  const Posts = response.data.posts;
+  const categories = await client.query({
+    query: ProductsCategories,
+  });
+  
+  const AllProducts = response.data.products.nodes;
+  const AllCategories = categories.data.productCategories.nodes;
   return {
     props: {
-      Posts,
+      AllProducts,
+      AllCategories
     },
   };
 }
