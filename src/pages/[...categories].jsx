@@ -18,9 +18,10 @@ const Categories = ({ AllProducts }) => {
   return (
     <>
       <section className="container mx-auto my-40 grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
-        {FilterProduct?.map((item, index) => (
+      {
+        FilterProduct.length > 0 ? FilterProduct?.map((item, index) => (
           <div key={index} className="mx-auto">
-            <figure className="flex justify-center items-center overflow-hidden">
+            <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
               <Link href={item?.slug}>
                 <img
                   src={item?.featuredImage?.node?.mediaItemUrl}
@@ -39,7 +40,9 @@ const Categories = ({ AllProducts }) => {
               {item.title}
             </Link>
           </div>
-        ))}
+        )) : <p className="mt-10 text-xl">Products Not Available!</p>
+      }
+       
       </section>
     </>
   );

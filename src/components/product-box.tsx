@@ -20,7 +20,7 @@ function ProductBox({ products }: any) {
           <div className="grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
             {products?.map((item: any, index: number) => (
               <div key={index} className="mx-auto">
-                <figure className="bg-gray-100 w-full h-[395px] flex justify-center items-center">
+                <figure className="bg-gray-50 w-full h-[395px] flex justify-center items-center">
                 <Link
                   href={item?.slug}><Image
                     src={item?.featuredImage?.node?.mediaItemUrl}
