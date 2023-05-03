@@ -19,7 +19,7 @@ function Single({ product }: any) {
         <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
           <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
             <img
-              alt="Les Paul"
+              alt="img"
               src={product?.featuredImage?.node?.mediaItemUrl}
               className="aspect-square w-full rounded-xl object-cover"
             />
@@ -29,7 +29,7 @@ function Single({ product }: any) {
                 return (
                   <img
                     key={idx}
-                    alt="Les Paul"
+                    alt="img"
                     src={img?.mediaItemUrl}
                     className="aspect-square w-full rounded-xl object-cover"
                   />
