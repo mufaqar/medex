@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Featured_Img from '../../../public/images/p-1.jpg';
 import { client } from '../../config/client';
 import { Products } from '../../config/quries';
 import ReactPaginate from 'react-paginate';
