@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import Img from '../../../../public/images/p-1.jpg';
 
 function Single() {
   return (
@@ -16,39 +15,39 @@ function Single() {
       <div className="relative mx-auto max-w-[1730px] md:px-6 lg:px-8 2xl:px-20 px-4 py-8">
         <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
           <div className="grid grid-cols-2 gap-4 md:grid-cols-1">
-            <Image
+            <img
               alt="Les Paul"
-              src={Img}
+              src="/images/p-1.jpg"
               className="aspect-square w-full rounded-xl object-cover"
             />
 
             <div className="grid grid-cols-2 gap-4 lg:mt-4">
-              <Image
+              <img
                 alt="Les Paul"
-                src={Img}
+                src="/images/p-1.jpg"
                 className="aspect-square w-full rounded-xl object-cover"
               />
 
-              <Image
+              <img
                 alt="Les Paul"
-                src={Img}
+                src="/images/p-1.jpg"
                 className="aspect-square w-full rounded-xl object-cover"
               />
 
-              <Image
+              <img
                 alt="Les Paul"
-                src={Img}
+                src="/images/p-1.jpg"
                 className="aspect-square w-full rounded-xl object-cover"
               />
 
-              <Image
+              <img
                 alt="Les Paul"
-                src={Img}
+                src="/images/p-1.jpg"
                 className="aspect-square w-full rounded-xl object-cover"
               />
             </div>
           </div>
-          <div className="sticky top-0">
+          <div className="sticky top-20">
             <div className="mt-8">
               <div className="max-w-[35ch] space-y-2">
                 <h1 className="text-xl font-bold sm:text-2xl">

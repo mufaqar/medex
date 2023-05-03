@@ -4,6 +4,8 @@ import { client } from "../config/client";
 import { Products } from "../config/quries";
 import Link from "next/link";
 import Image from "next/image";
+import ReactPaginate from "react-paginate";
+import { useState } from "react";
 
 const Categories = ({ AllProducts }) => {
   const router = useRouter();
@@ -11,38 +13,63 @@ const Categories = ({ AllProducts }) => {
   const FilterProduct = AllProducts?.filter(
     (item) => item?.productCategories?.nodes[0].slug === params
   );
-  console.log(
-    "🚀 ~ file: [...categories].jsx:11 ~ Categories ~ FilterProduct:",
-    FilterProduct
-  );
+
+  const itemsPerPage = 15;
+  const [itemOffset, setItemOffset] = useState(0);
+  const endOffset = itemOffset + itemsPerPage;
+  const currentItems = FilterProduct.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(FilterProduct.length / itemsPerPage);
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % FilterProduct.length;
+    setItemOffset(newOffset);
+  };
+
   return (
     <>
-      <section className="container mx-auto my-40 grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
-      {
-        FilterProduct.length > 0 ? FilterProduct?.map((item, index) => (
-          <div key={index} className="mx-auto">
-            <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
-              <Link href={item?.slug}>
-                <img
-                  src={item?.featuredImage?.node?.mediaItemUrl}
-                  alt=""
-                 className="w-full h-[250px] object-cover hover:scale-105 transition-all duration-300 ease-in-out"
-                />
+      <section className="container mx-auto mt-40 grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
+        {currentItems.length > 0 ? (
+          currentItems?.map((item, index) => (
+            <div key={index} className="mx-auto">
+              <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
+                <Link href={item?.slug}>
+                  <img
+                    src={item?.featuredImage?.node?.mediaItemUrl}
+                    alt=""
+                    className="w-full h-[250px] object-cover hover:scale-105 transition-all duration-300 ease-in-out"
+                  />
+                </Link>
+              </figure>
+              <h4 className="text-base leading-6 text-gray-400 mt-1.5 mb-1.5">
+                {item?.productCategories.nodes[0]?.name}
+              </h4>
+              <Link
+                href={item?.slug}
+                className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
+              >
+                {item.title}
               </Link>
-            </figure>
-            <h4 className="text-base leading-6 text-gray-400 mt-1.5 mb-1.5">
-              {item?.productCategories.nodes[0]?.name}
-            </h4>
-            <Link
-              href={item?.slug}
-              className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
-            >
-              {item.title}
-            </Link>
-          </div>
-        )) : <p className="mt-10 text-xl">Products Not Available!</p>
-      }
-       
+            </div>
+          ))
+        ) : (
+          <p className="mt-10 text-xl">Products Not Available!</p>
+        )}
+      </section>
+      <section className="container pagination mx-auto mb-40 mt-20">
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="Next"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={4}
+          pageCount={pageCount}
+          previousLabel="Previous"
+          renderOnZeroPageCount={null}
+          pageClassName="bg-gray-100 px-2 p-1 rounded-md hover:bg-[#BF1800] hover:text-white"
+          activeClassName="active text-white"
+          containerClassName="flex space-x-4 pagination_wrapper"
+          previousClassName="previous bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
+          nextClassName="next bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
+        />
       </section>
     </>
   );

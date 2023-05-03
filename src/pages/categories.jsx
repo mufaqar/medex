@@ -22,7 +22,7 @@ const Categories = ({ AllCategories }) => {
                 <img
                   src={item?.image?.mediaItemUrl}
                   alt=""
-                  className="object-cover w-full h-[250px] lg:h-[320px] group-hover:scale-110 transition-all duration-300 ease-out"
+                  className="object-cover w-full h-[250px] lg:h-[320px] group-hover:rotate-3 group-hover:scale-110 transition-all duration-300 ease-out"
                 />
                 </figure>
                 <div className="bg-black/20 absolute top-0 right-0 left-0 bottom-0" />

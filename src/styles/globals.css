@@ -31,3 +31,6 @@
     color: #bf1800;
     font-size: 30px;
 }
+.pagination_wrapper .active{
+    background:  #bf1800 !important;
+}

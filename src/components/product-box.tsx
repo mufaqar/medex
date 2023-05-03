@@ -22,7 +22,7 @@ function ProductBox({ products }: any) {
               <div key={index} className="mx-auto">
                 <figure className="bg-gray-50 w-full h-[395px] flex justify-center items-center">
                 <Link
-                  href={item?.slug}><Image
+                  href={`/products/${item?.slug}`}><Image
                     src={item?.featuredImage?.node?.mediaItemUrl}
                     alt=""
                     width={300}

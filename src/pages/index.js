@@ -9,7 +9,6 @@ import { client } from "../config/client";
 import { Products, ProductsCategories } from "../config/quries";
 
 export default function Home({AllProducts,AllCategories}) {
-  console.log("🚀 ~ file: index.js:12 ~ Home ~ Posts:", AllCategories)
   return (
     <>
       <Banner />
