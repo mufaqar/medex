@@ -109,7 +109,7 @@ function Single({ product }: any) {
                 </h3>
                 <div >
                   <div
-                  className="text-base leading-8 text-gray-600"
+                  className="text-base mt-4 description leading-8 text-gray-600"
                     dangerouslySetInnerHTML={{
                       __html: product?.content,
                     }}
