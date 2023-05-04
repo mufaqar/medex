@@ -7,6 +7,7 @@ import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { useState } from "react";
 import Head from "next/head";
+import NotFound from "../components/404";
 
 const Categories = ({ AllProducts }) => {
   const router = useRouter();
@@ -30,7 +31,7 @@ const Categories = ({ AllProducts }) => {
   return (
     <>
       <section className="container mx-auto mt-40 grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
-        {currentItems.length > 0 ? (
+        {currentItems.length > 0 && (
           currentItems?.map((item, index) => (
             <div key={index} className="mx-auto">
               <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
@@ -53,10 +54,10 @@ const Categories = ({ AllProducts }) => {
               </Link>
             </div>
           ))
-        ) : (
-          <p className="mt-10 text-xl">Products Not Available!</p>
-        )}
+        )
+        }
       </section>
+      {currentItems.length <= 0 && <NotFound/>}
       <section className="container pagination mx-auto mb-40 mt-20">
         <ReactPaginate
           breakLabel="..."
