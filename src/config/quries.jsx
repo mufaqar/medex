@@ -6,6 +6,9 @@ export const Products = gql`
       nodes {
         title
         slug
+        seo {
+          fullHead
+        }
         featuredImage {
           node {
             mediaItemUrl
@@ -28,6 +31,9 @@ export const ProductsCategories = gql`
       nodes {
         image {
           mediaItemUrl
+        }
+        seo {
+          fullHead
         }
         name
         slug

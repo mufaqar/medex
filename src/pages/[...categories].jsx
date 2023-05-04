@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { useState } from "react";
+import Head from "next/head";
 
 const Categories = ({ AllProducts }) => {
   const router = useRouter();
@@ -25,6 +26,7 @@ const Categories = ({ AllProducts }) => {
     setItemOffset(newOffset);
   };
 
+
   return (
     <>
       <section className="container mx-auto mt-40 grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
@@ -32,7 +34,7 @@ const Categories = ({ AllProducts }) => {
           currentItems?.map((item, index) => (
             <div key={index} className="mx-auto">
               <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
-                <Link href={item?.slug}>
+                <Link href={`products/${item?.slug}`}>
                   <img
                     src={item?.featuredImage?.node?.mediaItemUrl}
                     alt=""
@@ -44,7 +46,7 @@ const Categories = ({ AllProducts }) => {
                 {item?.productCategories.nodes[0]?.name}
               </h4>
               <Link
-                href={item?.slug}
+                href={`products/${item?.slug}`}
                 className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
               >
                 {item.title}

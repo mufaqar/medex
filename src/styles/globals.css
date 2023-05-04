@@ -43,3 +43,6 @@
 .description strong{
     color: #bf1800;
 }
+.ReactModal__Overlay{
+    background-color: #0b0b0ba8 !important;
+}
