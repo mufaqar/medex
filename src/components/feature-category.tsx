@@ -25,6 +25,7 @@ function Feature_Category({ categories }: any) {
                     <img
                       src={item?.image?.mediaItemUrl}
                       alt=""
+
                       className="object-cover w-full h-[230px] group-hover:rotate-3 group-hover:scale-110 transition-all duration-300 ease-out"
                     />
                   </figure>

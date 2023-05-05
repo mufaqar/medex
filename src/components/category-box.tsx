@@ -30,14 +30,14 @@ export default CategoryBox
 export const Cate_Date = [
     {
         featured: botox,
-        Cat_Link: "#",
+        Cat_Link: "/botox-and-fillers",
     },
     {
         featured: ultrasound,
-        Cat_Link: "#",
+        Cat_Link: "/ultrasound-scanner",
     },
     {
         featured: mri,
-        Cat_Link: "#",
+        Cat_Link: "/skin-care-laser",
     },
 ]
