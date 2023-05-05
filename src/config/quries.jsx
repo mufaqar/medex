@@ -27,7 +27,7 @@ export const FillerProducts = gql`
 
 export const Products = gql`
   query AllProducts {
-    products(first: 1000) {
+    products(first: 999) {
       nodes {
         title
         slug
