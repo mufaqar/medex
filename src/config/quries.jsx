@@ -1,8 +1,8 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 export const Products = gql`
   query AllProducts {
-    products(first: 10000) {
+    products(first: 6, where: { categoryId: 56 }) {
       nodes {
         title
         slug
