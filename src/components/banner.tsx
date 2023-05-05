@@ -1,8 +1,5 @@
-import Image from 'next/image';
 import React, { Component } from 'react';
-import Slide1 from '../../public/images/slide-1.jpg';
 import Slider from "react-slick";
-
 export default class Banner extends Component {
     render() {
         const settings = {
