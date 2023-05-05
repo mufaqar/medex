@@ -20,7 +20,7 @@ export default function HeadSection({}) {
       />
       <meta
         name="keywords"
-        content="medex , botox and fillter , used mediical equipment , ultasound scanner"
+        content="Used Medical Equipment , botox and fillter , used mediical equipment , ultasound scanner"
       ></meta>
     </Head>
   );
