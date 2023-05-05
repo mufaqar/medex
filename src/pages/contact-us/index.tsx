@@ -31,7 +31,7 @@ export default function Contact() {
                                             Addresses
                                         </h3>
                                         <p className="text-sm lg:leading-[27px]">
-                                            Acme Widgets 123 Widget Street Acmeville, AC 12345 United States of America
+                                            318 Diart Gallery A Dong , Sohyang Ro 119 , Wonmi-gu, City : Bucheon-si Province : Gyeonggi-do , South Korea
                                         </p>
                                     </div>
                                 </div>

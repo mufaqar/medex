@@ -10,10 +10,10 @@ function ProductBox({ products }: any) {
         <div className="mb-8 lg:mb-20">
           <div className="mb-5 text-center pb-2 lg:pb-3 xl:pb-4 lg:max-w-[550px] lg:mx-auto">
             <h2 className="xl:text-4xl xl:leading-9 text-3xl font-medium leading-8">
-              Featured Products
+              Featured Botox and Filler Products
             </h2>
             <p className="text-lg leading-[1.85em] text-gray-500 pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3 ">
-              Medex providing the best quality products and service you can trust.
+              Medex providing the best quality Botox and Filler products and service you can trust.
             </p>
           </div>
           <div className="grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5 ">
