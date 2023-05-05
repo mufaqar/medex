@@ -16,8 +16,8 @@ function Cta() {
                         Last chance to take advantage of our discounts!
                     </p>
                     <p className="">
-                        <Link href="#" className="bg-white text-gray-700 text-base md:h-12 mt-5 py-4 px-16 font-semibold hover:bg-[#BF1800] hover:text-white  focus:outline-none rounded">
-                            Discover Sale
+                        <Link href="/contact-us" className="bg-white text-gray-700 text-base md:h-12 mt-5 py-4 px-16 font-semibold hover:bg-[#BF1800] hover:text-white  focus:outline-none rounded">
+                            CONTACT US
                         </Link>
                     </p>
                 </div>

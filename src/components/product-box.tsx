@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Featured_Img from "../../public/images/p-1.jpg";
 
 function ProductBox({ products }: any) {
   return (
     <section>
       <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
         <div className="mb-8 lg:mb-20">
-          <div className="mb-5 text-center pb-2 lg:pb-3 xl:pb-4 lg:max-w-[550px] lg:mx-auto">
+          <div className="mb-5 text-center pb-2 lg:pb-3 xl:pb-4 lg:max-w-[800px] lg:mx-auto">
             <h2 className="xl:text-4xl xl:leading-9 text-3xl font-medium leading-8">
               Featured Botox and Filler Products
             </h2>
@@ -48,35 +47,3 @@ function ProductBox({ products }: any) {
 
 export default ProductBox;
 
-export const Products = [
-  {
-    featured: Featured_Img,
-    title: "[Sample] Able Brewing System  consetetur sadipscing elitr",
-    category: "Common Good",
-    prodct_Link: "#",
-  },
-  {
-    featured: Featured_Img,
-    title: "[Sample] Able Brewing System  consetetur sadipscing elitr",
-    category: "Common Good",
-    prodct_Link: "#",
-  },
-  {
-    featured: Featured_Img,
-    title: "[Sample] Able Brewing System  consetetur sadipscing elitr",
-    category: "Common Good",
-    prodct_Link: "#",
-  },
-  {
-    featured: Featured_Img,
-    title: "[Sample] Able Brewing System  consetetur sadipscing elitr",
-    category: "Common Good",
-    prodct_Link: "#",
-  },
-  {
-    featured: Featured_Img,
-    title: "[Sample] Able Brewing System  consetetur sadipscing elitr",
-    category: "Common Good",
-    prodct_Link: "#",
-  },
-];
