@@ -4,7 +4,7 @@ export default function HeadSection({}) {
   return (
     <Head>
       <title>
-        Find Affordable Medical Equipment in Pakistan! | Medex Worldwide
+        Best quality products and service you can trust | Medex Worldwide
       </title>
       <meta
         name="description"
