@@ -3,9 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: false,
   },
-  images:{
-    domains:["medexworldwide.com"]
-  }
-}
+  images: {
+    domains: ['medex.designercrunch.net'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
