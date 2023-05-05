@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer />
         <FloatingWhatsApp
-          phoneNumber="00821023208582"
+          phoneNumber="+821023208582"
           accountName="Medex World Wide"
           allowEsc
           allowClickAway
