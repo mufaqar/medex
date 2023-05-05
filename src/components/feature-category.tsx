@@ -14,8 +14,7 @@ function Feature_Category({ categories }: any) {
               Featured Categories
             </h2>
             <p className="text-lg leading-[1.85em] text-gray-500 pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3 ">
-              Commodo sociosqu venenatis cras dolor sagittis integer luctus sem
-              primis eget maecenas sed urna malesuada.
+              Products by Categories
             </p>
           </div>
           <div className="grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
