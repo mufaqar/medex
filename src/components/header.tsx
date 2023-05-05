@@ -118,29 +118,29 @@ function Header() {
                         <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-base text-gray-500  md:grid-cols-3 md:px-6">
                             <ul className="hidden mb-4 space-y-4 md:mb-0 md:block">
                                 <li>
-                                    <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/botox-and-fillers" className="hover:underline hover:text-[#BF1800]">
                                         BOTOX AND FILLERS
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/ct-scan" className="hover:underline hover:text-[#BF1800]">
                                         CT SCAN
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/endoscope" className="hover:underline hover:text-[#BF1800]">
                                         ENDOSCOPE
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/laboratory-instruments" className="hover:underline hover:text-[#BF1800]">
                                         LABORATORY INSTRUMENTS
                                     </Link>
                                 </li>
                             </ul>
                             <ul className="mb-4 space-y-4 md:mb-0">
                                 <li>
-                                    <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/mri" className="hover:underline hover:text-[#BF1800]">
                                         MRI
                                     </Link>
                                 </li>
@@ -150,15 +150,15 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/skin-care-laser" className="hover:underline hover:text-[#BF1800]">
                                         ULTRASOUND SCANNER
                                     </Link>
                                 </li>
                             </ul>
-                            <Link href="#" className="p-8 text-left bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-soft-light" style={{ backgroundImage: 'url(/docs/images/dashboard-overview.png)' }}>
-                                <p className="max-w-xl mb-5 font-extrabold leading-tight tracking-tight text-white">Preview the new Flowbite dashboard navigation.</p>
+                            <Link href="/contact-us" className="p-8 text-left bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-soft-light" style={{ backgroundImage: 'url(/docs/images/dashboard-overview.png)' }}>
+                                <p className="max-w-xl mb-5 leading-tight tracking-tight text-white">  Best quality products and service you can trust </p>
                                 <button type="button" className="inline-flex items-center px-2.5 py-1.5 text-xs font-medium text-center text-white border border-white rounded-lg hover:bg-white hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-700">
-                                    Get started
+                                    Contact Us
                                     <svg className="w-4 h-4 ml-1 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                 </button>
                             </Link>
