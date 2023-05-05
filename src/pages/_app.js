@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
         <Footer />
         <FloatingWhatsApp
           phoneNumber="00821023208582"
-          accountName="MedexWorlWide"
+          accountName="Medex Worl Wide"
           allowEsc
           allowClickAway
           notification
