@@ -1,4 +1,4 @@
-const siteUrl = 'https://medexworldwide.com';
+const siteUrl = 'https://medexworldwide.com/';
 module.exports = {
   siteUrl,
   exclude: ['/404'],

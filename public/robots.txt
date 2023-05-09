@@ -7,8 +7,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://medexworldwide.com
+Host: https://medexworldwide.com/
 
 # Sitemaps
 Sitemap: https://medexworldwide.com/sitemap.xml
-
+Sitemap: https://medexworldwide.com/server-sitemap.xml
