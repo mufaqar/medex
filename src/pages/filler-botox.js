@@ -5,7 +5,8 @@ import Img_url from '../../public/images/med.jpg';
 import Img1 from '../../public/images/mri.jpg';
 
 function Filler_botox() {
-    return (<>
+    return (
+    <>
         <section className='mb-12 mt-10 overflow-hidden'>
             <div className='bg-[url(/images/a.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]'>
                 <div className='md:ml-0 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8'>
