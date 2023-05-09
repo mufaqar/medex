@@ -8,7 +8,7 @@ const NotFound = () => {
         404
       </h1>
       <div className="bg-[#BF1800] px-2 text-sm text-white rounded rotate-12 absolute">
-        Products Not Found
+        Products Not Found !
       </div>
       <button className="mt-5">
         <a className="relative inline-block text-sm font-medium text-[#fff] group active:text-orange-500 focus:outline-none focus:ring">
