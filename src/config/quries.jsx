@@ -66,3 +66,14 @@ export const ProductsCategories = gql`
     }
   }
 `;
+
+export const FrontPage = gql`
+  query Frontpage($id: ID = "1792") {
+    page(id: $id, idType: DATABASE_ID) {
+      title
+      seo {
+        fullHead
+      }
+    }
+  }
+`;
