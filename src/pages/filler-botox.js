@@ -60,37 +60,37 @@ function Filler_botox() {
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-10'>
                     <div>
                         <Image src={Img1} alt="" className='mb-5 ' />
-                        <Link href="#" className='text-lg leading-5 mb-2 text-gray-400 hover:text-[#BF1800] uppercase'>
+                        <Link href="#" className='text-lg leading-5 mb-2 hover:text-[#BF1800] uppercase'>
                             Botox and Dermal Filler
                         </Link>
                     </div>
                     <div>
                         <Image src={Img1} alt="" className='mb-5 ' />
-                        <Link href="#" className='text-lg leading-5 mb-2 text-gray-400 hover:text-[#BF1800] uppercase'>
+                        <Link href="#" className='text-lg leading-5 mb-2 hover:text-[#BF1800] uppercase'>
                             Botox and Dermal Filler
                         </Link>
                     </div>
                     <div>
                         <Image src={Img1} alt="" className='mb-5 ' />
-                        <Link href="#" className='text-lg leading-5 mb-2 text-gray-400 hover:text-[#BF1800] uppercase'>
+                        <Link href="#" className='text-lg leading-5 mb-2 hover:text-[#BF1800] uppercase'>
                             Botox and Dermal Filler
                         </Link>
                     </div>
                     <div>
                         <Image src={Img1} alt="" className='mb-5 ' />
-                        <Link href="#" className='text-lg leading-5 mb-2 text-gray-400 hover:text-[#BF1800] uppercase'>
+                        <Link href="#" className='text-lg leading-5 mb-2 hover:text-[#BF1800] uppercase'>
                             Botox and Dermal Filler
                         </Link>
                     </div>
                     <div>
                         <Image src={Img1} alt="" className='mb-5 ' />
-                        <Link href="#" className='text-lg leading-5 mb-2 text-gray-400 hover:text-[#BF1800] uppercase'>
+                        <Link href="#" className='text-lg leading-5 mb-2 hover:text-[#BF1800] uppercase'>
                             Botox and Dermal Filler
                         </Link>
                     </div>
                     <div>
                         <Image src={Img1} alt="" className='mb-5 ' />
-                        <Link href="#" className='text-lg leading-5 mb-2 text-gray-400 hover:text-[#BF1800] uppercase'>
+                        <Link href="#" className='text-lg leading-5 mb-2 hover:text-[#BF1800] uppercase'>
                             Botox and Dermal Filler
                         </Link>
                     </div>
