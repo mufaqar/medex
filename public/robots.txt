@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://medexworldwide.com/
+
+# Sitemaps
+Sitemap: https://medexworldwide.com/sitemap.xml
+Sitemap: https://medexworldwide.com/server-sitemap.xml
