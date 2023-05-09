@@ -6,7 +6,9 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-
+.custom-shape {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
 .roboto{
     font-family: 'Roboto', sans-serif;
 }
