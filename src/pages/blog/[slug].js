@@ -34,7 +34,7 @@ const BlogSingle = ({ blog }) => {
                 </Link>
               </li>
               <li className="flex text-sm  px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 hover:text-skin-primary">
-                <Link className="inline-flex items-center " href="/">
+                <Link className="inline-flex items-center " href={`/blog/${blog.uri}`}>
                   <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" className="mr-1.5 text-gray-500 text-[15px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M184 112l144 144-144 144"></path>
                   </svg>
