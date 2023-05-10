@@ -86,7 +86,7 @@ function Filler_botox() {
                         </h2>
                     </div>
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-16'>
-                        <div>
+                        <div className='md:mb-0 mb-10'>
                             <div className='border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] mr-auto relative'>
                                 <Image src={Img_url} alt="img" className='h-full absolute top-[40px] right-[-50px] rounded-[15px] shadow-lg border border-black/5 ' />
                             </div>
