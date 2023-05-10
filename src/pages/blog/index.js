@@ -1,14 +1,26 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { BlogPage, BlogPostsQuery } from "../../config/quries";
 import { client } from "../../config/client";
 import parse from "html-react-parser";
 import Head from "next/head";
+import ReactPaginate from "react-paginate";
 
 const BlogPosts = ({ blogs, blogPage }) => {
   console.log("🚀 ~ file: index.js:7 ~ BlogPosts ~ blogs:", blogs);
 
   const seoHead = parse(blogPage?.seo.fullHead)
+
+  const itemsPerPage = 20;
+  const [itemOffset, setItemOffset] = useState(0);
+  const endOffset = itemOffset + itemsPerPage;
+  const currentItems = blogs.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(blogs.length / itemsPerPage);
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % blogs.length;
+    setItemOffset(newOffset);
+  };
 
   return (
     <>
@@ -21,7 +33,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
         </div>
       </div>
       <section className="container mx-auto my-10">
-        {blogs.map((post, idx) => {
+        {currentItems.map((post, idx) => {
           return (
             <Link href={`/blog/${post.uri}`} key={idx}>
               {post.title}
@@ -29,6 +41,22 @@ const BlogPosts = ({ blogs, blogPage }) => {
           );
         })}
       </section>
+      <section className="container pagination mx-auto mb-20 mt-20">
+      <ReactPaginate
+        breakLabel="..."
+        nextLabel="Next"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={4}
+        pageCount={pageCount}
+        previousLabel="Previous"
+        renderOnZeroPageCount={null}
+        pageClassName="bg-gray-100 px-2 p-1 rounded-md hover:bg-[#BF1800] hover:text-white"
+        activeClassName="active text-white"
+        containerClassName="flex space-x-4 pagination_wrapper"
+        previousClassName="previous bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
+        nextClassName="next bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
+      />
+    </section>
     </>
   );
 };
