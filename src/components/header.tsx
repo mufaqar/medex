@@ -89,6 +89,13 @@ function Header() {
                                 </li>
                                 <li>
                                     <span className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 text-base uppercase md:hover:bg-transparent md:border-0 md:hover:text-[#BF1800] md:p-0 ">
+                                        <Link href="/blog">
+                                            Blogs
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 text-base uppercase md:hover:bg-transparent md:border-0 md:hover:text-[#BF1800] md:p-0 ">
                                         <Link href="/about-us">
                                             About us
                                         </Link>

@@ -77,3 +77,36 @@ export const FrontPage = gql`
     }
   }
 `;
+export const BlogPage = gql`
+query blogPage {
+  page(id: "945", idType: DATABASE_ID) {
+    seo {
+      fullHead
+    }
+  }
+}
+`
+
+export const BlogPostsQuery = gql`
+query AllBlogPosts {
+  posts {
+    nodes {
+      uri
+      title
+      featuredImage {
+        node {
+          mediaItemUrl
+        }
+      }
+      excerpt
+      date
+      categories {
+        nodes {
+          name
+        }
+      }
+      content
+    }
+  }
+}
+`
