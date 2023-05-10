@@ -65,7 +65,7 @@ const BlogSingle = ({ blog }) => {
                       114 Views
                     </span>
                     <span className="has-dot ps-2.5 relative inline-block">
-                      Politic
+                      {blog?.categories?.nodes[0]?.name}
                     </span>
                   </div>
                 </div>
