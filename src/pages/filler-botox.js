@@ -14,11 +14,10 @@ function Filler_botox() {
                 <div className='bg-[url(/images/a.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]'>
                     <div className='md:ml-0 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8'>
                         <h1 className='md:text-6xl text-4xl text-[#a67979] '>
-                            Whenever you feel too tired
+                        Welcome to the World of Timeless Beauty!
                         </h1>
                         <p className='text-xl my-5'>
-                            Depressed or anxious about your daily, hectic routine...<br></br>
-                            we've got an answer for you!
+                        Discover the Secret to Youthful Radiance with Botox and Fillers
                         </p>
                         <Link href="#" className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5">
                             Show more
@@ -34,13 +33,13 @@ function Filler_botox() {
                                 Why our clients choose us
                             </h2>
                             <p className='text-lg my-2'>
-                                Our spa & skin care saloon will be your perfect gateway for any kind of body and mind relaxation and a skin care...
+                            Are you longing for smoother, wrinkle-free skin? Do you wish to regain that youthful glow that has gradually faded over the years? 
                             </p>
                             <p className='text-lg my-2'>
-                                It's been like that since the day 1, when our spa saloon was founded by Mary Fruition back in 1998. She did so in a spur of a moment decision,
+                            Look no further than our revolutionary Botox and Filler treatments.
                             </p>
                             <p className='text-lg my-2'>
-                                Get trn horrible remember pleasure two vicinity Far estimable extremely middle on his concealed precieved principle.
+                            Our team of experienced professionals is dedicated to helping you achieve your desired look and restoring your confidence.
                             </p>
                             <Link href="#" className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5">
                                 Show more
