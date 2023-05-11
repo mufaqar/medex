@@ -14,7 +14,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    border:'none',
+    border: 'none',
     background: 'none'
   },
 };
@@ -23,7 +23,7 @@ function Single({ product }: any) {
   const fullHead = parse(product.seo.fullHead);
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [imageUrl, setImageUrl] = useState<string>();
-  console.log("🚀 ~ file: [slug].tsx:24 ~ Single ~ imageUrl:", imageUrl);
+  console.log("🚀 ~ file: [slug].tsx:24 ~ Single ~ imageUrl:", fullHead);
   function openModal(url: string) {
     setIsOpen(true);
     setImageUrl(url);
@@ -35,7 +35,12 @@ function Single({ product }: any) {
   return (
     <>
       <main>
-        <Head>{fullHead}</Head>
+
+        <Head>
+          <title>{product.title} - Medex Worldwide</title>
+          {fullHead}
+        </Head>
+
         <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
           <div className="w-full">
             <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-[32px] font-bold text-center">
@@ -158,7 +163,7 @@ function Single({ product }: any) {
         contentLabel="Example Modal"
       >
         <div className="relative">
-        <button className="absolute right-4 top-0 bg-white p-2 rounded-full" onClick={closeModal}>X</button>
+          <button className="absolute right-4 top-0 bg-white p-2 rounded-full" onClick={closeModal}>X</button>
           <img
             alt="img"
             src={imageUrl}
