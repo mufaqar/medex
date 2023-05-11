@@ -17,7 +17,7 @@ function Feature_Category({ categories }: any) {
               Products by Categories
             </p>
           </div>
-          <div className="grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
+          <div className="grid gap-4 grid-cols-2 md:grid-cols-4 2xl:gap-5">
             {categories?.map((item: any, index: number) => (
               <div key={index} className="mx-auto group relative">
                 <Link href={item?.slug}>
