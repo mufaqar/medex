@@ -8,9 +8,9 @@ function ProductBox({ products }: any) {
       <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
         <div className="mb-8 lg:mb-20">
           <div className="mb-5 text-center pb-2 lg:pb-3 xl:pb-4 lg:max-w-[800px] lg:mx-auto">
-            <h2 className="xl:text-4xl xl:leading-9 text-3xl font-medium leading-8">
+            <h1 className="xl:text-4xl xl:leading-9 text-3xl font-medium leading-8">
               Featured Botox and Filler Products
-            </h2>
+            </h1>
             <p className="text-lg leading-[1.85em] text-gray-500 pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3 ">
               Medex providing the best quality Botox and Filler products and service you can trust.
             </p>
