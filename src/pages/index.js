@@ -20,7 +20,12 @@ export default function Home({ AllProducts, AllCategories, HomePage }) {
   const fullHead = parse(HomePage);
   return (
     <>
-      <Head>{fullHead}</Head>
+      <Head>
+        <title>
+          Best Quality Medical Equipment in Pakistan! - Medex Worldwide
+        </title>
+        {fullHead}
+      </Head>
       <Banner />
       <CategoryBox />
       <ProductBox products={AllProducts.slice(0, 5)} />
