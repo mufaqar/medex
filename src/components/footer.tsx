@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
             <div className='bg-[#BF1800] p-5'>
                 <p className="text-white text-center text-sm lg:text-[16px]">
-                    © 2021 Medex World Wide. Design & Developed by Mufaqar.com
+                    © 2010-2023 Medex World Wide. Design & Developed by Mufaqar.com
                 </p>
             </div>
         </footer>
