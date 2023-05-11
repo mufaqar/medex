@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Logo from '../../public/images/logo.png';
 import { BsEnvelopeFill, BsFillTelephoneFill, BsFacebook, BsTwitter, BsYoutube, BsInstagram, BsWhatsapp, } from 'react-icons/bs';
+import GoogleAnalytics from '@bradgarropy/next-google-analytics';
 
 
 function Header() {
@@ -13,7 +14,7 @@ function Header() {
     return (
         <>
 
-
+            <GoogleAnalytics measurementId="G-TKKQ94RWML" />;
             <header className='fixed top-0 left-0 right-0 bg-white/70 z-40'>
                 <nav className="">
                     <div className="hidden md:flex flex-wrap justify-between items-center mx-auto px-4 md:px-6 py-2.5 bg-[#BF1800]">
