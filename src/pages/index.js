@@ -21,9 +21,7 @@ export default function Home({ AllProducts, AllCategories, HomePage }) {
   return (
     <>
       <Head>
-        <title>
-          Best Quality Medical Equipment in Pakistan! - Medex Worldwide
-        </title>
+        <title>Medex Best Quality Medical Equipment in Pakistan</title>
         {fullHead}
       </Head>
       <Banner />
