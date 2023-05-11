@@ -19,7 +19,7 @@ function Feature_Category({ categories }: any) {
           </div>
           <div className="grid gap-4 grid-cols-2 md:grid-cols-4 2xl:gap-5">
             {categories?.map((item: any, index: number) => (
-              <div key={index} className="mx-auto group relative">
+              <div key={index} className="mx-auto group relative w-full">
                 <Link href={item?.slug}>
                   <figure className="overflow-hidden">
                     <img
