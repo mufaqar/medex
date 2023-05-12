@@ -24,7 +24,7 @@ function Feature_Category({ categories }: any) {
                   <figure className="overflow-hidden">
                     <img
                       src={item?.image?.mediaItemUrl}
-                      alt=""
+                      alt={item?.image?.mediaItemUrl}
 
                       className="object-cover w-full h-[230px] group-hover:rotate-3 group-hover:scale-110 transition-all duration-300 ease-out"
                     />

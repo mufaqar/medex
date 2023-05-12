@@ -22,7 +22,7 @@ function ProductBox({ products }: any) {
                   <Link
                     href={`/products/${item?.slug}`}><Image
                       src={item?.featuredImage?.node?.mediaItemUrl}
-                      alt=""
+                      alt={item?.featuredImage?.node?.mediaItemUrl}
                       width={300}
                       height={200}
                     /></Link>

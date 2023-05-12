@@ -15,7 +15,7 @@ function Header() {
         <>
 
             <GoogleAnalytics measurementId="G-TKKQ94RWML" />;
-            <header className='fixed top-0 left-0 right-0 bg-white/70 z-40'>
+            <header className='fixed top-0 left-0 right-0 bg-white/80 z-40 shadow-md'>
                 <nav className="">
                     <div className="hidden md:flex flex-wrap justify-between items-center mx-auto px-4 md:px-6 py-2.5 bg-[#BF1800]">
                         <ul className='flex flex-col text-sm font-medium md:flex-row md:space-x-5 md:mt-0'>
