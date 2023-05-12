@@ -130,16 +130,6 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/ct-scan" className="hover:underline hover:text-[#BF1800]">
-                                        CT SCAN
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/endoscope" className="hover:underline hover:text-[#BF1800]">
-                                        ENDOSCOPE
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/laboratory-instruments" className="hover:underline hover:text-[#BF1800]">
                                         LABORATORY INSTRUMENTS
                                     </Link>
@@ -147,17 +137,12 @@ function Header() {
                             </ul>
                             <ul className="mb-4 space-y-4 md:mb-0">
                                 <li>
-                                    <Link href="/mri" className="hover:underline hover:text-[#BF1800]">
-                                        MRI
+                                    <Link href="/medical-equipments" className="hover:underline hover:text-[#BF1800]">
+                                        MEDICAL EQUIPMENT
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="hover:underline hover:text-[#BF1800]">
-                                        SKIN CARE LASER
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/skin-care-laser" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/ultrasound-scanner" className="hover:underline hover:text-[#BF1800]">
                                         ULTRASOUND SCANNER
                                     </Link>
                                 </li>
