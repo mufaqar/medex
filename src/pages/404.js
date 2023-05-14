@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
-function Four0Four() {
+function ErrorPage() {
   return (
     <>
       <Head>
@@ -21,6 +22,9 @@ function Four0Four() {
             <p className="text-sm leading-[1.85em] text-gray-500 pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3 ">
               404 Page not found
             </p>
+            <Link href="/">
+              <a>Go back to the homepage</a>
+            </Link>
           </div>
         </div>
       </main>
@@ -28,4 +32,4 @@ function Four0Four() {
   );
 }
 
-export default Four0Four;
+export default ErrorPage;
