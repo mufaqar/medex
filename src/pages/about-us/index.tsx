@@ -6,6 +6,8 @@ function About() {
         <>
             <Head>
                 <title>About Us - Medex Worldwide</title>
+                <meta name="description" content="Medex Worldwide is a global wholesaler and distributor of high quality reconditioned/refurbished ultrasound, endoscopy systems"  />
+	
             </Head>
             <main>
                 <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
