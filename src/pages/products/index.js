@@ -36,7 +36,7 @@ function ProductsPage({AllProducts}) {
             <div key={index} className="mx-auto">
               <figure className="bg-gray-50 w-full h-[395px] flex justify-center items-center">
               <Link
-                href={`/products/${item?.slug}`}
+                href={`/product/${item?.slug}`}
                 className='w-full'>
                 <img
                   src={item?.featuredImage?.node?.mediaItemUrl}
@@ -49,7 +49,7 @@ function ProductsPage({AllProducts}) {
                 {item?.productCategories.nodes[0]?.name}
               </h4>
               <Link
-                href={item?.slug}
+                href={`/product/${item?.slug}`}
                 className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
               >
                 {item.title}

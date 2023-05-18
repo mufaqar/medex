@@ -36,7 +36,7 @@ const Categories = ({ AllProducts }) => {
           currentItems?.map((item, index) => (
             <div key={index} className="mx-auto">
               <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
-                <Link href="#">
+                <Link href={`/product/${item.slug}`}>
                   <img
                     src={item?.featuredImage?.node?.mediaItemUrl}
                     alt= {item.title}
@@ -47,12 +47,12 @@ const Categories = ({ AllProducts }) => {
               <h4 className="text-base leading-6 text-gray-400 mt-1.5 mb-1.5">
                 {item?.productCategories.nodes[0]?.name}
               </h4>
-              <a
-                href={`/product/ ${item.slug}`}
+              <Link
+                href={`/product/${item.slug}`}
                 className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
               >
                 {item.title}
-              </a>
+              </Link>
             </div>
           ))
         )
