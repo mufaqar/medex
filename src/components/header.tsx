@@ -142,7 +142,7 @@ function Header() {
                         <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-base text-gray-500  md:grid-cols-3 md:px-6">
                             <ul className="hidden mb-4 space-y-4 md:mb-0 md:block">
                                 <li onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>
-                                    <Link href="/product-category/botox-filler" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/product-category/botox-and-fillers" className="hover:underline hover:text-[#BF1800]">
                                         BOTOX AND FILLERS
                                     </Link>
                                 </li>
