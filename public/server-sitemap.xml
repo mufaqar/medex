@@ -1,42 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
-  <loc>https://www.medexworldwide.com/botox-and-fillers</loc>
+  <loc>https://www.medexworldwide.com/product-category/botox-and-fillers</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/ct-scan</loc>
+  <loc>https://www.medexworldwide.com/product-category/ct-scan</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/endoscope</loc>
+  <loc>https://www.medexworldwide.com/product-category/endoscope</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/laboratory-instruments</loc>
+  <loc>https://www.medexworldwide.com/product-category/laboratory-instruments</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/mri</loc>
+  <loc>https://www.medexworldwide.com/product-category/ultrasound-scanner</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/skin-care-laser</loc>
-  <lastmod>2023-05-09T09:58:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.medexworldwide.com/ultrasound-scanner</loc>
-  <lastmod>2023-05-09T09:58:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.medexworldwide.com/products/deneb-body-fillers</loc>
+  <loc>https://www.medexworldwide.com/product/deneb-body-fillers</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -46,7 +36,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/regenovue-sub-q-ha-dermal-filler</loc>
+  <loc>https://www.medexworldwide.com/product/regenovue-sub-q-ha-dermal-filler</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -56,7 +46,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/sosum</loc>
+  <loc>https://www.medexworldwide.com/product/sosum</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -66,7 +56,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/curacen-human-placenta</loc>
+  <loc>https://www.medexworldwide.com/product/curacen-human-placenta</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -76,7 +66,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/laennec-human-placenta</loc>
+  <loc>https://www.medexworldwide.com/product/laennec-human-placenta</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -91,7 +81,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/aloka-prosound-alpha-7</loc>
+  <loc>https://www.medexworldwide.com/product/aloka-prosound-alpha-7</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -101,7 +91,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/samsung-ws80a-ultrasound-system-3d-4d-live</loc>
+  <loc>https://www.medexworldwide.com/product/samsung-ws80a-ultrasound-system-3d-4d-live</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -111,7 +101,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/ge-voluson-s10-expert-ultrasound-system</loc>
+  <loc>https://www.medexworldwide.com/product/ge-voluson-s10-expert-ultrasound-system</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -121,7 +111,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/canon-toshiba-xario-200-ultrasound</loc>
+  <loc>https://www.medexworldwide.com/product/canon-toshiba-xario-200-ultrasound</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -131,7 +121,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/roche-cobas-e411-immunoassay-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/roche-cobas-e411-immunoassay-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -141,7 +131,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/mini-vidas-immunoassay-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/mini-vidas-immunoassay-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -151,7 +141,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/ge-voluson-e8-ultrasound-system</loc>
+  <loc>https://www.medexworldwide.com/product/ge-voluson-e8-ultrasound-system</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -161,7 +151,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/melsmon-human-placenta</loc>
+  <loc>https://www.medexworldwide.com/product/melsmon-human-placenta</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -171,7 +161,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/rejeunesse-cross-link-ha-filler</loc>
+  <loc>https://www.medexworldwide.com/product/rejeunesse-cross-link-ha-filler</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -181,7 +171,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/super-v-line-sol-fat-burning-injection</loc>
+  <loc>https://www.medexworldwide.com/product/super-v-line-sol-fat-burning-injection</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -191,7 +181,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/liponex-300-thioctic-acid-300mg</loc>
+  <loc>https://www.medexworldwide.com/product/liponex-300-thioctic-acid-300mg</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -201,7 +191,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/kabelline-fat-reduction-solution</loc>
+  <loc>https://www.medexworldwide.com/product/kabelline-fat-reduction-solution</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -211,7 +201,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/canon-toshiba-xario-200-ultrasound-scanner</loc>
+  <loc>https://www.medexworldwide.com/product/canon-toshiba-xario-200-ultrasound-scanner</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -221,7 +211,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/vidasimmunoassay-system</loc>
+  <loc>https://www.medexworldwide.com/product/vidasimmunoassay-system</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -231,7 +221,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/urit-3000-vet-plus-hematology-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/urit-3000-vet-plus-hematology-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -241,202 +231,202 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/hyaldew-shine</loc>
+  <loc>https://www.medexworldwide.com/product/hyaldew-shine</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/hyaldew-fine</loc>
+  <loc>https://www.medexworldwide.com/product/hyaldew-fine</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/hyaldew-all</loc>
+  <loc>https://www.medexworldwide.com/product/hyaldew-all</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/dermaheal-sb</loc>
+  <loc>https://www.medexworldwide.com/product/dermaheal-sb</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/dermaheal-ll</loc>
+  <loc>https://www.medexworldwide.com/product/dermaheal-ll</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/roche-cobas-c-311-automated-chemistry-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/roche-cobas-c-311-automated-chemistry-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/medonic-m-series</loc>
+  <loc>https://www.medexworldwide.com/product/medonic-m-series</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/orphee-mythic-18-hematology-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/orphee-mythic-18-hematology-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/sysmex-poch-100i-automated-hematology-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/sysmex-poch-100i-automated-hematology-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/microlab-200-300-semi-automatic-biochemistry-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/microlab-200-300-semi-automatic-biochemistry-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/olympus-au400-chemistry-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/olympus-au400-chemistry-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/hitachi-7180-clinical-chemistry-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/hitachi-7180-clinical-chemistry-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/hitachi-7020-clinicalautomatic-analyzer</loc>
+  <loc>https://www.medexworldwide.com/product/hitachi-7020-clinicalautomatic-analyzer</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/beckman-olympus-chemistry-analyzer-au2700</loc>
+  <loc>https://www.medexworldwide.com/product/beckman-olympus-chemistry-analyzer-au2700</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/mindray-bc-3000plus-bc-2800</loc>
+  <loc>https://www.medexworldwide.com/product/mindray-bc-3000plus-bc-2800</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/horiba-lc-660-fully-automated-blood-cell-counter</loc>
+  <loc>https://www.medexworldwide.com/product/horiba-lc-660-fully-automated-blood-cell-counter</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/shurink-ultraformer-iii-hifu</loc>
+  <loc>https://www.medexworldwide.com/product/shurink-ultraformer-iii-hifu</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/cynosure-cynergy-hair-removal-laser</loc>
+  <loc>https://www.medexworldwide.com/product/cynosure-cynergy-hair-removal-laser</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/the-s-a-f-e-r-hair-transplantation-unit-laser-treatment</loc>
+  <loc>https://www.medexworldwide.com/product/the-s-a-f-e-r-hair-transplantation-unit-laser-treatment</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/fraxel-dual-laser-for-acne-wrinkle-and-skin-resurfacing</loc>
+  <loc>https://www.medexworldwide.com/product/fraxel-dual-laser-for-acne-wrinkle-and-skin-resurfacing</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/i-lipo-machine-laser-lipolysis-fat-removing-machine</loc>
+  <loc>https://www.medexworldwide.com/product/i-lipo-machine-laser-lipolysis-fat-removing-machine</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/cellum6-keymodule-lpg-endermologie-cellulite-body-contouring-machine</loc>
+  <loc>https://www.medexworldwide.com/product/cellum6-keymodule-lpg-endermologie-cellulite-body-contouring-machine</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/lutronics-dual-pulsed-q-switched-nd-yag-laser</loc>
+  <loc>https://www.medexworldwide.com/product/lutronics-dual-pulsed-q-switched-nd-yag-laser</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/alma-arion-alexandrite-hair-removal-laser-refurbished</loc>
+  <loc>https://www.medexworldwide.com/product/alma-arion-alexandrite-hair-removal-laser-refurbished</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/alma-relax-f-laser-wrinkle-remover-laser</loc>
+  <loc>https://www.medexworldwide.com/product/alma-relax-f-laser-wrinkle-remover-laser</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/fotona-qx-max-q-switched-laser-ndyag-1064-nm-532-nm-650-nm-585-nm</loc>
+  <loc>https://www.medexworldwide.com/product/fotona-qx-max-q-switched-laser-ndyag-1064-nm-532-nm-650-nm-585-nm</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/candela-mini-gentleyag-hair-removal-wrinkle-removal-laser</loc>
+  <loc>https://www.medexworldwide.com/product/candela-mini-gentleyag-hair-removal-wrinkle-removal-laser</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/airgent-enerjet-skin-rejuvenation</loc>
+  <loc>https://www.medexworldwide.com/product/airgent-enerjet-skin-rejuvenation</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/alma-legato-ii-fractional-rf-skin-resurfacing-laser</loc>
+  <loc>https://www.medexworldwide.com/product/alma-legato-ii-fractional-rf-skin-resurfacing-laser</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/sharplan-co2-laser</loc>
+  <loc>https://www.medexworldwide.com/product/sharplan-co2-laser</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/body-jet-liposuction</loc>
+  <loc>https://www.medexworldwide.com/product/body-jet-liposuction</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/samsung-hs60-ultrasound</loc>
+  <loc>https://www.medexworldwide.com/product/samsung-hs60-ultrasound</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/samsung-hs50-ultrasound-scanner</loc>
+  <loc>https://www.medexworldwide.com/product/samsung-hs50-ultrasound-scanner</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/samsung-hs70-ultrasound-scanner</loc>
+  <loc>https://www.medexworldwide.com/product/samsung-hs70-ultrasound-scanner</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/canon-toshiba-aplio-300-color-dopler-ultrasound-demo-unit</loc>
+  <loc>https://www.medexworldwide.com/product/canon-toshiba-aplio-300-color-dopler-ultrasound-demo-unit</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/samsung-eko-7-cardiac-vascularcw-option-color-doppler-ultrasound-2</loc>
+  <loc>https://www.medexworldwide.com/product/samsung-eko-7-cardiac-vascularcw-option-color-doppler-ultrasound-2</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/ge-logiq-e-portable-color-dopler-ultrasound</loc>
+  <loc>https://www.medexworldwide.com/product/ge-logiq-e-portable-color-dopler-ultrasound</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/ge-logiq-p6-color-dopler-ultrasound-scanner</loc>
+  <loc>https://www.medexworldwide.com/product/ge-logiq-p6-color-dopler-ultrasound-scanner</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/samsung-eko-7-cardiac-vascularcw-option-color-doppler-ultrasound</loc>
+  <loc>https://www.medexworldwide.com/product/samsung-eko-7-cardiac-vascularcw-option-color-doppler-ultrasound</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.medexworldwide.com/products/ge-vivid-s5</loc>
+  <loc>https://www.medexworldwide.com/product/ge-vivid-s5</loc>
   <lastmod>2023-05-09T09:58:11+00:00</lastmod>
   <priority>0.64</priority>
 </url>
