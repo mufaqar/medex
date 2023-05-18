@@ -106,7 +106,7 @@ function Header() {
                                 <li onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>
                                     <span className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 text-base uppercase md:hover:bg-transparent md:border-0 md:hover:text-[#BF1800] md:p-0 ">
                                         <Link href="/blog">
-                                            Blogs
+                                            Blog
                                         </Link>
                                     </span>
                                 </li>
@@ -142,24 +142,24 @@ function Header() {
                         <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-base text-gray-500  md:grid-cols-3 md:px-6">
                             <ul className="hidden mb-4 space-y-4 md:mb-0 md:block">
                                 <li onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>
-                                    <Link href="/botox-filler" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/product-category/botox-filler" className="hover:underline hover:text-[#BF1800]">
                                         BOTOX AND FILLERS
                                     </Link>
                                 </li>
                                 <li onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>
-                                    <Link href="/laboratory-instruments" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/product-category/laboratory-instruments" className="hover:underline hover:text-[#BF1800]">
                                         LABORATORY INSTRUMENTS
                                     </Link>
                                 </li>
                             </ul>
                             <ul className="mb-4 space-y-4 md:mb-0">
                                 <li onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>
-                                    <Link href="/medical-equipments" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/product-category/medical-equipments" className="hover:underline hover:text-[#BF1800]">
                                         MEDICAL EQUIPMENT
                                     </Link>
                                 </li>
                                 <li onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>
-                                    <Link href="/ultrasound-scanner" className="hover:underline hover:text-[#BF1800]">
+                                    <Link href="/product-category/ultrasound-scanner" className="hover:underline hover:text-[#BF1800]">
                                         ULTRASOUND SCANNER
                                     </Link>
                                 </li>
