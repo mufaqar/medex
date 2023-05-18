@@ -1,18 +1,18 @@
-import { useRouter } from "next/router";
-import React from "react";
-import { client } from "../../config/client";
-import { Products } from "../../config/quries";
-import Link from "next/link";
-import Image from "next/image";
-import ReactPaginate from "react-paginate";
-import { useState } from "react";
-import Head from "next/head";
-import NotFound from "../../components/404";
+import { useRouter } from 'next/router';
+import React from 'react';
+import { client } from '../../config/client';
+import { Products } from '../../config/quries';
+import Link from 'next/link';
+import Image from 'next/image';
+import ReactPaginate from 'react-paginate';
+import { useState } from 'react';
+import Head from 'next/head';
+import NotFound from '../../components/404';
 
-const Categories = ({ AllProducts }) => { 
-
+const Categories = ({ AllProducts }) => {
   const router = useRouter();
   const params = router?.query?.slug;
+
   const FilterProduct = AllProducts?.filter(
     (item) => item?.productCategories?.nodes[0].slug === params
   );
@@ -23,23 +23,29 @@ const Categories = ({ AllProducts }) => {
   const currentItems = FilterProduct.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(FilterProduct.length / itemsPerPage);
 
+  console.log(currentItems);
+
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % FilterProduct.length;
     setItemOffset(newOffset);
   };
 
-
   return (
     <>
+      <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
+        <div className="w-full">
+          <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-[32px] font-bold text-center"></h2>
+        </div>
+      </div>
       <section className="container mx-auto mt-40 grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
-        {currentItems.length > 0 && (
+        {currentItems.length > 0 &&
           currentItems?.map((item, index) => (
             <div key={index} className="mx-auto">
               <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
                 <Link href={`/product/${item.slug}`}>
                   <img
                     src={item?.featuredImage?.node?.mediaItemUrl}
-                    alt= {item.title}
+                    alt={item.title}
                     className="w-full h-[250px] object-cover hover:scale-105 transition-all duration-300 ease-in-out"
                   />
                 </Link>
@@ -54,11 +60,9 @@ const Categories = ({ AllProducts }) => {
                 {item.title}
               </Link>
             </div>
-          ))
-        )
-        }
+          ))}
       </section>
-      {currentItems.length <= 0 && <NotFound/>}
+      {currentItems.length <= 0 && <NotFound />}
       <section className="container pagination mx-auto mb-40 mt-20">
         <ReactPaginate
           breakLabel="..."
@@ -97,6 +101,6 @@ export async function getStaticPaths() {
   const paths = [];
   return {
     paths,
-    fallback: "blocking",
+    fallback: 'blocking',
   };
 }
