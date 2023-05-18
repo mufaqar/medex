@@ -1,17 +1,18 @@
 import { useRouter } from "next/router";
 import React from "react";
-import { client } from "../config/client";
-import { Products } from "../config/quries";
+import { client } from "../../config/client";
+import { Products } from "../../config/quries";
 import Link from "next/link";
 import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { useState } from "react";
 import Head from "next/head";
-import NotFound from "../components/404";
+import NotFound from "../../components/404";
 
-const Categories = ({ AllProducts }) => {
+const Categories = ({ AllProducts }) => { 
+
   const router = useRouter();
-  const params = router?.query?.categories[0];
+  const params = router?.query?.slug;
   const FilterProduct = AllProducts?.filter(
     (item) => item?.productCategories?.nodes[0].slug === params
   );
@@ -35,10 +36,10 @@ const Categories = ({ AllProducts }) => {
           currentItems?.map((item, index) => (
             <div key={index} className="mx-auto">
               <figure className="flex bg-gray-50 justify-center items-center overflow-hidden">
-                <Link href={`products/${item?.slug}`}>
+                <Link href="#">
                   <img
                     src={item?.featuredImage?.node?.mediaItemUrl}
-                    alt=""
+                    alt= {item.title}
                     className="w-full h-[250px] object-cover hover:scale-105 transition-all duration-300 ease-in-out"
                   />
                 </Link>
@@ -46,12 +47,12 @@ const Categories = ({ AllProducts }) => {
               <h4 className="text-base leading-6 text-gray-400 mt-1.5 mb-1.5">
                 {item?.productCategories.nodes[0]?.name}
               </h4>
-              <Link
-                href={`products/${item?.slug}`}
+              <a
+                href={`/product/ ${item.slug}`}
                 className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
               >
                 {item.title}
-              </Link>
+              </a>
             </div>
           ))
         )

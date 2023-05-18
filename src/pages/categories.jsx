@@ -24,11 +24,11 @@ const Categories = ({ AllCategories }) => {
           <div className="grid container mx-auto my-20 px-4 gap-4 grid-cols-2 md:grid-cols-4 2xl:gap-5">
             {AllCategories?.map((item, index) => (
               <div key={index} className="mx-auto group relative">
-                <Link href={item?.slug}>
+                <Link href={"product-category/"+item?.slug}>
                   <figure className="w-full overflow-hidden ">
                     <img
                       src={item?.image?.mediaItemUrl}
-                      alt=""
+                      alt={item?.name}
                       className="object-cover w-full h-[250px] lg:h-[320px] group-hover:rotate-3 group-hover:scale-110 transition-all duration-300 ease-out"
                     />
                   </figure>
