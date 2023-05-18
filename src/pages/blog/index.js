@@ -8,7 +8,7 @@ import ReactPaginate from 'react-paginate';
 import Sidebar from '../../components/sidebar';
 
 const BlogPosts = ({ blogs, blogPage }) => {
-  console.log('🚀 ~ file: index.js:7 ~ BlogPosts ~ blogs:', blogs);
+ // console.log('🚀 ~ file: index.js:7 ~ BlogPosts ~ blogs:', blogs);
 
   const seoHead = parse(blogPage?.seo.fullHead);
 
