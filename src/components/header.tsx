@@ -23,48 +23,50 @@ function Header() {
             <GoogleAnalytics measurementId="G-TKKQ94RWML" />;
             <header className='fixed top-0 left-0 right-0 bg-white/80 z-40 shadow-md'>
                 <nav className="">
-                    <div onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }} className="hidden md:flex flex-wrap justify-between items-center mx-auto px-4 md:px-6 py-2.5 bg-[#BF1800] relative z-50">
-                        <ul className='flex flex-col text-sm font-medium md:flex-row md:space-x-5 md:mt-0'>
-                            <li>
-                                <Link href="https://www.facebook.com/medexworlwide/" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
-                                    <BsFacebook />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="https://twitter.com/BotoxKorea" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
-                                    <BsTwitter />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="https://www.youtube.com/channel/UCSc1ua3BkBlZlUaSvsXgT2Q" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
-                                    <BsYoutube />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="https://www.instagram.com/korea_botox_filler_export" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
-                                    <BsInstagram />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="https://api.whatsapp.com/send?phone=821023208582&text=Get%20Inquiry" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
-                                    <BsWhatsapp />
-                                </Link>
-                            </li>
-                        </ul>
-                        <ul className='flex flex-col text-base font-semibold roboto md:flex-row md:space-x-8 md:mt-0'>
-                            <li>
-                                <Link href="mailto:sonomedex@gmail.com" target="_blank" className='flex items-center gap-2 py-2 pl-3 pr-4 text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-black md:p-0 '>
-                                    <BsEnvelopeFill /> sonomedex@gmail.com
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="tel:+82-10-2320-8582" target="_blank" className='flex items-center gap-2 py-2 pl-3 pr-4 text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-black md:p-0 '>
-                                    <BsFillTelephoneFill /> +82-10-2320-8582
-                                </Link>
-                            </li>
-                        </ul>
+                    <div onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }} className="hidden md:block bg-[#BF1800] relative z-50">
+                        <div className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 md:flex flex-wrap justify-between items-center py-2.5 '>
+                            <ul className='flex flex-col text-sm font-medium md:flex-row md:space-x-5 md:mt-0'>
+                                <li>
+                                    <Link href="https://www.facebook.com/medexworlwide/" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
+                                        <BsFacebook />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="https://twitter.com/BotoxKorea" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
+                                        <BsTwitter />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="https://www.youtube.com/channel/UCSc1ua3BkBlZlUaSvsXgT2Q" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
+                                        <BsYoutube />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="https://www.instagram.com/korea_botox_filler_export" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
+                                        <BsInstagram />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="https://api.whatsapp.com/send?phone=821023208582&text=Get%20Inquiry" target="_blank" className='block p-2 rounded-full text-white bg-[#0000008c] hover:bg-[#00000029]'>
+                                        <BsWhatsapp />
+                                    </Link>
+                                </li>
+                            </ul>
+                            <ul className='flex flex-col text-base font-semibold roboto md:flex-row md:space-x-8 md:mt-0'>
+                                <li>
+                                    <Link href="mailto:sonomedex@gmail.com" target="_blank" className='flex items-center gap-2 py-2 pl-3 pr-4 text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-black md:p-0 '>
+                                        <BsEnvelopeFill /> sonomedex@gmail.com
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="tel:+82-10-2320-8582" target="_blank" className='flex items-center gap-2 py-2 pl-3 pr-4 text-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 hover:text-black md:p-0 '>
+                                        <BsFillTelephoneFill /> +82-10-2320-8582
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="flex flex-wrap justify-between items-center mx-auto px-4 md:px-6 py-2.5">
+                    <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 flex flex-wrap justify-between items-center py-2.5">
                         <Link href="/" className="flex items-center relative z-50">
                             <Image src={Logo} alt="logo" className='md:w-full w-1/2' onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }} />
                         </Link>
