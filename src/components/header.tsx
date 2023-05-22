@@ -86,6 +86,15 @@ function Header() {
                                         Home
                                     </Link>
                                 </li>
+                                <li >
+                                    <span className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 text-base uppercase md:hover:bg-transparent md:border-0 md:hover:text-[#BF1800] md:p-0 ">
+                                        <span >
+                                            <Link href="/botox-filler">
+                                                Botox and Filler
+                                            </Link>
+                                        </span>
+                                    </span>
+                                </li>
                                 <li onMouseOver={() => { setMegamenu(!megamenu), setDropdown(false) }}>
                                     <span className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 text-base uppercase md:hover:bg-transparent md:border-0 md:hover:text-[#BF1800] md:p-0 ">
                                         <span onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>

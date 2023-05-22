@@ -1,29 +1,44 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Img_url from '../../public/images/med.jpg';
 import Img1 from '../../public/images/mri.jpg';
 import Test1 from '../../public/images/test1.jpg';
 import Test2 from '../../public/images/test2.jpg';
 import Test3 from '../../public/images/test3.jpg';
 
-function Filler_botox() {
+import { client } from '../config/client';
+import { Products } from '../config/quries';
+
+function Filler_botox({ Featured_box_fillers }) {
+  const itemsPerPage = 20;
+  const [itemOffset, setItemOffset] = useState(0);
+  const endOffset = itemOffset + itemsPerPage;
+  const currentItems = Featured_box_fillers.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
   return (
     <>
       <section className="mb-12 mt-10 overflow-hidden">
         <div className="bg-[url(/images/a.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
           <div className="md:ml-0 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
             <h1 className="md:text-6xl text-4xl text-[#a67979] ">
-              Welcome to the World of Timeless Beauty!
+              Welcome to the World of Timeless Beauty Medex Worldwide!
             </h1>
             <p className="text-xl my-5">
-              Discover the Secret to Youthful Radiance with Botox and Fillers
+              Your trusted source for the finest Botox and fillers products. If
+              you're seeking safe and effective solutions to enhance your
+              appearance and combat the signs of aging, you've come to the right
+              place. In this article, we will explore the differences between
+              Botox and fillers, address their safety concerns, discuss their
+              effectiveness, and provide insights into their longevity. Join us
+              on this journey to discover the perfect solution for your
+              aesthetic needs.
             </p>
             <Link
               href="#"
               className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5"
             >
-              Show more
+              Our Products
             </Link>
           </div>
         </div>
@@ -33,20 +48,26 @@ function Filler_botox() {
           <div>
             <div className="">
               <h2 className="md:text-3xl text-2xl mb-5 capitalize">
-                Why our clients choose us
+                Which is Safer: Botox or Fillers?
               </h2>
               <p className="text-lg my-2">
-                Are you longing for smoother, wrinkle-free skin? Do you wish to
-                regain that youthful glow that has gradually faded over the
-                years?
+                When it comes to the safety of cosmetic procedures, both Botox
+                and fillers have proven track records. Botox, a brand name for
+                Botulinum Toxin Type A, is a neurotoxin that temporarily relaxes
+                targeted muscles, reducing the appearance of fine lines and
+                wrinkles. Dermal fillers, on the other hand, are injectable gels
+                that add volume to specific areas, smoothing out wrinkles and
+                restoring youthful contours.
               </p>
               <p className="text-lg my-2">
-                Look no further than our revolutionary Botox and Filler
-                treatments.
-              </p>
-              <p className="text-lg my-2">
-                Our team of experienced professionals is dedicated to helping
-                you achieve your desired look and restoring your confidence.
+                While both Botox and fillers carry minimal risks when
+                administered by qualified professionals, it's essential to
+                consult with a trained practitioner to ensure safety and optimal
+                results. At Medex Worldwide, we prioritize quality and provide
+                only the best products, including the renowned Botulax, Nabota,
+                and Revolax. These trusted brands have established themselves as
+                leaders in the field of aesthetics, offering safe and reliable
+                solutions.
               </p>
               <Link
                 href="#"
@@ -71,21 +92,36 @@ function Filler_botox() {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
             <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
-              Featured Products
+              Featured Botox and Filler Products
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
-            {Services?.map((item, index) => (
-              <div key={index}>
-                <Image src={item.featured} alt="" className="mb-5 " />
-                <Link
-                  href={item.url}
-                  className="text-lg leading-5 mb-2 hover:text-[#BF1800] uppercase"
-                >
-                  {item.title}
-                </Link>
+          <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
+            <div className="my-8 lg:my-12">
+              <div className="grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
+                {currentItems?.map((item, index) => (
+                  <div key={index} className="mx-auto">
+                    <figure className="bg-gray-50 w-full h-[395px] flex justify-center items-center">
+                      <Link href={`/product/${item?.slug}`} className="w-full">
+                        <img
+                          src={item?.featuredImage?.node?.mediaItemUrl}
+                          className="w-full object-cover h-[395px]"
+                          alt=""
+                        />
+                      </Link>
+                    </figure>
+                    <h4 className="text-base leading-6 text-gray-400 mt-1.5 mb-1.5">
+                      {item?.productCategories.nodes[0]?.name}
+                    </h4>
+                    <Link
+                      href={`/product/${item?.slug}`}
+                      className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
+                    >
+                      {item.title}
+                    </Link>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
           <div className="flex justify-center mt-10">
             <Link
@@ -381,39 +417,6 @@ function Filler_botox() {
 
 export default Filler_botox;
 
-export const Services = [
-  {
-    featured: Img1,
-    title: 'BOTOX AND DERMAL FILLER',
-    url: '#',
-  },
-  {
-    featured: Img1,
-    title: 'BOTOX AND DERMAL FILLER',
-    url: '#',
-  },
-  {
-    featured: Img1,
-    title: 'BOTOX AND DERMAL FILLER',
-    url: '#',
-  },
-  {
-    featured: Img1,
-    title: 'BOTOX AND DERMAL FILLER',
-    url: '#',
-  },
-  {
-    featured: Img1,
-    title: 'BOTOX AND DERMAL FILLER',
-    url: '#',
-  },
-  {
-    featured: Img1,
-    title: 'BOTOX AND DERMAL FILLER',
-    url: '#',
-  },
-];
-
 export const Testimonials = [
   {
     featured: Test1,
@@ -437,3 +440,15 @@ export const Testimonials = [
       'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.',
   },
 ];
+
+export async function getStaticProps() {
+  const response = await client.query({
+    query: Products,
+  });
+  const Featured_box_fillers = response.data.products.nodes;
+  return {
+    props: {
+      Featured_box_fillers,
+    },
+  };
+}
