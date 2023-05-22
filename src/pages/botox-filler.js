@@ -506,7 +506,7 @@ export const Testimonials = [
     name: 'Lisa Cudrow',
     position: 'Graphic Designer',
     review:
-      'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.',
+      'Ut ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.',
   },
   {
     featured: Test3,
