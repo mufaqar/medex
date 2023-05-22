@@ -23,7 +23,7 @@ function ErrorPage() {
               404 Page not found
             </p>
             <Link href="/">
-              <a>Go back to the homepage</a>
+              Go back to the homepage
             </Link>
           </div>
         </div>

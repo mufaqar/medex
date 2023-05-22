@@ -69,12 +69,6 @@ function Filler_botox({ Featured_box_fillers }) {
                 leaders in the field of aesthetics, offering safe and reliable
                 solutions.
               </p>
-              <Link
-                href="#"
-                className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5"
-              >
-                Show more
-              </Link>
             </div>
           </div>
           <div>
@@ -186,33 +180,14 @@ function Filler_botox({ Featured_box_fillers }) {
           <div>
             <div className="">
               <h2 className="md:text-3xl text-2xl mb-5 capitalize">
-                Filler article here
+                Which is Better: Filler or Botox?
               </h2>
               <p className="text-lg my-2">
-                When it comes to the safety of cosmetic procedures, both Botox
-                and fillers have proven track records. Botox, a brand name for
-                Botulinum Toxin Type A, is a neurotoxin that temporarily relaxes
-                targeted muscles, reducing the appearance of fine lines and
-                wrinkles. Dermal fillers, on the other hand, are injectable gels
-                that add volume to specific areas, smoothing out wrinkles and
-                restoring youthful contours.
+                Determining whether fillers or Botox is better depends on your specific aesthetic goals. Botox is highly effective in reducing the appearance of dynamic wrinkles caused by repeated facial muscle movements, such as crow's feet and frown lines. It temporarily paralyzes the muscles, resulting in smoother and more youthful-looking skin.
               </p>
               <p className="text-lg my-2">
-                While both Botox and fillers carry minimal risks when
-                administered by qualified professionals, it's essential to
-                consult with a trained practitioner to ensure safety and optimal
-                results. At Medex Worldwide, we prioritize quality and provide
-                only the best products, including the renowned Botulax, Nabota,
-                and Revolax. These trusted brands have established themselves as
-                leaders in the field of aesthetics, offering safe and reliable
-                solutions.
+                Fillers, on the other hand, are ideal for addressing static wrinkles, volume loss, and restoring facial contours. They can add plumpness to thin lips, soften nasolabial folds, and enhance cheekbones, providing a more rejuvenated appearance. With a variety of fillers available, such as Revolax and Liztox, Medex Worldwide ensures you have access to premium options tailored to your specific needs.
               </p>
-              <Link
-                href="#"
-                className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5"
-              >
-                Show more
-              </Link>
             </div>
           </div>
           <div>
@@ -222,6 +197,98 @@ function Filler_botox({ Featured_box_fillers }) {
                 alt="img"
                 className="h-full absolute top-[40px] left-[-50px] rounded-[15px] shadow-lg border border-black/5 "
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
+          <div className="mb-10">
+            <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
+              Our Filler Products
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
+            <div className="md:mb-0 mb-10">
+              <div className="border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] mr-auto relative">
+                <Image
+                  src={Img_url}
+                  alt="img"
+                  className="h-full absolute top-[40px] right-[-50px] rounded-[15px] shadow-lg border border-black/5 "
+                />
+              </div>
+            </div>
+            <div className="grid gap-8">
+              <div className="flex gap-5 ">
+                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                  <Image
+                    src={Img1}
+                    alt=""
+                    className="rounded-[15px] object-cover h-full w-full"
+                  />
+                </div>
+                <div className="md:w-3/4 w-1/2 h-full">
+                  <Link
+                    href="#"
+                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                  >
+                    Botox
+                  </Link>
+                  <p className="text-sm mt-2">
+                    It's been like that since the day 1, when our spa saloon was
+                    founded by Mary Fruition back in 1998. She did so in a spur
+                    of a moment decision, Get trn horrible remember pleasure two
+                    vicinity
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-5 ">
+                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                  <Image
+                    src={Img1}
+                    alt=""
+                    className="rounded-[15px] object-cover h-full w-full"
+                  />
+                </div>
+                <div className="md:w-3/4 w-1/2 h-full">
+                  <Link
+                    href="#"
+                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                  >
+                    Botox
+                  </Link>
+                  <p className="text-sm mt-2">
+                    It's been like that since the day 1, when our spa saloon was
+                    founded by Mary Fruition back in 1998. She did so in a spur
+                    of a moment decision, Get trn horrible remember pleasure two
+                    vicinity
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-5 ">
+                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                  <Image
+                    src={Img1}
+                    alt=""
+                    className="rounded-[15px] object-cover h-full w-full"
+                  />
+                </div>
+                <div className="md:w-3/4 w-1/2 h-full">
+                  <Link
+                    href="#"
+                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                  >
+                    Botox
+                  </Link>
+                  <p className="text-sm mt-2">
+                    It's been like that since the day 1, when our spa saloon was
+                    founded by Mary Fruition back in 1998. She did so in a spur
+                    of a moment decision, Get trn horrible remember pleasure two
+                    vicinity
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
