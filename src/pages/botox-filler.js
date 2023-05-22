@@ -18,7 +18,7 @@ function Filler_botox({ Featured_box_fillers }) {
   const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
   return (
     <>
-      <section className="mb-12 mt-10 overflow-hidden">
+      <section className="mb-12 md:mt-[6.6rem] mt-[2.2rem] overflow-hidden">
         <div className="bg-[url(/images/a.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
           <div className="md:ml-0 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
             <h1 className="md:text-6xl text-4xl text-[#a67979] ">
