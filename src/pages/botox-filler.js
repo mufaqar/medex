@@ -20,11 +20,11 @@ function Filler_botox({ Featured_box_fillers }) {
   const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
   return (
     <>
-      <section className="mb-12 mt-10 overflow-hidden">
+      <section className="mb-12 md:mt-[6.6rem] mt-[2.2rem] overflow-hidden">
         <div className="bg-[url(/images/botox-filler.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
           <div className="md:ml-0 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
             <h1 className="md:text-6xl text-4xl text-[#a67979] ">
-              Welcome to the World of Timeless Beauty Medex Worldwide!
+              Timeless Beauty Medex Worldwide!
             </h1>
             <p className="text-xl my-5">
               Your trusted source for the finest Botox and fillers products. If
@@ -36,12 +36,6 @@ function Filler_botox({ Featured_box_fillers }) {
               on this journey to discover the perfect solution for your
               aesthetic needs.
             </p>
-            <Link
-              href="#"
-              className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5"
-            >
-              Our Products
-            </Link>
           </div>
         </div>
       </section>
