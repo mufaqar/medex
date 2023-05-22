@@ -20,6 +20,10 @@ function Filler_botox({ Featured_box_fillers }) {
   const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
   return (
     <>
+      Looking for top-notch Botox products? Medex Worldwide offers a wide range
+      of high-quality Korean brands like Botulax, Nabota, Meditoxin, Liztox,
+      ReNtox, and Gtox. Explore our selection and unlock the secret to youthful
+      and radiant skin.
       <section className="mb-12 md:mt-[6.6rem] mt-[2.2rem] overflow-hidden">
         <div className="bg-[url(/images/botox-filler.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
           <div className=" mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
@@ -78,7 +82,6 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
-
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
@@ -170,7 +173,6 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
-
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
@@ -208,7 +210,6 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
-
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
@@ -300,7 +301,6 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
-
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
