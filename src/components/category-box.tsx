@@ -7,7 +7,7 @@ import mri from '../../public/images/mri.jpg';
 
 function CategoryBox() {
     return (
-        <section className='mb-8 lg:mb-20 mx-4'>
+        <section className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 mb-8 lg:mb-20 '>
             <div className='grid gap-4 grid-cols-1 sm:grid-cols-3 2xl:gap-5  '>
                 {Cate_Date.map((item, index) => (
                     <div key={index} className='mx-auto '>
