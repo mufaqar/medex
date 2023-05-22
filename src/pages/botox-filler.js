@@ -5,7 +5,9 @@ import Img_url from '../../public/images/med.jpg';
 import Img1 from '../../public/images/mri.jpg';
 import Test1 from '../../public/images/test1.jpg';
 import Test2 from '../../public/images/test2.jpg';
-import Test3 from '../../public/images/test3.jpg';
+import Test3 from '../../public/images/test2.jpg';
+import botox from '../../public/images/botox.jpg';
+import filler from '../../public/images/filler.jpg';
 
 import { client } from '../config/client';
 import { Products } from '../config/quries';
@@ -19,7 +21,7 @@ function Filler_botox({ Featured_box_fillers }) {
   return (
     <>
       <section className="mb-12 mt-10 overflow-hidden">
-        <div className="bg-[url(/images/a.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
+        <div className="bg-[url(/images/botox-filler.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
           <div className="md:ml-0 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
             <h1 className="md:text-6xl text-4xl text-[#a67979] ">
               Welcome to the World of Timeless Beauty Medex Worldwide!
@@ -94,7 +96,7 @@ function Filler_botox({ Featured_box_fillers }) {
             <div className="md:mb-0 mb-10">
               <div className="border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] mr-auto relative">
                 <Image
-                  src={Img_url}
+                  src={botox}
                   alt="img"
                   className="h-full absolute top-[40px] right-[-50px] rounded-[15px] shadow-lg border border-black/5 "
                 />
@@ -183,10 +185,21 @@ function Filler_botox({ Featured_box_fillers }) {
                 Which is Better: Filler or Botox?
               </h2>
               <p className="text-lg my-2">
-                Determining whether fillers or Botox is better depends on your specific aesthetic goals. Botox is highly effective in reducing the appearance of dynamic wrinkles caused by repeated facial muscle movements, such as crow's feet and frown lines. It temporarily paralyzes the muscles, resulting in smoother and more youthful-looking skin.
+                Determining whether fillers or Botox is better depends on your
+                specific aesthetic goals. Botox is highly effective in reducing
+                the appearance of dynamic wrinkles caused by repeated facial
+                muscle movements, such as crow's feet and frown lines. It
+                temporarily paralyzes the muscles, resulting in smoother and
+                more youthful-looking skin.
               </p>
               <p className="text-lg my-2">
-                Fillers, on the other hand, are ideal for addressing static wrinkles, volume loss, and restoring facial contours. They can add plumpness to thin lips, soften nasolabial folds, and enhance cheekbones, providing a more rejuvenated appearance. With a variety of fillers available, such as Revolax and Liztox, Medex Worldwide ensures you have access to premium options tailored to your specific needs.
+                Fillers, on the other hand, are ideal for addressing static
+                wrinkles, volume loss, and restoring facial contours. They can
+                add plumpness to thin lips, soften nasolabial folds, and enhance
+                cheekbones, providing a more rejuvenated appearance. With a
+                variety of fillers available, such as Revolax and Liztox, Medex
+                Worldwide ensures you have access to premium options tailored to
+                your specific needs.
               </p>
             </div>
           </div>
@@ -213,7 +226,7 @@ function Filler_botox({ Featured_box_fillers }) {
             <div className="md:mb-0 mb-10">
               <div className="border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] mr-auto relative">
                 <Image
-                  src={Img_url}
+                  src={filler}
                   alt="img"
                   className="h-full absolute top-[40px] right-[-50px] rounded-[15px] shadow-lg border border-black/5 "
                 />
