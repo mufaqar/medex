@@ -8,7 +8,7 @@ import Test2 from '../../public/images/test2.jpg';
 import Test3 from '../../public/images/test2.jpg';
 import botox from '../../public/images/botox.jpg';
 import filler from '../../public/images/filler.jpg';
-
+import Appointment from '../components/appointment';
 import { client } from '../config/client';
 import { Products } from '../config/quries';
 
@@ -301,17 +301,16 @@ function Filler_botox({ Featured_box_fillers }) {
         </div>
       </section>
 
-      <section>
+      <Appointment />
+
+      {/* <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
             <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
               Testimonials
             </h2>
           </div>
-
-          {/*Container for the Testimonials */}
           <div className="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
-            {/* <!-- First Testimonial --> */}
             {Testimonials?.map((item, index) => (
               <div key={index} className="mb-12 md:mb-0">
                 <div className="mb-6 flex justify-center">
@@ -410,8 +409,8 @@ function Filler_botox({ Featured_box_fillers }) {
             ))}
           </div>
         </div>
-      </section>
-      <section className="min-h-screen bg-cover bg-[url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')]">
+      </section> */}
+      {/* <section className="min-h-screen bg-cover bg-[url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')]">
         <div className="flex flex-col min-h-screen bg-black/60">
           <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
             <div className="flex-1 lg:flex lg:items-center lg:-mx-6">
@@ -487,7 +486,7 @@ function Filler_botox({ Featured_box_fillers }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

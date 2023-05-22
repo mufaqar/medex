@@ -15,25 +15,25 @@
 .montserrat{
     font-family: 'Montserrat', sans-serif;
 }
-.slick-prev {
+#main_slider .slick-prev {
     z-index: 2;
     left: 1.25rem;
 }
 
-.slick-next {
+#main_slider .slick-next {
     z-index: 2;
     right: 1.25rem;
 }
-.slick-prev::before {
+#main_slider.slick-prev::before {
     color: #bf1800;
     font-size: 30px;
 }
 
-.slick-next::before {
+#main_slider .slick-next::before {
     color: #bf1800;
     font-size: 30px;
 }
-.pagination_wrapper .active{
+#main_slider .pagination_wrapper .active{
     background:  #bf1800 !important;
 }
 .description ul{
