@@ -88,56 +88,12 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
+
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
             <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
-              Featured Botox and Filler Products
-            </h2>
-          </div>
-          <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
-            <div className="my-8 lg:my-12">
-              <div className="grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
-                {currentItems?.map((item, index) => (
-                  <div key={index} className="mx-auto">
-                    <figure className="bg-gray-50 w-full h-[395px] flex justify-center items-center">
-                      <Link href={`/product/${item?.slug}`} className="w-full">
-                        <img
-                          src={item?.featuredImage?.node?.mediaItemUrl}
-                          className="w-full object-cover h-[395px]"
-                          alt=""
-                        />
-                      </Link>
-                    </figure>
-                    <h4 className="text-base leading-6 text-gray-400 mt-1.5 mb-1.5">
-                      {item?.productCategories.nodes[0]?.name}
-                    </h4>
-                    <Link
-                      href={`/product/${item?.slug}`}
-                      className="text-lg leading-5 mb-2 hover:text-[#BF1800] "
-                    >
-                      {item.title}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center mt-10">
-            <Link
-              href="#"
-              className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5"
-            >
-              Show more
-            </Link>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
-          <div className="mb-10">
-            <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
-              Our Fillers And Botox
+              Our Botox Products
             </h2>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
@@ -224,6 +180,53 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
+
+      <section>
+        <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
+          <div>
+            <div className="">
+              <h2 className="md:text-3xl text-2xl mb-5 capitalize">
+                Filler article here
+              </h2>
+              <p className="text-lg my-2">
+                When it comes to the safety of cosmetic procedures, both Botox
+                and fillers have proven track records. Botox, a brand name for
+                Botulinum Toxin Type A, is a neurotoxin that temporarily relaxes
+                targeted muscles, reducing the appearance of fine lines and
+                wrinkles. Dermal fillers, on the other hand, are injectable gels
+                that add volume to specific areas, smoothing out wrinkles and
+                restoring youthful contours.
+              </p>
+              <p className="text-lg my-2">
+                While both Botox and fillers carry minimal risks when
+                administered by qualified professionals, it's essential to
+                consult with a trained practitioner to ensure safety and optimal
+                results. At Medex Worldwide, we prioritize quality and provide
+                only the best products, including the renowned Botulax, Nabota,
+                and Revolax. These trusted brands have established themselves as
+                leaders in the field of aesthetics, offering safe and reliable
+                solutions.
+              </p>
+              <Link
+                href="#"
+                className="bg-[#a250b6] text-white text-lg py-2 px-7 rounded-full shadow-sm shadow-[#a250b6ed] inline-flex mt-5"
+              >
+                Show more
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div className="border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] ml-auto relative">
+              <Image
+                src={Img_url}
+                alt="img"
+                className="h-full absolute top-[40px] left-[-50px] rounded-[15px] shadow-lg border border-black/5 "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
