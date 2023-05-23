@@ -39,7 +39,10 @@ const Categories = ({ AllProducts }) => {
           </h2>
         </div>
       </div>
-      <section className="container mx-auto mt-40 grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
+
+      <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
+        <div className="my-8 lg:my-12">
+          <div className="grid gap-4 grid-cols-2 md:grid-cols-5 2xl:gap-5">
         {currentItems.length > 0 &&
           currentItems?.map((item, index) => (
             <div key={index} className="mx-auto">
@@ -63,9 +66,11 @@ const Categories = ({ AllProducts }) => {
               </Link>
             </div>
           ))}
-      </section>
+          </div>
+        </div>
+      </div>
       {currentItems.length <= 0 && <NotFound />}
-      <section className="container pagination mx-auto mb-40 mt-20">
+      <section className="container pagination mx-auto mb-40 mt-20 md:px-0 px-4">
         <ReactPaginate
           breakLabel="..."
           nextLabel="Next"
@@ -74,11 +79,11 @@ const Categories = ({ AllProducts }) => {
           pageCount={pageCount}
           previousLabel="Previous"
           renderOnZeroPageCount={null}
-          pageClassName="bg-gray-100 px-2 p-1 rounded-md hover:bg-[#BF1800] hover:text-white"
-          activeClassName="active text-white"
+          pageClassName="bg-gray-100 px-2 p-1 hover:bg-Brown hover:text-white"
+          activeClassName="active text-white bg-title-color"
           containerClassName="flex space-x-4 pagination_wrapper"
-          previousClassName="previous bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
-          nextClassName="next bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
+          previousClassName="previous bg-Brown text-white px-2 p-1 hover:bg-title-color hover:text-white"
+          nextClassName="next bg-Brown text-white px-2 p-1 hover:bg-title-color hover:text-white"
         />
       </section>
     </>
