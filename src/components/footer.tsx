@@ -233,7 +233,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#1D2429] p-5 '>
+            <div className='bg-[#1D2429] py-5 '>
                 <div className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
                     <div>
                         <p className="text-white text-sm lg:text-base">
