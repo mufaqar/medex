@@ -29,7 +29,7 @@ function Appointment() {
             <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
                 <div className="flex md:flex-row flex-col ">
                     <div className='bg-white shadow-lg md:w-[40%] py-[45px] md:px-[35px] px-5'>
-                        <h2 className="md:text-3xl text-2xl mb-5 capitalize ">
+                        <h2 className="md:text-3xl text-2xl mb-5 capitalize text-title-color">
                             Book Appointment
                         </h2>
                         <p className='text-Brown text-lg font-medium my-2'>
