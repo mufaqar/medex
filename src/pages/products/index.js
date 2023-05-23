@@ -24,7 +24,7 @@ function ProductsPage({AllProducts}) {
       <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
         <div className="w-full">
           <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
-            Products
+            Products Page
           </h2>
         </div>
       </div>
@@ -59,6 +59,7 @@ function ProductsPage({AllProducts}) {
           </div>
         </div>
       </div>
+
       <section className="container pagination mx-auto mb-20 mt-20 md:px-0 px-4">
       <ReactPaginate
         breakLabel="..."
