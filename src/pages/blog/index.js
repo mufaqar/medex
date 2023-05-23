@@ -32,7 +32,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
       <section className="bg-slate-100">
         <div className="pt-7 md:pt-40 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
           <div className="w-full">
-            <h2 className="md:text-5xl text-4xl text-title-color font-bold text-center">
+            <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
               Blog
             </h2>
           </div>

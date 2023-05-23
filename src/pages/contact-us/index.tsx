@@ -11,7 +11,7 @@ export default function Contact() {
             <main className=''>
                 <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
                     <div className="w-full">
-                        <h2 className="md:text-5xl text-4xl font-bold text-title-color text-center">
+                        <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
                             Contact Us
                         </h2>
                     </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                                     </label>
                                     <textarea id="message" name="message" className="px-4 py-3 flex items-center w-full appearance-none transition duration-300 ease-in-out  text-[13px] lg:text-sm focus:outline-none focus:ring-0 placeholder-body-color border focus:bg-white focus:border-2" rows={4} placeholder="Briefly describe.."></textarea>
                                 </div>
-                                <button type="submit" className="text-sm lg:text-[15px] leading-4 inline-flex items-center transition ease-in-out duration-300 font-semibold text-center justify-center tracking-[0.2px] h-11 md:h-[50px] bg-Brown  text-white hover:text-white hover:bg-title-color px-5 lg:px-6 py-4 md:py-3.5 lg:py-4 w-full">
+                                <button type="submit" className="btn text-sm lg:text-[15px] leading-4 inline-flex items-center transition ease-in-out duration-300 font-semibold text-center justify-center tracking-[0.2px] h-11 md:h-[50px] bg-Brown  text-white hover:text-white hover:bg-title-color px-5 lg:px-6 py-4 md:py-3.5 lg:py-4 w-full">
                                     Send Message
                                 </button>
                             </form>

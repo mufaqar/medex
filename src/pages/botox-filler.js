@@ -44,7 +44,7 @@ function Filler_botox({ Featured_box_fillers }) {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
             <div className="">
-              <h2 className="md:text-3xl text-2xl mb-5 capitalize text-title-color">
+              <h2 className="md:text-4xl text-2xl capitalize text-title-color mb-5">
                 Which is Safer: Botox or Fillers?
               </h2>
               <p className="text-lg my-2 text-body-color">
@@ -83,7 +83,7 @@ function Filler_botox({ Featured_box_fillers }) {
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
-            <h2 className="md:text-4xl text-2xl mb-5 capitalize text-center text-title-color">
+            <h2 className="md:text-4xl text-2xl capitalize text-title-color text-center mb-5">
               Our Botox Products
             </h2>
           </div>
@@ -176,7 +176,7 @@ function Filler_botox({ Featured_box_fillers }) {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
             <div className="">
-              <h2 className="md:text-3xl text-2xl mb-5 capitalize text-title-color">
+              <h2 className="md:text-4xl text-2xl capitalize text-title-color mb-5">
                 Which is Better: Filler or Botox?
               </h2>
               <p className="text-lg my-2 text-body-color">
@@ -213,7 +213,7 @@ function Filler_botox({ Featured_box_fillers }) {
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
-            <h2 className="md:text-4xl text-2xl mb-5 capitalize text-center text-title-color">
+            <h2 className="md:text-4xl text-2xl capitalize text-title-color text-center mb-5">
               Our Filler Products
             </h2>
           </div>

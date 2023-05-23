@@ -41,7 +41,7 @@ function Single({ product }: any) {
         </Head>
         <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
           <div className="w-full">
-            <h2 className="md:text-5xl text-4xl text-title-color font-bold text-center">
+            <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
               {product?.title}
             </h2>
           </div>

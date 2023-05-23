@@ -10,7 +10,7 @@ function Feature_Category({ categories }: any) {
       <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
         <div className="mb-8 lg:mb-20">
           <div className="mb-5 text-center pb-2 lg:pb-3 xl:pb-4 lg:max-w-[450px] lg:mx-auto">
-            <h2 className="md:text-5xl text-4xl font-normal text-title-color">
+            <h2 className="md:text-4xl text-2xl capitalize text-title-color">
               Featured Categories
             </h2>
             <p className="text-lg font-normal text-body-color pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3">

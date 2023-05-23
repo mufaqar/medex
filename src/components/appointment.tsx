@@ -58,8 +58,8 @@ function Appointment() {
                                 ></textarea>
                             </div>
 
-                            <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide md:h-16 h-12 text-white capitalize transition-colors duration-300 transform bg-Brown hover:bg-title-color focus:outline-none focus:ring-none">
-                                get in touch
+                            <button className="w-full btn px-6 py-3 mt-6 text-sm font-bold uppercase tracking-wide md:h-16 h-12 text-white transition-colors duration-300 transform bg-Brown hover:bg-title-color focus:outline-none focus:ring-none">
+                                Send Message
                             </button>
                         </form>
                     </div>

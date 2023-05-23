@@ -102,7 +102,7 @@ const BlogSingle = ({ blog }) => {
             <div className="blog-post w-full  pt-8 pb-8">
               <div className="flex flex-col product-card overflow-hidden h-full mb-10">
                 <div className="pb-5 h-full relative">
-                  <h2 className="font-bold text-2xl lg:text-4xl mb-3.5 text-title-color">
+                  <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold mb-3.5 ">
                     {blog?.title}
                   </h2>
                   <div className="entry-meta text-sm text-primary">
