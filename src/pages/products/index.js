@@ -59,7 +59,7 @@ function ProductsPage({AllProducts}) {
           </div>
         </div>
       </div>
-      <section className="container pagination mx-auto mb-20 mt-20">
+      <section className="container pagination mx-auto mb-20 mt-20 md:px-0 px-4">
       <ReactPaginate
         breakLabel="..."
         nextLabel="Next"
