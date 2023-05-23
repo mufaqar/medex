@@ -143,7 +143,7 @@ function Header() {
 
                     <div className={`${megamenu ? 'block' : 'hidden'} mt-1 bg-white border-gray-200 shadow-sm border-y`}>
                         <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-base text-gray-500  md:grid-cols-3 md:px-6">
-                            <ul className="hidden mb-4 space-y-4 md:mb-0 md:block">
+                            <ul className="mb-4 space-y-4 md:mb-0 md:block">
                                 <li onClick={() => { setMegamenu(false), setDropdown(false), setNavbar(false) }}>
                                     <Link href="/product-category/botox-and-fillers" className="text-sm font-semibold uppercase text-title-color hover:text-Brown">
                                         BOTOX AND FILLERS
