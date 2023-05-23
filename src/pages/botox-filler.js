@@ -20,6 +20,10 @@ function Filler_botox({ Featured_box_fillers }) {
   const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
   return (
     <>
+      Looking for top-notch Botox products? Medex Worldwide offers a wide range
+      of high-quality Korean brands like Botulax, Nabota, Meditoxin, Liztox,
+      ReNtox, and Gtox. Explore our selection and unlock the secret to youthful
+      and radiant skin.
       <section className="mb-12 md:mt-[6.6rem] mt-[2.2rem] overflow-hidden">
         <div className="bg-[url(/images/botox-filler.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
           <div className=" mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
@@ -39,6 +43,7 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
+
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
@@ -208,7 +213,7 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
-
+      
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
@@ -304,6 +309,7 @@ function Filler_botox({ Featured_box_fillers }) {
       <Appointment />
 
       {/* <section>
+      <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
             <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
@@ -410,6 +416,7 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section> */}
+      
       {/* <section className="min-h-screen bg-cover bg-[url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')]">
         <div className="flex flex-col min-h-screen bg-black/60">
           <div className="container flex flex-col flex-1 px-6 py-12 mx-auto">
