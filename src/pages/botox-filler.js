@@ -213,7 +213,7 @@ function Filler_botox({ Featured_box_fillers }) {
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
-            <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
+            <h2 className="md:text-4xl text-2xl mb-5 capitalize text-center text-title-color">
               Our Filler Products
             </h2>
           </div>
