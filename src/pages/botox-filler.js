@@ -44,10 +44,10 @@ function Filler_botox({ Featured_box_fillers }) {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
             <div className="">
-              <h2 className="md:text-3xl text-2xl mb-5 capitalize">
+              <h2 className="md:text-3xl text-2xl mb-5 capitalize text-title-color">
                 Which is Safer: Botox or Fillers?
               </h2>
-              <p className="text-lg my-2">
+              <p className="text-lg my-2 text-body-color">
                 When it comes to the safety of cosmetic procedures, both Botox
                 and fillers have proven track records. Botox, a brand name for
                 Botulinum Toxin Type A, is a neurotoxin that temporarily relaxes
