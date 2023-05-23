@@ -10,10 +10,10 @@ function Feature_Category({ categories }: any) {
       <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
         <div className="mb-8 lg:mb-20">
           <div className="mb-5 text-center pb-2 lg:pb-3 xl:pb-4 lg:max-w-[450px] lg:mx-auto">
-            <h2 className="xl:text-4xl xl:leading-9 text-3xl font-medium leading-8">
+            <h2 className="md:text-5xl text-4xl font-normal text-title-color">
               Featured Categories
             </h2>
-            <p className="text-lg leading-[1.85em] text-gray-500 pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3 ">
+            <p className="text-lg font-normal text-body-color pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3">
               Products by Categories
             </p>
           </div>
@@ -31,7 +31,7 @@ function Feature_Category({ categories }: any) {
                   </figure>
                   <div className="bg-black/20 absolute top-0 right-0 left-0 bottom-0" />
                   <div className="absolute top-0 left-0 right-0 bottom-0 p-5 text-center flex flex-col items-center justify-center group">
-                    <h4 className="text-lg leading-5 font-bold mb-2 text-white group-hover:text-[#BF1800] ">
+                    <h4 className="text-lg leading-5 font-bold mb-2 text-white group-hover:text-Brown ">
                       {item?.name}
                     </h4>
                   </div>

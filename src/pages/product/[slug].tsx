@@ -41,7 +41,7 @@ function Single({ product }: any) {
         </Head>
         <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
           <div className="w-full">
-            <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-[32px] font-bold text-center">
+            <h2 className="md:text-5xl text-4xl text-title-color font-bold text-center">
               {product?.title}
             </h2>
           </div>
@@ -73,10 +73,10 @@ function Single({ product }: any) {
             <div className="sticky top-28">
               <div className="mt-8">
                 <div className="max-w-[35ch] space-y-2">
-                  <h1 className="text-xl font-bold sm:text-2xl">
+                  <h1 className="text-xl font-bold sm:text-2xl text-title-color">
                     {product?.title}
                   </h1>
-                  <p className="text-sm">
+                  <p className="text-sm text-primary">
                     {product?.productCategories?.nodes[0]?.name}
                   </p>
                   <div className="-ml-0.5 flex">
@@ -130,19 +130,19 @@ function Single({ product }: any) {
               <div className="mt-4">
                 <div className="prose max-w-none">
                   <div
-                    className="text-base leading-8"
+                    className="text-base leading-8 text-body-color"
                     dangerouslySetInnerHTML={{
                       __html: product?.shortDescription,
                     }}
                   />
                 </div>
 
-                <h3 className="mt-6 text-lg font-bold underline select-none">
+                <h3 className="mt-6 text-lg font-bold underline select-none text-title-color">
                   Product Description
                 </h3>
                 <div>
                   <div
-                    className="text-base mt-4 description leading-8 text-gray-600"
+                    className="text-base mt-4 description leading-8 text-body-color"
                     dangerouslySetInnerHTML={{
                       __html: product?.content,
                     }}

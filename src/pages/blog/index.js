@@ -8,7 +8,7 @@ import ReactPaginate from 'react-paginate';
 import Sidebar from '../../components/sidebar';
 
 const BlogPosts = ({ blogs, blogPage }) => {
- // console.log('🚀 ~ file: index.js:7 ~ BlogPosts ~ blogs:', blogs);
+  // console.log('🚀 ~ file: index.js:7 ~ BlogPosts ~ blogs:', blogs);
 
   const seoHead = parse(blogPage?.seo.fullHead);
 
@@ -31,16 +31,21 @@ const BlogPosts = ({ blogs, blogPage }) => {
       </Head>
       <section className="bg-slate-100">
         <div className="pt-7 md:pt-40 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
+          <div className="w-full">
+            <h2 className="md:text-5xl text-4xl text-title-color font-bold text-center">
+              Blog
+            </h2>
+          </div>
           <div className="breadcrumb flex items-center py-10 ">
             <ol className="flex items-center w-full overflow-hidden">
-              <li className="flex text-sm  px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 hover:text-skin-primary">
-                <Link className="inline-flex items-center " href="/">
+              <li className="flex text-base font-medium px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 text-title-color hover:text-Brown">
+                <Link className="inline-flex items-center" href="/">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 512 512"
-                    className="mr-1.5 text-skin-base text-15px"
+                    className="mr-1.5 text-Brown text-base"
                     height="1em"
                     width="1em"
                     xmlns="http://www.w3.org/2000/svg"
@@ -63,13 +68,14 @@ const BlogPosts = ({ blogs, blogPage }) => {
                   Home
                 </Link>
               </li>
-              <li className="text-base text-skin-base  false">
+              <li className="flex text-base font-medium px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 text-title-color hover:text-Brown">
+                <Link className="inline-flex items-center" href="/blog">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
                   strokeWidth="0"
                   viewBox="0 0 512 512"
-                  className="text-skin-base text-opacity-40 text-15px}"
+                  className="text-Brown text-base"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -82,10 +88,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
                     d="M184 112l144 144-144 144"
                   ></path>
                 </svg>
-              </li>
-              <li className="flex text-sm  px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 hover:text-skin-primary">
-                <Link className="capitalize" href="/blog">
-                  blog
+                  Blog
                 </Link>
               </li>
             </ol>
@@ -120,16 +123,16 @@ const BlogPosts = ({ blogs, blogPage }) => {
                       <h3 className="font-semibold text-2xl lg:text-3xl mb-3.5 ">
                         <Link
                           href={`/blog/${post.uri}`}
-                          className="hover:text-[#BF1800]"
+                          className="hover:text-Brown"
                         >
                           {post.title}
                         </Link>
                       </h3>
-                      <p className="post-exerpt mb-5 lg:mb-8 text-gray-500">
+                      <p className="post-exerpt mb-5 lg:mb-8 text-body-color">
                         {post.excerpt}
                       </p>
                       <div className="flex justify-between">
-                        <div className="entry-meta text-[13px] text-gray-500 flex">
+                        <div className="entry-meta text-[13px] text-body-color flex">
                           <span className="post-on pr-2.5 relative flex items-center gap-1.5">
                             <svg
                               stroke="currentColor"
@@ -152,15 +155,15 @@ const BlogPosts = ({ blogs, blogPage }) => {
                         </div>
                         <Link
                           href={`/blog/${post.uri}`}
-                          className="text-gray-500 hover:text-[#BF1800] text-[13px] flex items-center gap-1.5"
+                          className="text-body-color hover:text-Brown text-[13px] font-medium flex items-center gap-1.5"
                         >
                           Read More
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
-                            strokeWidth="0"
+                            strokeWidth="1"
                             viewBox="0 0 16 16"
-                            className="false"
+                            className="false "
                             height="1em"
                             width="1em"
                             xmlns="http://www.w3.org/2000/svg"
@@ -189,11 +192,11 @@ const BlogPosts = ({ blogs, blogPage }) => {
           pageCount={pageCount}
           previousLabel="Previous"
           renderOnZeroPageCount={null}
-          pageClassName="bg-gray-100 px-2 p-1 rounded-md hover:bg-[#BF1800] hover:text-white"
-          activeClassName="active text-white"
+          pageClassName="bg-gray-100 px-2 p-1 hover:bg-Brown hover:text-white"
+          activeClassName="active text-white bg-title-color"
           containerClassName="flex space-x-4 pagination_wrapper"
-          previousClassName="previous bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
-          nextClassName="next bg-[#BF1800] text-white px-2 p-1 rounded-md hover:bg-black hover:text-white"
+          previousClassName="previous bg-Brown text-white px-2 p-1 hover:bg-title-color hover:text-white"
+          nextClassName="next bg-Brown text-white px-2 p-1 hover:bg-title-color hover:text-white"
         />
       </section>
     </>

@@ -26,7 +26,7 @@ function Filler_botox({ Featured_box_fillers }) {
             <h1 className="md:text-6xl text-4xl text-[#a67979] ">
               Timeless Beauty Medex Worldwide!
             </h1>
-            <p className="text-xl my-5">
+            <p className="text-xl my-5 text-body-color">
               Your trusted source for the finest Botox and fillers products. If
               you're seeking safe and effective solutions to enhance your
               appearance and combat the signs of aging, you've come to the right
@@ -56,7 +56,7 @@ function Filler_botox({ Featured_box_fillers }) {
                 that add volume to specific areas, smoothing out wrinkles and
                 restoring youthful contours.
               </p>
-              <p className="text-lg my-2">
+              <p className="text-lg my-2 text-body-color">
                 While both Botox and fillers carry minimal risks when
                 administered by qualified professionals, it's essential to
                 consult with a trained practitioner to ensure safety and optimal
@@ -83,7 +83,7 @@ function Filler_botox({ Featured_box_fillers }) {
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
-            <h2 className="md:text-3xl text-2xl mb-5 capitalize text-center">
+            <h2 className="md:text-4xl text-2xl mb-5 capitalize text-center text-title-color">
               Our Botox Products
             </h2>
           </div>
@@ -109,11 +109,11 @@ function Filler_botox({ Featured_box_fillers }) {
                 <div className="md:w-3/4 w-1/2 h-full">
                   <Link
                     href="#"
-                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
                   >
                     Botox
                   </Link>
-                  <p className="text-sm mt-2">
+                  <p className="text-sm mt-2 text-body-color">
                     It's been like that since the day 1, when our spa saloon was
                     founded by Mary Fruition back in 1998. She did so in a spur
                     of a moment decision, Get trn horrible remember pleasure two
@@ -132,11 +132,11 @@ function Filler_botox({ Featured_box_fillers }) {
                 <div className="md:w-3/4 w-1/2 h-full">
                   <Link
                     href="#"
-                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
                   >
                     Botox
                   </Link>
-                  <p className="text-sm mt-2">
+                  <p className="text-sm mt-2 text-body-color">
                     It's been like that since the day 1, when our spa saloon was
                     founded by Mary Fruition back in 1998. She did so in a spur
                     of a moment decision, Get trn horrible remember pleasure two
@@ -155,11 +155,11 @@ function Filler_botox({ Featured_box_fillers }) {
                 <div className="md:w-3/4 w-1/2 h-full">
                   <Link
                     href="#"
-                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
                   >
                     Botox
                   </Link>
-                  <p className="text-sm mt-2">
+                  <p className="text-sm mt-2 text-body-color">
                     It's been like that since the day 1, when our spa saloon was
                     founded by Mary Fruition back in 1998. She did so in a spur
                     of a moment decision, Get trn horrible remember pleasure two
@@ -176,10 +176,10 @@ function Filler_botox({ Featured_box_fillers }) {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
             <div className="">
-              <h2 className="md:text-3xl text-2xl mb-5 capitalize">
+              <h2 className="md:text-3xl text-2xl mb-5 capitalize text-title-color">
                 Which is Better: Filler or Botox?
               </h2>
-              <p className="text-lg my-2">
+              <p className="text-lg my-2 text-body-color">
                 Determining whether fillers or Botox is better depends on your
                 specific aesthetic goals. Botox is highly effective in reducing
                 the appearance of dynamic wrinkles caused by repeated facial
@@ -187,7 +187,7 @@ function Filler_botox({ Featured_box_fillers }) {
                 temporarily paralyzes the muscles, resulting in smoother and
                 more youthful-looking skin.
               </p>
-              <p className="text-lg my-2">
+              <p className="text-lg my-2 text-body-color">
                 Fillers, on the other hand, are ideal for addressing static
                 wrinkles, volume loss, and restoring facial contours. They can
                 add plumpness to thin lips, soften nasolabial folds, and enhance
@@ -239,11 +239,11 @@ function Filler_botox({ Featured_box_fillers }) {
                 <div className="md:w-3/4 w-1/2 h-full">
                   <Link
                     href="#"
-                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
                   >
                     Botox
                   </Link>
-                  <p className="text-sm mt-2">
+                  <p className="text-sm mt-2 text-body-color">
                     It's been like that since the day 1, when our spa saloon was
                     founded by Mary Fruition back in 1998. She did so in a spur
                     of a moment decision, Get trn horrible remember pleasure two
@@ -262,11 +262,11 @@ function Filler_botox({ Featured_box_fillers }) {
                 <div className="md:w-3/4 w-1/2 h-full">
                   <Link
                     href="#"
-                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
                   >
                     Botox
                   </Link>
-                  <p className="text-sm mt-2">
+                  <p className="text-sm mt-2 text-body-color">
                     It's been like that since the day 1, when our spa saloon was
                     founded by Mary Fruition back in 1998. She did so in a spur
                     of a moment decision, Get trn horrible remember pleasure two
@@ -285,11 +285,11 @@ function Filler_botox({ Featured_box_fillers }) {
                 <div className="md:w-3/4 w-1/2 h-full">
                   <Link
                     href="#"
-                    className="text-lg leading-5 hover:text-[#BF1800] uppercase"
+                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
                   >
                     Botox
                   </Link>
-                  <p className="text-sm mt-2">
+                  <p className="text-sm mt-2 text-body-color">
                     It's been like that since the day 1, when our spa saloon was
                     founded by Mary Fruition back in 1998. She did so in a spur
                     of a moment decision, Get trn horrible remember pleasure two

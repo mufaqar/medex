@@ -10,8 +10,8 @@ function Sidebar() {
             <div>
                 <ul>
                     {categories?.map((item, index) => (
-                        <li key={index} className="flex justify-between items-center transition text-sm md:text-[15px] font-medium  border-t border-black/10 first:border-t-0  py-3 xl:py-3.5 2xl:py-2.5 3xl:py-3 text-gray-500 hover:text-[#BF1800]">
-                            <p className="flex justify-between items-center w-full text-start outline-none focus:outline-none focus:ring-0 focus:text-gray-500">
+                        <li key={index} className="flex justify-between items-center transition text-sm md:text-base] font-medium  border-t border-black/10 first:border-t-0  py-3 xl:py-3.5 2xl:py-2.5 3xl:py-3 text-primary hover:text-Brown">
+                            <p className="flex justify-between items-center w-full">
                                 <span className="capitalize">
                                     {item.title}
                                 </span>

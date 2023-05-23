@@ -11,7 +11,7 @@ export default function Contact() {
             <main className=''>
                 <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
                     <div className="w-full">
-                        <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-[32px] font-bold text-center">
+                        <h2 className="md:text-5xl text-4xl font-bold text-title-color text-center">
                             Contact Us
                         </h2>
                     </div>
@@ -21,7 +21,7 @@ export default function Contact() {
                     <div className="flex flex-wrap w-full xl:py-12  relative z-10">
                         <div className="w-full md:w-[50%] xl:w-[50%]">
                             <div className="">
-                                <h2 className="mb-3 lg:mb-4 xl:mb-5 text-lg lg:text-xl xl:text-[22px] xl:leading-8 font-bold ">
+                                <h2 className="mb-3 lg:mb-4 xl:mb-5 md:text-3xl text-xl font-normal text-title-color">
                                     Contact Us
                                 </h2>
                                 <div className="mx-auto space-y-4 mb-6">
@@ -32,10 +32,10 @@ export default function Contact() {
                                             </svg>
                                         </div>
                                         <div className="pl-3 mt-0">
-                                            <h3 className=" text-[15px] sm:text-base font-medium">
+                                            <h3 className="text-xl font-bold text-title-color">
                                                 Addresses
                                             </h3>
-                                            <p className="text-sm lg:leading-[27px]">
+                                            <p className="text-lg font-normal text-body-color ">
                                                 318 Diart Gallery A Dong , Sohyang Ro 119 , Wonmi-gu, City : Bucheon-si Province : Gyeonggi-do , South Korea
                                             </p>
                                         </div>
@@ -48,10 +48,10 @@ export default function Contact() {
                                             </svg>
                                         </div>
                                         <div className="pl-3 mt-0">
-                                            <h3 className=" text-15px sm:text-base font-medium">
+                                            <h3 className="text-xl font-bold text-title-color">
                                                 Phone Number
                                             </h3>
-                                            <p className="text-sm lg:leading-[27px]">
+                                            <p className="text-lg font-normal text-body-color ">
                                                 +82-10-2320-8582
                                             </p>
                                         </div>
@@ -63,10 +63,10 @@ export default function Contact() {
                                             </svg>
                                         </div>
                                         <div className="pl-3 mt-0">
-                                            <h3 className=" text-15px sm:text-base font-medium">
+                                            <h3 className="text-xl font-bold text-title-color">
                                                 Email
                                             </h3>
-                                            <p className="text-sm lg:leading-[27px]">
+                                            <p className="text-lg font-normal text-body-color ">
                                                 sonomedex@gmail.com
                                             </p>
                                         </div>
@@ -79,10 +79,10 @@ export default function Contact() {
 
                                         </div>
                                         <div className="pl-3 mt-0">
-                                            <h3 className=" text-15px sm:text-base font-medium">
+                                            <h3 className="text-xl font-bold text-title-color">
                                                 Timing
                                             </h3>
-                                            <p className="text-sm lg:leading-[27px]">
+                                            <p className="text-lg font-normal text-body-color ">
                                                 Monday to Friday: 10am to 7pm
                                                 Saturday: 10am to 4pm
                                                 Sunday: 12am to 4pm
@@ -95,30 +95,30 @@ export default function Contact() {
                         <div className="w-full md:w-[50%] xl:w-[50%] pb-0.5 lg:pl-12 pt-1.5">
                             <form className="space-y-5">
                                 <div className="block">
-                                    <label htmlFor="name" className="block  opacity-70 font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer">
+                                    <label htmlFor="name" className="font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer hidden">
                                         Full Name (required)
                                     </label>
-                                    <input type="text" id="name" name="name" placeholder="Enter Your Full Name" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm rounded placeholder-[#B3B3B3] min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
+                                    <input type="text" id="name" name="name" placeholder="Enter Your Full Name" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm placeholder-body-color min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
                                 </div>
                                 <div className="block">
-                                    <label htmlFor="email" className="block  opacity-70 font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer">
+                                    <label htmlFor="email" className="font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer hidden">
                                         Email Address (required)
                                     </label>
-                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm rounded placeholder-[#B3B3B3] min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm placeholder-body-color min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
                                 </div>
                                 <div className="block">
-                                    <label htmlFor="phone" className="block  opacity-70 font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer">
+                                    <label htmlFor="phone" className="font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer hidden">
                                         Phone (Optional)
                                     </label>
-                                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm rounded placeholder-[#B3B3B3] min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone" className="py-2 px-4 w-full appearance-none border text-input text-[13px] lg:text-sm placeholder-body-color min-h-12 transition duration-200 ease-in-out focus:border-2 focus:outline-none h-11 md:h-12" />
                                 </div>
                                 <div>
-                                    <label htmlFor="message" className="block  opacity-70 font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer">
+                                    <label htmlFor="message" className="font-normal text-[13px] lg:text-sm leading-none mb-3 cursor-pointer hidden">
                                         Message
                                     </label>
-                                    <textarea id="message" name="message" className="px-4 py-3 flex items-center w-full rounded appearance-none transition duration-300 ease-in-out  text-[13px] lg:text-sm focus:outline-none focus:ring-0 placeholder-[#B3B3B3] border focus:bg-white focus:border-2" rows={4} placeholder="Briefly describe.."></textarea>
+                                    <textarea id="message" name="message" className="px-4 py-3 flex items-center w-full appearance-none transition duration-300 ease-in-out  text-[13px] lg:text-sm focus:outline-none focus:ring-0 placeholder-body-color border focus:bg-white focus:border-2" rows={4} placeholder="Briefly describe.."></textarea>
                                 </div>
-                                <button type="submit" className="text-sm lg:text-[15px] leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold text-center justify-center tracking-[0.2px] rounded placeholder-white focus-visible:outline-none focus:outline-none h-11 md:h-[50px] bg-[#BF1800]  text-white  px-5 lg:px-6 py-4 md:py-3.5 lg:py-4 hover:text-white hover:bg-opacity-90 focus:bg-opacity-70 w-full">
+                                <button type="submit" className="text-sm lg:text-[15px] leading-4 inline-flex items-center transition ease-in-out duration-300 font-semibold text-center justify-center tracking-[0.2px] h-11 md:h-[50px] bg-Brown  text-white hover:text-white hover:bg-title-color px-5 lg:px-6 py-4 md:py-3.5 lg:py-4 w-full">
                                     Send Message
                                 </button>
                             </form>

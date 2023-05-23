@@ -40,7 +40,7 @@ function Appointment() {
                                 <input
                                     type="text"
                                     placeholder="Your Name*"
-                                    className="block w-full px-5 py-1 mt-2 text-[#6f6c6c] placeholder:text-[#6f6c6c] bg-[#fde6d8] md:h-16 h-12 focus:ring-none focus:outline-none"
+                                    className="block w-full px-5 py-1 mt-2 text-body-color placeholder:text-body-color bg-input-Bg md:h-16 h-12 focus:ring-none focus:outline-none"
                                 />
                             </div>
 
@@ -48,22 +48,22 @@ function Appointment() {
                                 <input
                                     type="email"
                                     placeholder="Your Email*"
-                                    className="block w-full px-5 py-1 mt-2 text-[#6f6c6c] placeholder:text-[#6f6c6c] bg-[#fde6d8] md:h-16 h-12 focus:ring-none focus:outline-none"
+                                    className="block w-full px-5 py-1 mt-2 text-body-color placeholder:text-body-color bg-input-Bg md:h-16 h-12 focus:ring-none focus:outline-none"
                                 />
                             </div>
 
                             <div className="w-full mt-3">
-                                <textarea className="block w-full h-32 px-5 py-1 mt-2 text-[#6f6c6c] placeholder:text-[#6f6c6c] placeholder-gray-400 bg-[#fde6d8] md:h-32 focus:ring-none focus:outline-none"
+                                <textarea className="block w-full h-32 px-5 py-1 mt-2 text-body-color placeholder:text-body-color placeholder-gray-400 bg-input-Bg md:h-32 focus:ring-none focus:outline-none"
                                     placeholder="Message"
                                 ></textarea>
                             </div>
 
-                            <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide md:h-16 h-12 text-white capitalize transition-colors duration-300 transform bg-[#9A563A] hover:bg-[#121f38] focus:outline-none focus:ring-none">
+                            <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide md:h-16 h-12 text-white capitalize transition-colors duration-300 transform bg-Brown hover:bg-title-color focus:outline-none focus:ring-none">
                                 get in touch
                             </button>
                         </form>
                     </div>
-                    <div className="bg-[#9a563a] relative py-[80px] md:px-[90px] px-5 md:w-[60%] bg-[url('/images/appoint-bg.png')] bg-cover bg-center bg-no-repeat">
+                    <div className="bg-Brown relative py-[80px] md:px-[90px] px-5 md:w-[60%] bg-[url('/images/appoint-bg.png')] bg-cover bg-center bg-no-repeat">
                         <h2 className="md:text-3xl text-2xl text-white mb-5 capitalize ">
                             OUR BEST REVIEWS
                         </h2>
@@ -106,13 +106,13 @@ function Appointment() {
                         </Slider>
                         <div className="flex absolute bottom-10 md:left-20 left-4 ">
                             <button
-                                className="p-2 font-bold text-xl border border-white border-r-0 bg-transparent hover:bg-white text-white hover:text-[#9a563a]"
+                                className="p-2 font-bold text-xl border border-white border-r-0 bg-transparent hover:bg-white text-white hover:text-Brown"
                                 onClick={handlePrevSlide}
                             >
                                 <BiChevronLeft size={28} />
                             </button>
                             <button
-                                className="p-2 font-bold text-xl border border-white bg-transparent hover:bg-white text-white hover:text-[#9a563a]"
+                                className="p-2 font-bold text-xl border border-white bg-transparent hover:bg-white text-white hover:text-Brown"
                                 onClick={handleNextSlide}
                             >
                                 <BiChevronRight size={28} />
