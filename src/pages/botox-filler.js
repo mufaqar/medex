@@ -20,22 +20,24 @@ function Filler_botox({ Featured_box_fillers }) {
   const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
   return (
     <>
-      <section className="mb-12 md:mt-[6.6rem] mt-[2.2rem] overflow-hidden">
-        <div className="bg-[url(/images/botox-filler.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start p-7 sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
-          <div className=" mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8">
-            <h1 className="md:text-6xl text-4xl text-[#a67979] ">
-              Timeless Beauty Medex Worldwide!
-            </h1>
-            <p className="text-xl my-5 text-body-color">
-              Your trusted source for the finest Botox and fillers products. If
-              you're seeking safe and effective solutions to enhance your
-              appearance and combat the signs of aging, you've come to the right
-              place. In this article, we will explore the differences between
-              Botox and fillers, address their safety concerns, discuss their
-              effectiveness, and provide insights into their longevity. Join us
-              on this journey to discover the perfect solution for your
-              aesthetic needs.
-            </p>
+      <section className="mb-12 md:mt-[5.6rem] mt-[2.2rem] overflow-hidden">
+        <div className="bg-[url(/images/botox-filler.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
+          <div className=" mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8 grid md:grid-cols-2 grid-cols-1">
+            <div className=''>
+              <h1 className="md:text-6xl text-4xl text-[#a67979] ">
+                Timeless Beauty Medex Worldwide!
+              </h1>
+              <p className="text-lg my-5 text-body-color">
+                Your trusted source for the finest Botox and fillers products. If
+                you're seeking safe and effective solutions to enhance your
+                appearance and combat the signs of aging, you've come to the right
+                place. In this article, we will explore the differences between
+                Botox and fillers, address their safety concerns, discuss their
+                effectiveness, and provide insights into their longevity. Join us
+                on this journey to discover the perfect solution for your
+                aesthetic needs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -44,10 +46,10 @@ function Filler_botox({ Featured_box_fillers }) {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
             <div className="">
-              <h2 className="md:text-4xl text-2xl capitalize text-title-color mb-5">
+              <h2 className="md:text-5xl text-2xl capitalize text-title-color mb-5">
                 Which is Safer: Botox or Fillers?
               </h2>
-              <p className="text-lg my-2 text-body-color">
+              <p className="text-base my-2 text-body-color">
                 When it comes to the safety of cosmetic procedures, both Botox
                 and fillers have proven track records. Botox, a brand name for
                 Botulinum Toxin Type A, is a neurotoxin that temporarily relaxes
@@ -56,7 +58,7 @@ function Filler_botox({ Featured_box_fillers }) {
                 that add volume to specific areas, smoothing out wrinkles and
                 restoring youthful contours.
               </p>
-              <p className="text-lg my-2 text-body-color">
+              <p className="text-base my-2 text-body-color">
                 While both Botox and fillers carry minimal risks when
                 administered by qualified professionals, it's essential to
                 consult with a trained practitioner to ensure safety and optimal
@@ -83,7 +85,7 @@ function Filler_botox({ Featured_box_fillers }) {
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
-            <h2 className="md:text-4xl text-2xl capitalize text-title-color text-center mb-5">
+            <h2 className="md:text-5xl text-2xl capitalize text-title-color text-center mb-5">
               Our Botox Products
             </h2>
           </div>
@@ -176,10 +178,10 @@ function Filler_botox({ Featured_box_fillers }) {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 grid md:grid-cols-2 grid-cols-1 gap-16">
           <div>
             <div className="">
-              <h2 className="md:text-4xl text-2xl capitalize text-title-color mb-5">
+              <h2 className="md:text-5xl text-2xl capitalize text-title-color mb-5">
                 Which is Better: Filler or Botox?
               </h2>
-              <p className="text-lg my-2 text-body-color">
+              <p className="text-base my-2 text-body-color">
                 Determining whether fillers or Botox is better depends on your
                 specific aesthetic goals. Botox is highly effective in reducing
                 the appearance of dynamic wrinkles caused by repeated facial
@@ -187,7 +189,7 @@ function Filler_botox({ Featured_box_fillers }) {
                 temporarily paralyzes the muscles, resulting in smoother and
                 more youthful-looking skin.
               </p>
-              <p className="text-lg my-2 text-body-color">
+              <p className="text-base my-2 text-body-color">
                 Fillers, on the other hand, are ideal for addressing static
                 wrinkles, volume loss, and restoring facial contours. They can
                 add plumpness to thin lips, soften nasolabial folds, and enhance
@@ -209,11 +211,11 @@ function Filler_botox({ Featured_box_fillers }) {
           </div>
         </div>
       </section>
-      
+
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
-            <h2 className="md:text-4xl text-2xl capitalize text-title-color text-center mb-5">
+            <h2 className="md:text-5xl text-2xl capitalize text-title-color text-center mb-5">
               Our Filler Products
             </h2>
           </div>

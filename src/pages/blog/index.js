@@ -32,9 +32,9 @@ const BlogPosts = ({ blogs, blogPage }) => {
       <section className="bg-slate-100">
         <div className="pt-7 md:pt-40 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
           <div className="w-full">
-            <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
+            <h1 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
               Blog
-            </h2>
+            </h1>
           </div>
           <div className="breadcrumb flex items-center py-10 ">
             <ol className="flex items-center w-full overflow-hidden">
@@ -120,14 +120,14 @@ const BlogPosts = ({ blogs, blogPage }) => {
                       </Link>
                     </div>
                     <div className="flex flex-col justify-center py-5 px-5 sm:px-8 h-full overflow-hidden relative">
-                      <h3 className="font-semibold text-2xl lg:text-3xl mb-3.5 ">
+                      <h2 className="font-semibold text-2xl lg:text-3xl mb-3.5 ">
                         <Link
                           href={`/blog/${post.uri}`}
                           className="hover:text-Brown"
                         >
                           {post.title}
                         </Link>
-                      </h3>
+                      </h2>
                       <p className="post-exerpt mb-5 lg:mb-8 text-body-color">
                         {post.excerpt}
                       </p>

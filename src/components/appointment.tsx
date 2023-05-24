@@ -25,13 +25,13 @@ function Appointment() {
     };
 
     return (
-        <section>
-            <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
+        <section className="bg-[url('/images/filler-botox-banner.jpg')] bg-no-repeat bg-cover bg-right">
+            <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 ">
                 <div className="flex md:flex-row flex-col ">
                     <div className='bg-white shadow-lg md:w-[40%] py-[45px] md:px-[35px] px-5'>
-                        <h2 className="md:text-3xl text-2xl mb-5 capitalize text-title-color">
+                        <h3 className="md:text-3xl text-2xl mb-5 capitalize text-title-color">
                             Book Appointment
-                        </h2>
+                        </h3>
                         <p className='text-Brown text-lg font-medium my-2'>
                             Today For Free
                         </p>
@@ -63,10 +63,10 @@ function Appointment() {
                             </button>
                         </form>
                     </div>
-                    <div className="bg-Brown relative py-[80px] md:px-[90px] px-5 md:w-[60%] bg-[url('/images/appoint-bg.png')] bg-cover bg-center bg-no-repeat">
-                        <h2 className="md:text-3xl text-2xl text-white mb-5 capitalize ">
+                    <div className="bg-Brown/90 relative py-[80px] md:px-[90px] px-5 md:w-[60%]">
+                        <h3 className="md:text-3xl text-2xl text-white mb-5 capitalize ">
                             OUR BEST REVIEWS
-                        </h2>
+                        </h3>
                         <p className='text-white text-lg font-medium my-2'>
                             CUSTOMER’S FEEDBACK
                         </p>

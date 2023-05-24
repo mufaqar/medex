@@ -15,9 +15,9 @@ const Categories = ({ AllCategories }) => {
       <section>
         <div className="flex mt-10 justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
           <div className="w-full">
-            <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
+            <h1 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
               Categories
-            </h2>
+            </h1>
           </div>
         </div>
         <div>

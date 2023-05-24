@@ -41,9 +41,9 @@ function Single({ product }: any) {
         </Head>
         <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
           <div className="w-full">
-            <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
+            <h1 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
               {product?.title}
-            </h2>
+            </h1>
           </div>
         </div>
 
@@ -72,10 +72,10 @@ function Single({ product }: any) {
             </div>
             <div className="sticky top-28">
               <div className="mt-8">
-                <div className="max-w-[35ch] space-y-2">
-                  <h1 className="text-xl font-bold sm:text-2xl text-title-color">
+                <div className="space-y-2">
+                  <h2 className="text-xl font-bold sm:text-3xl text-title-color">
                     {product?.title}
-                  </h1>
+                  </h2>
                   <p className="text-sm text-primary">
                     {product?.productCategories?.nodes[0]?.name}
                   </p>

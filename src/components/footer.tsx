@@ -50,9 +50,9 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className='py-10 px-0'>
-                        <h3 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
+                        <h6 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
                             OUR NEWSLETTER
-                        </h3>
+                        </h6>
                         <form className="flex items-stretch ">
                             <input size={40} className="text-sm leading-none text-white placeholder:text-white h-10 p-3 w-4/5 border-b bg-transparent border-[#fde6d84d] focus:outline-none " type="email" placeholder="Enter your email..." />
                             <button className="w-32 btn hover:bg-white bg-Brown duration-200 text-xs tracking-widest leading-none text-white hover:text-Brown font-medium p-3 uppercase focus:outline-none focus:ring-none border border-transparent">subscribe</button>
@@ -62,9 +62,9 @@ export default function Footer() {
                 <div className='bg-Brown/50 h-[1px]'></div>
                 <div className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 grid md:grid-cols-4 grid-cols-1 gap-5 md:gap-12 py-16 '>
                     <div>
-                        <h3 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
+                        <h6 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
                             About Medex
-                        </h3>
+                        </h6>
                         <ul className="text-sm lg:text-base flex flex-col space-y-3">
                             <li className="flex items-baseline">
                                 <Link href="https://www.google.com/maps/place/119+Sohyang-ro,+Wonmi-gu,+Bucheon,+Gyeonggi-do,+South+Korea/@37.5025335,126.7525041,15z/data=!3m1!4b1!4m2!3m1!1s0x357b7d3e1121c409:0x3743772ecbe8a8c1" target="_blank"
@@ -95,17 +95,17 @@ export default function Footer() {
                                 </Link>
                             </li>
                         </ul>
-                        <h3 className='mt-4 sm:mt-5 lg:mt-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
+                        <h6 className='mt-4 sm:mt-5 lg:mt-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
                             Open Hours
-                        </h3>
+                        </h6>
                         <p className="text-white">
                             Monday to Friday: 10am to 7pm
                         </p>
                     </div>
                     <div>
-                        <h3 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
+                        <h6 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
                             IMPORTANT LINKS
-                        </h3>
+                        </h6>
                         <ul className="text-sm lg:text-base flex flex-col space-y-3">
                             <li className="flex items-center">
                                 <BiChevronRight size={26} className='text-Brown' />
@@ -134,9 +134,9 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
+                        <h6 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
                             Categories
-                        </h3>
+                        </h6>
                         <ul className="text-sm lg:text-base flex flex-col space-y-3">
                             <li className="flex items-center">
                                 <BiChevronRight size={26} className='text-Brown' />
@@ -165,9 +165,9 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h3 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
+                        <h6 className='mb-4 sm:mb-5 lg:mb-6 pb-0.5 md:text-2xl text-xl text-white lg:leading-7 font-medium uppercase'>
                             RECENT POST
-                        </h3>
+                        </h6>
                         <div className="grid gap-8">
                             <div className="flex gap-5 ">
                                 <div className="w-1/4">
