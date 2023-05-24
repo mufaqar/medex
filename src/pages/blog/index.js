@@ -109,11 +109,12 @@ const BlogPosts = ({ blogs, blogPage }) => {
                     className="flex flex-col sm:flex-row blog-card overflow-hidden w-full border border-black/10 rounded-xl"
                   >
                     <div className="relative flex-shrink-0 ">
-                      <Link href={`/blog/${post.uri}`}>
+                      <Link href={`/blog${post.uri}`}>
                         <figure className="md:max-w-[440px] max-w-360px h-full">
                           <img
                             src={post?.featuredImage?.node?.mediaItemUrl}
                             alt="blog-image"
+                            
                             className="object-cover h-full w-full object-left-top"
                           />
                         </figure>
@@ -122,7 +123,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
                     <div className="flex flex-col justify-center py-5 px-5 sm:px-8 h-full overflow-hidden relative">
                       <h2 className="font-semibold text-2xl lg:text-3xl mb-3.5 ">
                         <Link
-                          href={`/blog/${post.uri}`}
+                          href={`/blog${post.uri}`}
                           className="hover:text-Brown"
                         >
                           {post.title}
@@ -154,7 +155,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
                           </span>
                         </div>
                         <Link
-                          href={`/blog/${post.uri}`}
+                          href={`/blog${post.uri}`}
                           className="text-body-color hover:text-Brown text-[13px] font-medium flex items-center gap-1.5"
                         >
                           Read More
@@ -169,7 +170,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                             ></path>
                           </svg>
