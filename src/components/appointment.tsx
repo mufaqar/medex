@@ -84,7 +84,7 @@ function Appointment() {
                                                 <FaStar color="#ffffff" size={18} key={i} />
                                             ))}
                                         </div>
-                                        <p className="mt-5 mb-5 text-white text-lg">{item.review}</p>
+                                        <p className="mt-5 mb-5 text-white text-lg">" {item.review} "</p>
                                         <div className="flex items-center gap-4 my-8">
                                             <Image
                                                 src={item?.user.image}
@@ -129,31 +129,37 @@ export default Appointment
 
 const Feedbackdata = [
     {
-        review:
-            '“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”',
+        review: "As a dermatologist, I rely on Medex Worldwide's Botox and fillers for my patients. The quality and effectiveness of their products are exceptional. My patients consistently achieve fantastic results, and I trust Medex Worldwide for their reliable and safe products.",
         user: {
-            name: 'Maria Wang',
-            designation: 'Student',
+            name: 'Dr. Jennifer Thompson',
+            designation: 'Dermatologist',
             image: Test1,
         },
         rating: 5,
     },
     {
-        review:
-            '“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”',
+        review: "I have been using Medex Worldwide's fillers in my aesthetic practice for years. The range of products they offer is extensive, and the quality is outstanding. My clients always leave satisfied with the natural-looking results. I highly recommend Medex Worldwide for their top-notch fillers.",
         user: {
-            name: 'David',
-            designation: 'Student',
+            name: 'Sarah Miller',
+            designation: 'Aesthetician',
             image: Test1,
         },
         rating: 5,
     },
     {
-        review:
-            '“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”',
+        review: "Medex Worldwide's Botox products have become my go-to choice for my patients. The quality and reliability of their products are unparalleled. My patients experience long-lasting effects and utmost satisfaction. Medex Worldwide has truly set a high standard in the industry.",
         user: {
-            name: 'Jimmy Small',
-            designation: 'Student',
+            name: 'Michael Stewart',
+            designation: 'Plastic Surgeon',
+            image: Test1,
+        },
+        rating: 4,
+    },
+    {
+        review: "As a beauty salon owner, I strive to offer the best treatments to my clients. Medex Worldwide's Botox has been a game-changer for my salon. The ease of use and excellent results have made a significant impact. I highly recommend Medex Worldwide for their high-quality Botox products.",
+        user: {
+            name: 'Emily Rogers',
+            designation: 'Beauty Salon Owner',
             image: Test1,
         },
         rating: 4,
