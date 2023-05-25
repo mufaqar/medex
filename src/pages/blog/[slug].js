@@ -5,7 +5,7 @@ import { client } from "../../config/client";
 import Head from "next/head";
 import parse from "html-react-parser";
 import Footer from '../../components/footer';
-import {BlogPostsQuery} from '../../config/quries';
+import { BlogPostsQuery } from '../../config/quries';
 
 const BlogSingle = ({ blog, blogs }) => {
   console.log("🚀 ~ file: [slug].js:5 ~ BlogSingle ~ blog:", blog)
@@ -14,114 +14,32 @@ const BlogSingle = ({ blog, blogs }) => {
   return (
     <>
       <Head>{seoHead}</Head>
-      <section className='bg-slate-100'>
-        <div className="pt-7 md:pt-40 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
-          <div className="breadcrumb flex items-center py-10 ">
-            <ol className="flex items-center w-full overflow-hidden">
-              <li className="flex text-base font-medium px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 text-title-color hover:text-Brown">
-                <Link className="inline-flex items-center" href="/">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 512 512"
-                    className="mr-1.5 text-Brown text-base"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="32"
-                      d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
-                    ></path>
-                    <path
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="32"
-                      d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69"
-                    ></path>
-                  </svg>
-                  Home
-                </Link>
-              </li>
-              <li className="flex text-base font-medium px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 text-title-color hover:text-Brown">
-                <Link className="inline-flex items-center" href="/blog">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 512 512"
-                    className="text-Brown text-base"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="48"
-                      d="M184 112l144 144-144 144"
-                    ></path>
-                  </svg>
-                  Blog
-                </Link>
-              </li>
-              <li className="flex text-base font-medium px-2.5 transition duration-200 ease-in first:ps-0 last:pe-0 text-title-color hover:text-Brown">
-                <Link className="inline-flex items-center" href="/blog">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 512 512"
-                    className="text-Brown text-base"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="48"
-                      d="M184 112l144 144-144 144"
-                    ></path>
-                  </svg>
-                  {blog?.title}
-                </Link>
-              </li>
-            </ol>
+      <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
+        <div className="w-full">
+          <h1 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
+            {blog?.title}
+          </h1>
+          <div className="entry-meta text-sm text-primary text-center my-5">
+            <span className="post-by pe-2.5 relative inline-block">
+              By Melissa Jones
+            </span>
+            <span className="has-dot px-2.5 relative inline-block">
+              {blog.date}
+            </span>
+            <span className="has-dot px-2.5 relative inline-block">
+              114 Views
+            </span>
+            <span className="has-dot ps-2.5 relative inline-block">
+              {blog?.categories?.nodes[0]?.name}
+            </span>
           </div>
         </div>
-      </section>
+      </div>
       <section>
         <div className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12 flex md:flex-row flex-col-reverse gap-10'>
           <div className="max-w-[1024px] m-auto">
             <div className="blog-post w-full  pt-8 pb-8">
               <div className="flex flex-col product-card overflow-hidden h-full mb-10">
-                <div className="pb-5 h-full relative">
-                  <h2 className="md:text-4xl text-2xl capitalize text-title-color font-bold mb-3.5 ">
-                    {blog?.title}
-                  </h2>
-                  <div className="entry-meta text-sm text-primary">
-                    <span className="post-by pe-2.5 relative inline-block">
-                      By Melissa Jones
-                    </span>
-                    <span className="has-dot px-2.5 relative inline-block">
-                      {blog.date}
-                    </span>
-                    <span className="has-dot px-2.5 relative inline-block">
-                      114 Views
-                    </span>
-                    <span className="has-dot ps-2.5 relative inline-block">
-                      {blog?.categories?.nodes[0]?.name}
-                    </span>
-                  </div>
-                </div>
                 <div className="relative flex-shrink-0 mb-10">
                   <figure className="card-img-container max-w-[1050px] overflow-hidden flex mx-auto relative rounded-xl">
                     <img src={blog?.featuredImage?.node?.mediaItemUrl} alt="blog-image" className='object-cover w-full object-left-top' />
@@ -203,7 +121,7 @@ const BlogSingle = ({ blog, blogs }) => {
           </div>
         </div>
       </section>
-      <Footer blogs={blogs}  />
+      <Footer blogs={blogs} />
     </>
   );
 };

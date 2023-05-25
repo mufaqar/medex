@@ -216,12 +216,12 @@ export async function getServerSideProps(context: any) {
       id: slug,
     },
   });
-  const blogs = await client.query({
+  const blog = await client.query({
     query: BlogPostsQuery,
   });
 
   const product = response?.data?.product;
-  const footer_blogs = blogs.data.posts.nodes;
+  const blogs = blog.data.posts.nodes;
   return {
     props: {
       product,

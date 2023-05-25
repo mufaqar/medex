@@ -194,46 +194,6 @@ export default function Footer({ blogs }: any) {
                                     </div>
                                 </div>
                             ))}
-                            {/* <div className="flex gap-5 ">
-                                <div className="w-1/4">
-                                    <Image
-                                        src={Img1}
-                                        alt=""
-                                        className="rounded-[15px] object-cover h-full w-full"
-                                    />
-                                </div>
-                                <div className="md:w-3/4 w-1/2 h-full">
-                                    <Link
-                                        href="#"
-                                        className="text-lg text-white hover:text-Brown font-medium"
-                                    >
-                                        Botox
-                                    </Link>
-                                    <p className="text-sm mt-2 text-primary flex items-center gap-2">
-                                        <FaCalendarAlt size={12} className='text-Brown' /> 16 March 2023
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="flex gap-5 ">
-                                <div className="w-1/4">
-                                    <Image
-                                        src={Img1}
-                                        alt=""
-                                        className="rounded-[15px] object-cover h-full w-full"
-                                    />
-                                </div>
-                                <div className="md:w-3/4 w-1/2 h-full">
-                                    <Link
-                                        href="#"
-                                        className="text-lg text-white hover:text-Brown font-medium"
-                                    >
-                                        Botox
-                                    </Link>
-                                    <p className="text-sm mt-2 text-primary flex items-center gap-2">
-                                        <FaCalendarAlt size={12} className='text-Brown' /> 16 March 2023
-                                    </p>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
