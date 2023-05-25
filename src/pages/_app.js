@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
       <ApolloProvider client={client}>
         <Header />
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
         <FloatingWhatsApp
           phoneNumber="+821023208582"
           accountName="Medex World Wide"

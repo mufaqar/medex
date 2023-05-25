@@ -1,15 +1,16 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import { client } from '../../config/client';
-import { Products } from '../../config/quries';
+import { Products, BlogPostsQuery } from '../../config/quries';
 import Link from 'next/link';
 import Image from 'next/image';
 import ReactPaginate from 'react-paginate';
 import { useState } from 'react';
 import Head from 'next/head';
 import NotFound from '../../components/404';
+import Footer from '../../components/footer';
 
-const Categories = ({ AllProducts }) => {
+const Categories = ({ AllProducts, blogs }) => {
   const router = useRouter();
   const params = router?.query?.slug;
 
@@ -86,6 +87,7 @@ const Categories = ({ AllProducts }) => {
           nextClassName="next bg-Brown text-white px-2 p-1 hover:bg-title-color hover:text-white"
         />
       </section>
+      <Footer blogs={blogs}  />
     </>
   );
 };
@@ -96,11 +98,16 @@ export async function getStaticProps() {
   const response = await client.query({
     query: Products,
   });
+  const blog = await client.query({
+    query: BlogPostsQuery,
+  });
 
   const AllProducts = response.data.products.nodes;
+  const blogs = blog.data.posts.nodes;
   return {
     props: {
       AllProducts,
+      blogs,
     },
   };
 }

@@ -5,6 +5,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import parse from "html-react-parser";
 import Modal from "react-modal";
+import Footer from '../../components/footer';
+import {BlogPostsQuery} from '../../config/quries';
 
 const customStyles = {
   content: {
@@ -19,7 +21,7 @@ const customStyles = {
   },
 };
 
-function Single({ product }: any) {
+function Single({ product }: any, {blogs}: any) {
   const fullHead = parse(product.seo.fullHead);
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [imageUrl, setImageUrl] = useState<string>();
@@ -169,6 +171,7 @@ function Single({ product }: any) {
           />
         </div>
       </Modal>
+      <Footer blogs={blogs}  />
     </>
   );
 }
@@ -213,11 +216,16 @@ export async function getServerSideProps(context: any) {
       id: slug,
     },
   });
+  const blogs = await client.query({
+    query: BlogPostsQuery,
+  });
 
   const product = response?.data?.product;
+  const footer_blogs = blogs.data.posts.nodes;
   return {
     props: {
       product,
+      blogs,
     },
   };
 }

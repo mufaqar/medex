@@ -6,6 +6,7 @@ import parse from 'html-react-parser';
 import Head from 'next/head';
 import ReactPaginate from 'react-paginate';
 import Sidebar from '../../components/sidebar';
+import Footer from '../../components/footer';
 
 const BlogPosts = ({ blogs, blogPage }) => {
   // console.log('🚀 ~ file: index.js:7 ~ BlogPosts ~ blogs:', blogs);
@@ -200,6 +201,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
           nextClassName="next bg-Brown text-white px-2 p-1 hover:bg-title-color hover:text-white"
         />
       </section>
+      <Footer blogs={blogs}  />
     </>
   );
 };

@@ -13,10 +13,12 @@ import {
   Products,
   ProductsCategories,
   FrontPage,
+  BlogPostsQuery,
 } from '../config/quries';
+import Footer from '../components/footer'
 
-export default function Home({ AllProducts, AllCategories, HomePage }) {
-  //console.log(HomePage);
+export default function Home({ AllProducts, AllCategories, HomePage, blogs }) {
+  // console.log(HomePage);
   const fullHead = parse(HomePage);
   return (
     <>
@@ -30,6 +32,7 @@ export default function Home({ AllProducts, AllCategories, HomePage }) {
       <Feature_Category categories={AllCategories.slice(0, 4)} />
       {/* <ProductBox products={AllProducts.slice(5, 10)} /> */}
       <Cta />
+      <Footer blogs={blogs}  />
     </>
   );
 }
@@ -44,15 +47,20 @@ export async function getStaticProps() {
   const FrontPageseo = await client.query({
     query: FrontPage,
   });
+  const blog = await client.query({
+    query: BlogPostsQuery,
+  });
 
   const AllProducts = response.data.products.nodes;
   const AllCategories = categories.data.productCategories.nodes;
   const HomePage = FrontPageseo.data.page.seo.fullHead;
+  const blogs = blog.data.posts.nodes;
   return {
     props: {
       AllProducts,
       AllCategories,
       HomePage,
+      blogs,
     },
   };
 }

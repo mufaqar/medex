@@ -1,7 +1,10 @@
 import React from 'react';
 import Head from "next/head";
+import { client } from '@/config/client';
+import Footer from '../../components/footer';
+import {BlogPostsQuery} from '../../config/quries';
 
-function WhoWeAre() {
+function WhoWeAre({blogs}: any) {
     return (
 
         <>
@@ -30,8 +33,23 @@ function WhoWeAre() {
                         </p>
                     </div>
                 </div>
-            </main></>
+            </main>
+            <Footer blogs={blogs}  />
+            </>
     )
 }
 
 export default WhoWeAre
+
+export async function getStaticProps() {
+    const blog = await client.query({
+      query: BlogPostsQuery,
+    });
+
+    const blogs = blog.data.posts.nodes;
+    return {
+      props: {
+        blogs,
+      },
+    };
+  }

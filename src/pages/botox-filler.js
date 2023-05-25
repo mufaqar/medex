@@ -10,9 +10,10 @@ import botox from '../../public/images/botox.jpg';
 import filler from '../../public/images/filler.jpg';
 import Appointment from '../components/appointment';
 import { client } from '../config/client';
-import { Products } from '../config/quries';
+import { BlogPostsQuery, Products } from '../config/quries';
+import Footer from '../components/footer'
 
-function Filler_botox({ Featured_box_fillers }) {
+function Filler_botox({ Featured_box_fillers, blogs }) {
   const itemsPerPage = 20;
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
@@ -304,6 +305,8 @@ function Filler_botox({ Featured_box_fillers }) {
         </div>
       </section>
       <Appointment />
+      <Footer blogs={blogs}  />
+      
     </>
   );
 }
@@ -314,10 +317,15 @@ export async function getStaticProps() {
   const response = await client.query({
     query: Products,
   });
+  const blog = await client.query({
+    query: BlogPostsQuery,
+  });
   const Featured_box_fillers = response.data.products.nodes;
+  const blogs = blog.data.posts.nodes;
   return {
     props: {
       Featured_box_fillers,
+      blogs,
     },
   };
 }

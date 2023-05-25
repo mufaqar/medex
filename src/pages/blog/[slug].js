@@ -4,8 +4,10 @@ import React from "react";
 import { client } from "../../config/client";
 import Head from "next/head";
 import parse from "html-react-parser";
+import Footer from '../../components/footer';
+import {BlogPostsQuery} from '../../config/quries';
 
-const BlogSingle = ({ blog }) => {
+const BlogSingle = ({ blog, blogs }) => {
   console.log("🚀 ~ file: [slug].js:5 ~ BlogSingle ~ blog:", blog)
   const seoHead = parse(blog?.seo.fullHead)
 
@@ -201,6 +203,7 @@ const BlogSingle = ({ blog }) => {
           </div>
         </div>
       </section>
+      <Footer blogs={blogs}  />
     </>
   );
 };
@@ -241,11 +244,16 @@ export async function getServerSideProps(context) {
       id: slug,
     },
   });
+  const footer_blog = await client.query({
+    query: BlogPostsQuery,
+  });
 
   const blog = response?.data?.post;
+  const blogs = footer_blog.data.posts.nodes;
   return {
     props: {
       blog,
+      blogs,
     },
   };
 }

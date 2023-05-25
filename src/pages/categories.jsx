@@ -1,10 +1,12 @@
 import React from 'react';
 import { client } from '../config/client';
-import { ProductsCategories } from '../config/quries';
+import { ProductsCategories, BlogPostsQuery } from '../config/quries';
 import Link from 'next/link';
 import Head from 'next/head';
+import Footer from '../components/footer';
 
-const Categories = ({ AllCategories }) => {
+
+const Categories = ({ AllCategories,blogs }) => {
   //const fullHead = parse(AllCategories.seo.fullHead);
   return (
     <>
@@ -44,6 +46,7 @@ const Categories = ({ AllCategories }) => {
           </div>
         </div>
       </section>
+      <Footer blogs={blogs}  />
     </>
   );
 };
@@ -54,11 +57,16 @@ export async function getStaticProps() {
   const categories = await client.query({
     query: ProductsCategories,
   });
+  const blog = await client.query({
+    query: BlogPostsQuery,
+  });
 
   const AllCategories = categories.data.productCategories.nodes;
+  const blogs = blog.data.posts.nodes;
   return {
     props: {
       AllCategories,
+      blogs,
     },
   };
 }

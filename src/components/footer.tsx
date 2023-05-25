@@ -10,7 +10,7 @@ import Logo from '../../public/images/logo.png';
 import Img1 from '../../public/images/mri.jpg';
 import Card from '../../public/images/card.png';
 
-export default function Footer() {
+export default function Footer({ blogs }: any) {
     return (
         <footer className=''>
             <div className='bg-light-gray pt-10 md:pt-0'>
@@ -169,7 +169,32 @@ export default function Footer() {
                             RECENT POST
                         </h6>
                         <div className="grid gap-8">
-                            <div className="flex gap-5 ">
+
+                            {blogs?.map((item: any, index: number) => (
+                                <div key={index} className="flex gap-5 ">
+                                    <div className="w-[30%]">
+                                        <Image
+                                            src={item?.featuredImage?.node?.mediaItemUrl}
+                                            alt=""
+                                            className="rounded-[15px] object-cover h-full w-full"
+                                            width={300}
+                                            height={300}
+                                        />
+                                    </div>
+                                    <div className="w-[60%] h-full">
+                                        <Link
+                                            href={`/blog${item.uri}`}
+                                            className="text-base text-white hover:text-Brown font-medium"
+                                        >
+                                            {item.title}
+                                        </Link>
+                                        <p className="text-sm mt-2 text-primary flex items-center gap-2">
+                                            <FaCalendarAlt size={12} className='text-Brown' /> {item.date}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                            {/* <div className="flex gap-5 ">
                                 <div className="w-1/4">
                                     <Image
                                         src={Img1}
@@ -208,27 +233,7 @@ export default function Footer() {
                                         <FaCalendarAlt size={12} className='text-Brown' /> 16 March 2023
                                     </p>
                                 </div>
-                            </div>
-                            <div className="flex gap-5 ">
-                                <div className="w-1/4">
-                                    <Image
-                                        src={Img1}
-                                        alt=""
-                                        className="rounded-[15px] object-cover h-full w-full"
-                                    />
-                                </div>
-                                <div className="md:w-3/4 w-1/2 h-full">
-                                    <Link
-                                        href="#"
-                                        className="text-lg text-white hover:text-Brown font-medium"
-                                    >
-                                        Botox
-                                    </Link>
-                                    <p className="text-sm mt-2 text-primary flex items-center gap-2">
-                                        <FaCalendarAlt size={12} className='text-Brown' /> 16 March 2023
-                                    </p>
-                                </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

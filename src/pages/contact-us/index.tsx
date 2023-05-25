@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 import Head from "next/head";
+import {BlogPostsQuery} from '../../config/quries';
+import { client } from '@/config/client';
+import Footer from '../../components/footer';
 
-export default function Contact() {
+export default function Contact({blogs}: any) {
     return (
         <>
             <Head>
@@ -130,6 +133,20 @@ export default function Contact() {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d405010.10440433753!2d126.751814!3d37.528163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d4b3a3457a3%3A0x10e419c014a0079!2sWonmi-gu%2C%20Bucheon-si%2C%20Gyeonggi-do%2C%20South%20Korea!5e0!3m2!1sen!2sus!4v1678282798612!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-full h-[300px]'></iframe>
                 </div>
             </main>
+            <Footer blogs={blogs}  />
         </>
     )
 }
+
+export async function getStaticProps() {
+    const blog = await client.query({
+      query: BlogPostsQuery,
+    });
+
+    const blogs = blog.data.posts.nodes;
+    return {
+      props: {
+        blogs,
+      },
+    };
+  }

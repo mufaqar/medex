@@ -1,8 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { client } from '@/config/client';
+import {BlogPostsQuery} from '../config/quries';
+import Footer from '../components/footer';
 
-function ErrorPage() {
+function ErrorPage({blogs}) {
   return (
     <>
       <Head>
@@ -28,8 +31,22 @@ function ErrorPage() {
           </div>
         </div>
       </main>
+      <Footer blogs={blogs}  />
     </>
   );
 }
 
 export default ErrorPage;
+
+export async function getStaticProps() {
+  const blog = await client.query({
+    query: BlogPostsQuery,
+  });
+
+  const blogs = blog.data.posts.nodes;
+  return {
+    props: {
+      blogs,
+    },
+  };
+}
