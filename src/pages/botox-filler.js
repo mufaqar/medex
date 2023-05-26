@@ -14,11 +14,12 @@ import { BlogPostsQuery, Products } from '../config/quries';
 import Footer from '../components/footer'
 
 function Filler_botox({ Featured_box_fillers, blogs }) {
-  const itemsPerPage = 20;
-  const [itemOffset, setItemOffset] = useState(0);
-  const endOffset = itemOffset + itemsPerPage;
-  const currentItems = Featured_box_fillers.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
+  console.log(Featured_box_fillers);
+  // const itemsPerPage = 20;
+  // const [itemOffset, setItemOffset] = useState(0);
+  // const endOffset = itemOffset + itemsPerPage;
+  // const currentItems = Featured_box_fillers.slice(itemOffset, endOffset);
+  // const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
   return (
     <>
       <section className="mb-12 md:mt-[5.6rem] mt-[2.2rem] overflow-hidden">
@@ -101,7 +102,35 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
               </div>
             </div>
             <div className="grid gap-8 md:order-2 order-1">
-              <div className="flex gap-5 ">
+            {Featured_box_fillers?.map((item, index) => (
+              <div key={index} className="flex gap-5 ">
+                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                  <Image
+                    src={item?.featuredImage?.node?.mediaItemUrl}
+                    alt={item.title}
+                    width={300}
+                    height={300}
+                    className="rounded-[15px] object-cover h-full w-full"
+                  />
+                </div>
+                <div className="md:w-3/4 w-1/2 h-full">
+                  <Link
+                    href="#"
+                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
+                  >
+                    Botox
+                  </Link>
+                  <p className="text-sm mt-2 text-body-color">
+                    It's been like that since the day 1, when our spa saloon was
+                    founded by Mary Fruition back in 1998. She did so in a spur
+                    of a moment decision, Get trn horrible remember pleasure two
+                    vicinity
+                  </p>
+                </div>
+              </div>
+                ))}
+
+              {/* <div className="flex gap-5 ">
                 <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
                   <Image
                     src={Img1}
@@ -146,30 +175,7 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
                     vicinity
                   </p>
                 </div>
-              </div>
-              <div className="flex gap-5 ">
-                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                  <Image
-                    src={Img1}
-                    alt=""
-                    className="rounded-[15px] object-cover h-full w-full"
-                  />
-                </div>
-                <div className="md:w-3/4 w-1/2 h-full">
-                  <Link
-                    href="#"
-                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                  >
-                    Botox
-                  </Link>
-                  <p className="text-sm mt-2 text-body-color">
-                    It's been like that since the day 1, when our spa saloon was
-                    founded by Mary Fruition back in 1998. She did so in a spur
-                    of a moment decision, Get trn horrible remember pleasure two
-                    vicinity
-                  </p>
-                </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
