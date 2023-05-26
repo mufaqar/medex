@@ -2,24 +2,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Img_url from '../../public/images/med.jpg';
-import Img1 from '../../public/images/mri.jpg';
-import Test1 from '../../public/images/test1.jpg';
-import Test2 from '../../public/images/test2.jpg';
-import Test3 from '../../public/images/test2.jpg';
 import botox from '../../public/images/botox.jpg';
 import filler from '../../public/images/filler.jpg';
 import Appointment from '../components/appointment';
 import { client } from '../config/client';
-import { BlogPostsQuery, Products } from '../config/quries';
+import { BlogPostsQuery, Products, FillerProducts } from '../config/quries';
 import Footer from '../components/footer'
 
 function Filler_botox({ Featured_box_fillers, blogs }) {
-  console.log(Featured_box_fillers);
-  // const itemsPerPage = 20;
-  // const [itemOffset, setItemOffset] = useState(0);
-  // const endOffset = itemOffset + itemsPerPage;
-  // const currentItems = Featured_box_fillers.slice(itemOffset, endOffset);
-  // const pageCount = Math.ceil(Featured_box_fillers.length / itemsPerPage);
+
+  //console.log(Featured_box_fillers);
+
+  const FillerProducys = Featured_box_fillers.slice(0, 3);
+  const BotoxProducts = Featured_box_fillers.slice(3, 6);
   return (
     <>
       <section className="mb-12 md:mt-[5.6rem] mt-[2.2rem] overflow-hidden">
@@ -102,80 +97,31 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
               </div>
             </div>
             <div className="grid gap-8 md:order-2 order-1">
-            {Featured_box_fillers?.map((item, index) => (
-              <div key={index} className="flex gap-5 ">
-                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                  <Image
-                    src={item?.featuredImage?.node?.mediaItemUrl}
-                    alt={item.title}
-                    width={300}
-                    height={300}
-                    className="rounded-[15px] object-cover h-full w-full"
-                  />
+              {FillerProducys?.map((item, index) => (
+                <div key={index} className="flex gap-5 ">
+                  <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                    <Image
+                      src={item?.featuredImage?.node?.mediaItemUrl}
+                      alt={item.title}
+                      width={300}
+                      height={300}
+                      className="rounded-[15px] object-cover h-full w-full"
+                    />
+                  </div>
+                  <div className="md:w-3/4 w-1/2 h-full">
+                    <Link
+                      href={`/product/${item.slug}`}
+                      className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
+                    >
+                      {item.title}
+                    </Link>
+                    <p className="text-sm mt-2 text-body-color">
+                      {item?.productCategories.nodes[0]?.name}
+                    </p>
+                  </div>
                 </div>
-                <div className="md:w-3/4 w-1/2 h-full">
-                  <Link
-                    href="#"
-                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                  >
-                    Botox
-                  </Link>
-                  <p className="text-sm mt-2 text-body-color">
-                    It's been like that since the day 1, when our spa saloon was
-                    founded by Mary Fruition back in 1998. She did so in a spur
-                    of a moment decision, Get trn horrible remember pleasure two
-                    vicinity
-                  </p>
-                </div>
-              </div>
-                ))}
+              ))}
 
-              {/* <div className="flex gap-5 ">
-                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                  <Image
-                    src={Img1}
-                    alt=""
-                    className="rounded-[15px] object-cover h-full w-full"
-                  />
-                </div>
-                <div className="md:w-3/4 w-1/2 h-full">
-                  <Link
-                    href="#"
-                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                  >
-                    Botox
-                  </Link>
-                  <p className="text-sm mt-2 text-body-color">
-                    It's been like that since the day 1, when our spa saloon was
-                    founded by Mary Fruition back in 1998. She did so in a spur
-                    of a moment decision, Get trn horrible remember pleasure two
-                    vicinity
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-5 ">
-                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                  <Image
-                    src={Img1}
-                    alt=""
-                    className="rounded-[15px] object-cover h-full w-full"
-                  />
-                </div>
-                <div className="md:w-3/4 w-1/2 h-full">
-                  <Link
-                    href="#"
-                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                  >
-                    Botox
-                  </Link>
-                  <p className="text-sm mt-2 text-body-color">
-                    It's been like that since the day 1, when our spa saloon was
-                    founded by Mary Fruition back in 1998. She did so in a spur
-                    of a moment decision, Get trn horrible remember pleasure two
-                    vicinity
-                  </p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -237,82 +183,38 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
               </div>
             </div>
             <div className="grid gap-8 md:order-2 order-1">
-              <div className="flex gap-5 ">
-                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                  <Image
-                    src={Img1}
-                    alt=""
-                    className="rounded-[15px] object-cover h-full w-full"
-                  />
+              {BotoxProducts?.map((item, index) => (
+                <div key={index} className="flex gap-5 ">
+                  <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                    <Image
+                      src={item?.featuredImage?.node?.mediaItemUrl}
+                      alt={item.title}
+                      width={300}
+                      height={300}
+                      className="rounded-[15px] object-cover h-full w-full"
+                    />
+                  </div>
+                  <div className="md:w-3/4 w-1/2 h-full">
+                    <Link
+                      href={`/product/${item.slug}`}
+                      className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
+                    >
+                      {item.title}
+                    </Link>
+                    <p className="text-sm mt-2 text-body-color">
+                      {item?.productCategories.nodes[0]?.name}
+                    </p>
+                  </div>
                 </div>
-                <div className="md:w-3/4 w-1/2 h-full">
-                  <Link
-                    href="#"
-                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                  >
-                    Botox
-                  </Link>
-                  <p className="text-sm mt-2 text-body-color">
-                    It's been like that since the day 1, when our spa saloon was
-                    founded by Mary Fruition back in 1998. She did so in a spur
-                    of a moment decision, Get trn horrible remember pleasure two
-                    vicinity
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-5 ">
-                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                  <Image
-                    src={Img1}
-                    alt=""
-                    className="rounded-[15px] object-cover h-full w-full"
-                  />
-                </div>
-                <div className="md:w-3/4 w-1/2 h-full">
-                  <Link
-                    href="#"
-                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                  >
-                    Botox
-                  </Link>
-                  <p className="text-sm mt-2 text-body-color">
-                    It's been like that since the day 1, when our spa saloon was
-                    founded by Mary Fruition back in 1998. She did so in a spur
-                    of a moment decision, Get trn horrible remember pleasure two
-                    vicinity
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-5 ">
-                <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                  <Image
-                    src={Img1}
-                    alt=""
-                    className="rounded-[15px] object-cover h-full w-full"
-                  />
-                </div>
-                <div className="md:w-3/4 w-1/2 h-full">
-                  <Link
-                    href="#"
-                    className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                  >
-                    Botox
-                  </Link>
-                  <p className="text-sm mt-2 text-body-color">
-                    It's been like that since the day 1, when our spa saloon was
-                    founded by Mary Fruition back in 1998. She did so in a spur
-                    of a moment decision, Get trn horrible remember pleasure two
-                    vicinity
-                  </p>
-                </div>
-              </div>
+              ))}
+
             </div>
           </div>
         </div>
       </section>
       <Appointment />
-      <Footer blogs={blogs}  />
-      
+      <Footer blogs={blogs} />
+
     </>
   );
 }
@@ -321,7 +223,7 @@ export default Filler_botox;
 
 export async function getStaticProps() {
   const response = await client.query({
-    query: Products,
+    query: FillerProducts,
   });
   const blog = await client.query({
     query: BlogPostsQuery,
