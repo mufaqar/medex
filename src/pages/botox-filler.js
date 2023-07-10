@@ -41,6 +41,55 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
 
     
 
+      <section>
+        <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
+          <div className="mb-10">
+            <h2 className="md:text-5xl text-2xl capitalize text-title-color text-center mb-5">
+              Our Botox Products
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
+            <div className="md:mb-0 mb-10 md:order-1 order-2">
+              <div className="border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] mr-auto relative">
+                <Image
+                  src={botox}
+                  alt="img"
+                  className="h-full absolute top-[40px] right-[-50px] rounded-[15px] shadow-lg border border-black/5 "
+                />
+              </div>
+            </div>
+            <div className="grid gap-8 md:order-2 order-1">
+              {FillerProducys?.map((item, index) => (
+                <div key={index} className="flex gap-5 ">
+                  <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                    <Image
+                      src={item?.featuredImage?.node?.mediaItemUrl}
+                      alt={item.title}
+                      width={300}
+                      height={300}
+                      className="rounded-[15px] object-cover h-full w-full"
+                    />
+                  </div>
+                  <div className="md:w-3/4 w-1/2 h-full">
+                    <Link
+                      href={`/product/${item.slug}`}
+                      className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
+                    >
+                      {item.title}
+                    </Link>
+                    <p className="text-sm mt-2 text-body-color">
+                      {item?.productCategories.nodes[0]?.name}
+                    </p>
+                  </div>
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
 
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
