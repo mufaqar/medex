@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const FillerProducts = gql`
   query AllProducts {
-    products(first: 100, where: { categoryId: 43 }) {
+    products(first: 100) {
       nodes {
         title
         slug
