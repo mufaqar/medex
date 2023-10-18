@@ -52,7 +52,7 @@ export async function getStaticProps() {
   });
 
   const AllProducts = response.data.products.nodes;
-  const AllCategories = categories.data.productCategories.nodes;
+  const AllCategories = categories.data.types.nodes;
   const HomePage = FrontPageseo.data.page.seo.fullHead;
   const blogs = blog.data.posts.nodes;
   return {

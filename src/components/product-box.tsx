@@ -28,7 +28,7 @@ function ProductBox({ products }: any) {
                     /></Link>
                 </figure>
                 <h4 className="text-base leading-6 text-primary mt-1.5 mb-1.5">
-                  {item?.productCategories.nodes[0]?.name}
+                  {item?.types.nodes[0]?.name}
                 </h4>
                 <Link
                   href={item?.slug}

@@ -78,7 +78,7 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
                       {item.title}
                     </Link>
                     <p className="text-sm mt-2 text-body-color">
-                      {item?.productCategories.nodes[0]?.name}
+                      {item?.types.nodes[0]?.name}
                     </p>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
                       {item.title}
                     </Link>
                     <p className="text-sm mt-2 text-body-color">
-                      {item?.productCategories.nodes[0]?.name}
+                      {item?.types.nodes[0]?.name}
                     </p>
                   </div>
                 </div>

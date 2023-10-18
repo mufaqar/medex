@@ -61,7 +61,7 @@ export async function getStaticProps() {
     query: BlogPostsQuery,
   });
 
-  const AllCategories = categories.data.productCategories.nodes;
+  const AllCategories = categories.data.types.nodes;
   const blogs = blog.data.posts.nodes;
   return {
     props: {

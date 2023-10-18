@@ -15,7 +15,7 @@ const Categories = ({ AllProducts, blogs }) => {
   const params = router?.query?.slug;
 
   const FilterProduct = AllProducts?.filter(
-    (item) => item?.productCategories?.nodes[0].slug === params
+    (item) => item?.types?.nodes[0].slug === params
   );
 
   const itemsPerPage = 15;
@@ -57,7 +57,7 @@ const Categories = ({ AllProducts, blogs }) => {
                 </Link>
               </figure>
               <h4 className="text-base leading-6 text-primary mt-1.5 mb-1.5">
-                {item?.productCategories.nodes[0]?.name}
+                {item?.types.nodes[0]?.name}
               </h4>
               <Link
                 href={`/product/${item.slug}`}

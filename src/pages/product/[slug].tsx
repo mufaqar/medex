@@ -79,7 +79,7 @@ function Single({ product }: any, {blogs}: any) {
                     {product?.title}
                   </h2>
                   <p className="text-sm text-primary">
-                    {product?.productCategories?.nodes[0]?.name}
+                    {product?.types?.nodes[0]?.name}
                   </p>
                   <div className="-ml-0.5 flex">
                     <svg
@@ -193,7 +193,7 @@ export async function getServerSideProps(context: any) {
             mediaItemUrl
           }
         }
-        productCategories {
+        types {
           nodes {
             slug
             name

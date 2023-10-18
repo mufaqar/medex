@@ -14,7 +14,7 @@ export const FillerProducts = gql`
             mediaItemUrl
           }
         }
-        productCategories {
+        types {
           nodes {
             slug
             name
@@ -39,7 +39,7 @@ export const Products = gql`
             mediaItemUrl
           }
         }
-        productCategories {
+        types {
           nodes {
             slug
             name
@@ -52,10 +52,12 @@ export const Products = gql`
 
 export const ProductsCategories = gql`
   query AllCategories {
-    productCategories {
+    types {
       nodes {
-        image {
-          mediaItemUrl
+        typesInfo {
+          featureImage {
+            mediaItemUrl
+          }
         }
         seo {
           fullHead
