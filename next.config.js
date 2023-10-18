@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: false,
   },
   images: {
-    domains: ['medex.designercrunch.net'],
+    domains: ['wpmedex.designercrunch.net'],
   },
 };
 
