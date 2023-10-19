@@ -18,7 +18,7 @@ export default function (req, res) {
 
      const mailData = {
           from: EMAIL,
-          to: `${req.body.email}`,
+          to: `mufaqar@gmail.com, sonomedex@gmail.com, ${req.body.email}`,
           subject: `Contact Us`,
           text: `Message From ${req.body.name}`,
           html: `
