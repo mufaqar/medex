@@ -106,7 +106,7 @@ function Header() {
                                             </span>
                                             <ul className={`${servicesNav === idx ? 'block' : 'hidden'} bg-white pl-5  ${item?.subNav && 'md:py-[15px] md:px-[30px]'} md:border md:absolute md:right-0  md:top-12  py-0 px-0`}>
                                                 {item?.subNav?.map((snav:any,i:number)=>(
-                                                    <li className="py-1">
+                                                    <li className="py-1" key={i}>
                                                     <Link href={snav.link} className="text-sm whitespace-nowrap font-semibold uppercase text-title-color hover:text-Brown">
                                                         {snav.name}
                                                     </Link>
