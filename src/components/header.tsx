@@ -138,6 +138,14 @@ const NavLinks = [
     {
         name: "Botox and Filler",
         link: "/botox-filler",
+    },
+    {
+        name: "Products",
+        link: "/products"
+    },
+    {
+        name: "Categories",
+        link: "/categories",
         subNav: [
             {
                 name: "BOTOX AND FILLERS",
@@ -156,14 +164,6 @@ const NavLinks = [
                 link: "/product-category/ultrasound-scanner"
             }
         ]
-    },
-    {
-        name: "Products",
-        link: "/products"
-    },
-    {
-        name: "Categories",
-        link: "/categories"
     },
     {
         name: "Blog",

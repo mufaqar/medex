@@ -7,6 +7,7 @@ import parse from "html-react-parser";
 import Modal from "react-modal";
 import Footer from '../../components/footer';
 import { BlogPostsQuery } from '../../config/quries';
+import ContactUsForm from "@/components/contactUsForm";
 
 const customStyles = {
   content: {
@@ -119,7 +120,7 @@ function Single({ product }: any, { blogs }: any) {
                     </svg>
 
                     <svg
-                      className="h-5 w-5 text-gray-200"
+                      className="h-5 w-5 text-yellow-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -139,9 +140,6 @@ function Single({ product }: any, { blogs }: any) {
                   />
                 </div>
 
-                <h3 className="mt-6 text-lg font-bold underline select-none text-title-color">
-                  Product Description
-                </h3>
                 <div>
                   <div
                     className="text-base mt-4 description leading-8 text-body-color"
@@ -150,6 +148,10 @@ function Single({ product }: any, { blogs }: any) {
                     }}
                   />
                 </div>
+                <h2 className="text-xl mt-10 mb-4 font-bold sm:text-3xl text-title-color">
+                    {`Inquiry Form`}
+                  </h2>
+                <ContactUsForm/>
               </div>
             </div>
           </div>

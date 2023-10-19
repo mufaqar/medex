@@ -29,7 +29,7 @@ const Categories = ({ AllCategories,blogs }) => {
                 <Link href={"product-category/"+item?.slug}>
                   <figure className="w-full overflow-hidden ">
                     <img
-                      src={item?.image?.mediaItemUrl}
+                      src={item?.typesInfo?.featureImage?.mediaItemUrl}
                       alt={item?.name}
                       className="object-cover w-full h-[250px] lg:h-[320px] group-hover:rotate-3 group-hover:scale-110 transition-all duration-300 ease-out"
                     />
