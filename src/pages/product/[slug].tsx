@@ -60,7 +60,7 @@ function Single({ product }: any, { blogs }: any) {
               />
 
               <div className="grid grid-cols-2 gap-4 lg:mt-4">
-                {product?.galleryImages?.nodes?.map((img: any, idx: number) => {
+                {product?.productInfo?.galleryimages?.map((img: any, idx: number) => {
                   return (
                     <img
                       key={idx}
@@ -201,7 +201,11 @@ export async function getServerSideProps(context: any) {
             name
           }
         }
-        
+        productInfo {
+          galleryimages {
+            mediaItemUrl
+          }
+        }
         
       }
     }

@@ -20,7 +20,7 @@ function ProductBox({ products }: any) {
               <div key={index} className="mx-auto ">
                 <figure className="bg-gray-50 w-full h-[395px] flex justify-center items-center">
                   <Link
-                    href={`/products/${item?.slug}`}><Image
+                    href={`/product/${item?.slug}`}><Image
                       src={item?.featuredImage?.node?.mediaItemUrl}
                       alt={item?.featuredImage?.node?.mediaItemUrl}
                       width={300}
@@ -31,7 +31,7 @@ function ProductBox({ products }: any) {
                   {item?.types.nodes[0]?.name}
                 </h4>
                 <Link
-                  href={item?.slug}
+                  href={`/product/${item?.slug}`}
                   className="text-lg font-medium leading-5 mb-2 text-title-color hover:text-Brown "
                 >
                   {item.title}
