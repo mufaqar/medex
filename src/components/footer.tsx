@@ -46,7 +46,7 @@ export default function Footer({ blogs }: any) {
                     </div>
                     <div className='md:border-x border-x-0 md:border-y-0 border-y border-Brown/50 h-full py-10 px-0'>
                         <Link href="/">
-                            <Image src={Logo} alt="Lono.png" className='w-3/5 m-auto' />
+                            <Image src={Logo} alt="Lono.png" className='w-3/5 m-auto invert' />
                         </Link>
                     </div>
                     <div className='py-10 px-0'>

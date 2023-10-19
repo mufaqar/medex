@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import parse from "html-react-parser";
 import Modal from "react-modal";
 import Footer from '../../components/footer';
-import {BlogPostsQuery} from '../../config/quries';
+import { BlogPostsQuery } from '../../config/quries';
 
 const customStyles = {
   content: {
@@ -21,11 +21,11 @@ const customStyles = {
   },
 };
 
-function Single({ product }: any, {blogs}: any) {
+function Single({ product }: any, { blogs }: any) {
+  console.log("🚀 ~ file: [slug].tsx:25 ~ Single ~ product:", product)
   const fullHead = parse(product.seo.fullHead);
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [imageUrl, setImageUrl] = useState<string>();
-  console.log("🚀 ~ file: [slug].tsx:24 ~ Single ~ imageUrl:", fullHead);
   function openModal(url: string) {
     setIsOpen(true);
     setImageUrl(url);
@@ -171,7 +171,7 @@ function Single({ product }: any, {blogs}: any) {
           />
         </div>
       </Modal>
-      <Footer blogs={blogs}  />
+      <Footer blogs={blogs} />
     </>
   );
 }
@@ -199,12 +199,8 @@ export async function getServerSideProps(context: any) {
             name
           }
         }
-        shortDescription
-        galleryImages {
-          nodes {
-            mediaItemUrl
-          }
-        }
+        
+        
       }
     }
   `;
