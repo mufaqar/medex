@@ -170,7 +170,7 @@ export default function Footer({ blogs }: any) {
                         </h6>
                         <div className="grid gap-8">
 
-                            {blogs?.map((item: any, index: number) => (
+                            {blogs?.slice(0, 3).map((item: any, index: number) => (
                                 <div key={index} className="flex gap-5 ">
                                     <div className="w-[30%]">
                                         <Image
