@@ -130,9 +130,8 @@ const BlogPosts = ({ blogs, blogPage }) => {
                           {post.title}
                         </Link>
                       </h2>
-                      <p className="post-exerpt mb-5 lg:mb-8 text-body-color">
-                        {post.excerpt}
-                      </p>
+                   
+                      <div className="post-exerpt mb-5 lg:mb-8 text-body-color" dangerouslySetInnerHTML={{__html:post.excerpt}} ></div>
                       <div className="flex justify-between">
                         <div className="entry-meta text-[13px] text-body-color flex">
                           <span className="post-on pr-2.5 relative flex items-center gap-1.5">
