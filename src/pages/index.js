@@ -33,7 +33,7 @@ export default function Home({ AllProducts, AllCategories, HomePage, blogs }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await client.query({
     query: FillerProducts,
   });

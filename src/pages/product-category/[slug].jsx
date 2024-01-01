@@ -89,7 +89,7 @@ const Categories = ({ AllProducts, blogs }) => {
 
 export default Categories;
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const slug = context.params.slug;
   const response = await client.query({
     query: productByTypes,
@@ -109,12 +109,5 @@ export async function getStaticProps(context) {
       AllProducts,
       blogs,
     },
-  };
-}
-export async function getStaticPaths() {
-  const paths = [];
-  return {
-    paths,
-    fallback: "blocking",
   };
 }

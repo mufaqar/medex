@@ -44,7 +44,7 @@ function WhoWeAre({blogs}: any) {
 
 export default WhoWeAre
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const blog = await client.query({
       query: BlogPostsQuery,
     });

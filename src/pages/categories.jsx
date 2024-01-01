@@ -56,7 +56,7 @@ const Categories = ({ AllCategories, blogs }) => {
 
 export default Categories;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const categories = await client.query({
     query: ProductsCategories,
   });
