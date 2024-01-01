@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import Footer from '../../components/footer';
 import { BlogPostsQuery } from '../../config/quries';
 import ContactUsForm from "@/components/contactUsForm";
+import YoastSeo from "@/components/YoastSeo";
 
 const customStyles = {
   content: {
@@ -23,8 +24,7 @@ const customStyles = {
 };
 
 function Single({ product }: any, { blogs }: any) {
-  console.log("🚀 ~ file: [slug].tsx:25 ~ Single ~ product:", product)
-  const fullHead = parse(product.seo.fullHead);
+
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [imageUrl, setImageUrl] = useState<string>();
   function openModal(url: string) {
@@ -38,10 +38,8 @@ function Single({ product }: any, { blogs }: any) {
   return (
     <>
       <main>
-        <Head>
-          <title>{product.title} - Medex Worldwide</title>
-          {fullHead}
-        </Head>
+        <YoastSeo {...product} />
+
         <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
           <div className="w-full">
             <h1 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
@@ -188,8 +186,16 @@ export async function getServerSideProps(context: any) {
         slug
         content
         seo {
-          fullHead
+        metaDesc
+        opengraphUrl
+        opengraphType
+        opengraphTitle
+        opengraphSiteName
+        opengraphImage {
+          mediaItemUrl
         }
+        opengraphDescription
+      }
         featuredImage {
           node {
             mediaItemUrl

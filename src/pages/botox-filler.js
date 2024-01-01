@@ -8,15 +8,21 @@ import Appointment from '../components/appointment';
 import { client } from '../config/client';
 import { BlogPostsQuery, Products, FillerProducts } from '../config/quries';
 import Footer from '../components/footer'
+import YoastSeo from '@/components/YoastSeo'
 
 function Filler_botox({ Featured_box_fillers, blogs }) {
 
   //console.log(Featured_box_fillers);
+  const seoMeta = {
+    title: 'Box Filler - Medex Worldwide',
+    description: "Medex Worldwide is a global wholesaler and distributor of high quality reconditioned/refurbished ultrasound, endoscopy systems"
+  }
 
   const FillerProducys = Featured_box_fillers.slice(0, 3);
   const BotoxProducts = Featured_box_fillers.slice(3, 6);
   return (
     <>
+      <YoastSeo {...seoMeta} />
       <section className="mb-12 md:mt-[3.6rem] mt-[2.2rem] overflow-hidden">
         <div className="bg-[url(/images/botox-filler.jpg)] bg-center bg-no-repeat bg-cover min-h-[250px] flex items-center justify-start sm:pb-24 xl:pb-32 sm:pt-16 xl:pt-24 md:min-h-[400px] xl:min-h-[560px] 2xl:min-h-[750px]">
           <div className=" mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 my-8 grid md:grid-cols-2 grid-cols-1">
@@ -39,7 +45,7 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
         </div>
       </section>
 
-    
+
 
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
@@ -89,7 +95,7 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
         </div>
       </section>
 
-      
+
 
       <section>
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">

@@ -1,19 +1,22 @@
-import React from 'react';
-import { client } from '../config/client';
-import { ProductsCategories, BlogPostsQuery } from '../config/quries';
-import Link from 'next/link';
-import Head from 'next/head';
-import Footer from '../components/footer';
+import React from "react";
+import { client } from "../config/client";
+import { ProductsCategories, BlogPostsQuery } from "../config/quries";
+import Link from "next/link";
+import Head from "next/head";
+import Footer from "../components/footer";
+import YoastSeo from "@/components/YoastSeo";
 
+const Categories = ({ AllCategories, blogs }) => {
+  
+  const seoMeta = {
+    title: "Categories - Medex Worldwide",
+    description:
+      "Medex Worldwide is a global wholesaler and distributor of high quality reconditioned/refurbished ultrasound, endoscopy systems",
+  };
 
-const Categories = ({ AllCategories,blogs }) => {
-  //const fullHead = parse(AllCategories.seo.fullHead);
   return (
     <>
-      <Head>
-        <title> All Categories - Medex Worldwide</title>
-        {/* {fullHead} */}
-      </Head>
+      <YoastSeo {...seoMeta} />
       <section>
         <div className="flex mt-10 justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
           <div className="w-full">
@@ -26,7 +29,7 @@ const Categories = ({ AllCategories,blogs }) => {
           <div className="grid container mx-auto my-20 px-4 gap-4 grid-cols-2 md:grid-cols-4 2xl:gap-5">
             {AllCategories?.map((item, index) => (
               <div key={index} className="mx-auto group relative">
-                <Link href={"product-category/"+item?.slug}>
+                <Link href={"product-category/" + item?.slug}>
                   <figure className="w-full overflow-hidden ">
                     <img
                       src={item?.typesInfo?.featureImage?.mediaItemUrl}
@@ -46,7 +49,7 @@ const Categories = ({ AllCategories,blogs }) => {
           </div>
         </div>
       </section>
-      <Footer blogs={blogs}  />
+      <Footer blogs={blogs} />
     </>
   );
 };

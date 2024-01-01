@@ -1,16 +1,19 @@
 import React from 'react';
-import Head from "next/head";
 import { client } from '@/config/client';
 import Footer from '../../components/footer';
 import {BlogPostsQuery} from '../../config/quries';
+import YoastSeo from '@/components/YoastSeo';
 
 function WhoWeAre({blogs}: any) {
-    return (
 
+    const seoMeta = {
+        title: 'Who we are - Medex Worldwide',
+        description: "Medex Worldwide is a global wholesaler and distributor of high quality reconditioned/refurbished ultrasound, endoscopy systems"
+    }
+
+    return (
         <>
-            <Head>
-                <title>Who We Are - Medex Worldwide</title>
-            </Head>
+             <YoastSeo {...seoMeta} />
             <main>
                 <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
                     <div className="w-full">

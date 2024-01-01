@@ -7,12 +7,9 @@ import Head from 'next/head';
 import ReactPaginate from 'react-paginate';
 import Sidebar from '../../components/sidebar';
 import Footer from '../../components/footer';
+import YoastSeo from '../../components/YoastSeo';
 
 const BlogPosts = ({ blogs, blogPage }) => {
-  // console.log('🚀 ~ file: index.js:7 ~ BlogPosts ~ blogs:', blogs);
-
-  const seoHead = parse(blogPage?.seo.fullHead);
-
   const itemsPerPage = 20;
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
@@ -26,10 +23,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
 
   return (
     <>
-      <Head>
-        <title>Blog - Medex Worldwide</title>
-        {seoHead}
-      </Head>
+      <YoastSeo {...blogPage} />
       <section className="bg-slate-100">
         <div className="pt-7 md:pt-40 mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20">
           <div className="w-full">

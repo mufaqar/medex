@@ -6,14 +6,14 @@ import Head from "next/head";
 import parse from "html-react-parser";
 import Footer from '../../components/footer';
 import { BlogPostsQuery } from '../../config/quries';
+import YoastSeo from "../../components/YoastSeo";
 
 const BlogSingle = ({ blog, blogs }) => {
-  console.log("🚀 ~ file: [slug].js:5 ~ BlogSingle ~ blog:", blog)
-  const seoHead = parse(blog?.seo.fullHead)
 
   return (
     <>
-      <Head>{seoHead}</Head>
+      <YoastSeo {...blog} />
+
       <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
         <div className="w-full">
           <h1 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
@@ -149,7 +149,15 @@ export async function getServerSideProps(context) {
         }
         content
         seo {
-          fullHead
+          metaDesc
+          opengraphUrl
+          opengraphType
+          opengraphTitle
+          opengraphSiteName
+          opengraphImage {
+            mediaItemUrl
+          }
+          opengraphDescription
         }
       }
     }

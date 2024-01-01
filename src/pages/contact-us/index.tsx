@@ -1,20 +1,21 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Head from "next/head";
 import {BlogPostsQuery} from '../../config/quries';
 import { client } from '@/config/client';
 import Footer from '../../components/footer';
 import ContactUsForm from '@/components/contactUsForm';
+import YoastSeo from '@/components/YoastSeo';
 
 
 export default function Contact({blogs}: any) {
+
+    const seoMeta = {
+        title: 'Contact Us - Medex Worldwide'
+    }
     
-      
     return (
         <>
-            <Head>
-                <title>Contact Us - Medex Worldwide</title>
-            </Head>
+            <YoastSeo {...seoMeta} />
             <main className=''>
                 <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
                     <div className="w-full">

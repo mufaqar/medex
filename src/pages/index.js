@@ -16,16 +16,12 @@ import {
   BlogPostsQuery,
 } from '../config/quries';
 import Footer from '../components/footer'
+import YoastSeo from '../components/YoastSeo';
 
 export default function Home({ AllProducts, AllCategories, HomePage, blogs }) {
-  // console.log(HomePage);
-  const fullHead = parse(HomePage);
   return (
     <>
-      <Head>
-        <title>Medex Best Quality Medical Equipment in Pakistan</title>
-        {fullHead}
-      </Head>
+      <YoastSeo {...HomePage} />
       <Banner />
       <CategoryBox />
       <ProductBox products={AllProducts.slice(0, 5)} />
@@ -53,7 +49,7 @@ export async function getStaticProps() {
 
   const AllProducts = response.data.products.nodes;
   const AllCategories = categories.data.types.nodes;
-  const HomePage = FrontPageseo.data.page.seo.fullHead;
+  const HomePage = FrontPageseo.data.page;
   const blogs = blog.data.posts.nodes;
   return {
     props: {

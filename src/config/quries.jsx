@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const FillerProducts = gql`
   query AllProducts {
@@ -32,7 +32,16 @@ export const Products = gql`
         title
         slug
         seo {
-          fullHead
+          metaDesc
+          opengraphUrl
+          opengraphType
+          opengraphTitle
+          opengraphSiteName
+          opengraphImage {
+            mediaItemUrl
+          }
+          opengraphDescription
+          title
         }
         featuredImage {
           node {
@@ -60,10 +69,18 @@ export const ProductsCategories = gql`
           }
         }
         seo {
-          fullHead
+          metaDesc
+          opengraphUrl
+          opengraphType
+          opengraphTitle
+          opengraphSiteName
+          opengraphImage {
+            mediaItemUrl
+          }
+          opengraphDescription
+          title
         }
         name
-        slug
       }
     }
   }
@@ -74,17 +91,36 @@ export const FrontPage = gql`
     page(id: $id, idType: DATABASE_ID) {
       title
       seo {
-        fullHead
+        metaDesc
+        opengraphUrl
+        opengraphType
+        opengraphTitle
+        opengraphSiteName
+        opengraphImage {
+          mediaItemUrl
+        }
+        opengraphDescription
       }
+      slug
     }
   }
 `;
 export const BlogPage = gql`
   query blogPage {
     page(id: "945", idType: DATABASE_ID) {
+      title
       seo {
-        fullHead
+        metaDesc
+        opengraphUrl
+        opengraphType
+        opengraphTitle
+        opengraphSiteName
+        opengraphImage {
+          mediaItemUrl
+        }
+        opengraphDescription
       }
+      slug
     }
   }
 `;
