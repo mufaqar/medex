@@ -23,7 +23,7 @@ export default function Home({ AllProducts, AllCategories, HomePage, blogs }) {
     <>
       <YoastSeo {...HomePage} />
       <Banner />
-      <CategoryBox />
+      {/* <CategoryBox /> */}
       <ProductBox products={AllProducts.slice(0, 5)} />
       <Feature_Category categories={AllCategories.slice(0, 4)} />
       {/* <ProductBox products={AllProducts.slice(5, 10)} /> */}

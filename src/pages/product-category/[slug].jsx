@@ -1,49 +1,37 @@
 import { useRouter } from "next/router";
 import React from "react";
 import { client } from "../../config/client";
-import { Products, BlogPostsQuery } from "../../config/quries";
+import { BlogPostsQuery, productByTypes } from "../../config/quries";
 import Link from "next/link";
-import Image from "next/image";
 import ReactPaginate from "react-paginate";
 import { useState } from "react";
-import Head from "next/head";
 import NotFound from "../../components/404";
 import Footer from "../../components/footer";
 import YoastSeo from "../../components/YoastSeo";
 
 const Categories = ({ AllProducts, blogs }) => {
   const router = useRouter();
-  console.log("🚀 ~ file: [slug].jsx:16 ~ Categories ~ router:", router);
-  const params = router?.query?.slug;
-
-  const FilterProduct = AllProducts?.filter(
-    (item) => item?.types?.nodes[0].slug === params
-  );
+  const seoMeta = AllProducts
+  AllProducts = AllProducts.products.nodes
 
   const itemsPerPage = 15;
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
-  const currentItems = FilterProduct.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(FilterProduct.length / itemsPerPage);
-
-  console.log(currentItems);
+  const currentItems = AllProducts.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(AllProducts.length / itemsPerPage);
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % FilterProduct.length;
+    const newOffset = (event.selected * itemsPerPage) % AllProducts.length;
     setItemOffset(newOffset);
   };
-
-  const seoMeta = {
-    title: router.query.slug.replace(/-/g, " "),
-  };
-
+  
   return (
     <>
       <YoastSeo {...seoMeta} />
       <div className="flex justify-center items-center pt-20 min-h-[250px] lg:min-h-[350px] w-full bg-slate-100">
         <div className="w-full">
           <h1 className="md:text-4xl text-2xl capitalize text-title-color font-bold text-center">
-            {params}
+            {seoMeta.name}
           </h1>
         </div>
       </div>
@@ -101,16 +89,21 @@ const Categories = ({ AllProducts, blogs }) => {
 
 export default Categories;
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  const slug = context.params.slug;
   const response = await client.query({
-    query: Products,
+    query: productByTypes,
+    variables: {
+      id: slug,
+    },
   });
   const blog = await client.query({
     query: BlogPostsQuery,
   });
 
-  const AllProducts = response.data.products.nodes;
+  const AllProducts = response.data.type;
   const blogs = blog.data.posts.nodes;
+
   return {
     props: {
       AllProducts,

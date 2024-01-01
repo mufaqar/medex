@@ -148,3 +148,39 @@ export const BlogPostsQuery = gql`
     }
   }
 `;
+
+export const productByTypes = gql`
+query productByTypes($id: ID = "") {
+  type(id: $id, idType: SLUG) {
+    products(first: 100) {
+      nodes {
+        title
+        slug
+        featuredImage {
+          node {
+            mediaItemUrl
+          }
+        }
+        types {
+          nodes {
+            slug
+            name
+          }
+        }
+      }
+    }
+    name
+    seo {
+      metaDesc
+      opengraphUrl
+      opengraphType
+      opengraphTitle
+      opengraphSiteName
+      opengraphImage {
+        mediaItemUrl
+      }
+      opengraphDescription
+      title
+    }
+  }
+}`;
