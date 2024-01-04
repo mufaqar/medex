@@ -201,7 +201,7 @@ const BlogPosts = ({ blogs, blogPage }) => {
 
 export default BlogPosts;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await client.query({
     query: BlogPostsQuery,
   });

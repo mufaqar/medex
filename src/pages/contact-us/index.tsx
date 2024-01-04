@@ -113,7 +113,7 @@ export default function Contact({blogs}: any) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const blog = await client.query({
       query: BlogPostsQuery,
     });

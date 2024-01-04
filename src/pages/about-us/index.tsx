@@ -71,7 +71,7 @@ function About({blogs}: any) {
 
 export default About
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const blog = await client.query({
       query: BlogPostsQuery,
     });

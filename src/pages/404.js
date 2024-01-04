@@ -38,7 +38,7 @@ function ErrorPage({blogs}) {
 
 export default ErrorPage;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const blog = await client.query({
     query: BlogPostsQuery,
   });

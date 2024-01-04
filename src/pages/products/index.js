@@ -94,7 +94,7 @@ function ProductsPage({ AllProducts, blogs }) {
 
 export default ProductsPage;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await client.query({
     query: Products,
   });

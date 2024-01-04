@@ -4,6 +4,7 @@ import React from "react";
 import Featured_Img from "../../public/images/cat_h15_1.jpg";
 
 function Feature_Category({ categories }: any) {
+console.log("🚀 ~ file: feature-category.tsx:7 ~ Feature_Category ~ categories:", categories)
 
   return (
     <section>
@@ -23,15 +24,15 @@ function Feature_Category({ categories }: any) {
                 <Link href={`product-category/${item?.slug}`}>
                   <figure className="overflow-hidden">
                     <img
-                      src={item?.image?.mediaItemUrl}
+                      src={item?.image?.mediaItemUrl || item?.typesInfo.featureImage.mediaItemUrl}
                       alt={item?.image?.mediaItemUrl}
 
-                      className="object-cover w-full h-[230px] group-hover:rotate-3 group-hover:scale-110 transition-all duration-300 ease-out"
+                      className="object-cover w-full opacity-20 group-hover:opacity-100 h-[230px] group-hover:rotate-3 group-hover:scale-110 transition-all duration-300 ease-out"
                     />
                   </figure>
                   <div className="bg-black/20 absolute top-0 right-0 left-0 bottom-0" />
                   <div className="absolute top-0 left-0 right-0 bottom-0 p-5 text-center flex flex-col items-center justify-center group">
-                    <h4 className="text-lg leading-5 font-bold mb-2 text-white group-hover:text-Brown ">
+                    <h4 className="text-lg leading-5 font-bold mb-2 group-hover:text-white text-black ">
                       {item?.name}
                     </h4>
                   </div>

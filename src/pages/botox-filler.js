@@ -153,7 +153,7 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
 
 export default Filler_botox;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await client.query({
     query: FillerProducts,
   });

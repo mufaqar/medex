@@ -2,11 +2,12 @@ import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 
 export default function YoastSeo(props) {
+     console.log("🚀 ~ file: YoastSeo.jsx:5 ~ YoastSeo ~ props:", props)
      const router = useRouter()
      
      const openGrap = {
-       type: props.og_type,
-       title: props.opengraphType,
+       type: props.opengraphType,
+       title: props.opengraphTitle,
        description: props.opengraphDescription,
        url: props.opengraphUrl,
        siteName: props.opengraphSiteName,
@@ -19,7 +20,7 @@ export default function YoastSeo(props) {
    
      return (
        <NextSeo
-         title={props.title}
+         title={props?.seo?.opengraphTitle || props.title}
          description={props.seo?.metaDesc || props.seo?.opengraphDescription}
          openGraph={openGrap}
          canonical={process.env.NEXT_PUBLIC_SITE_URL + `${router?.asPath}`}
