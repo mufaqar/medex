@@ -1,9 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { client } from '@/config/client';
-import {BlogPostsQuery} from '../config/quries';
-import Footer from '../components/footer';
+
 
 function ErrorPage() {
   return (
@@ -31,7 +29,7 @@ function ErrorPage() {
           </div>
         </div>
       </main>
-      <Footer blogs={blogs}  />
+     
     </>
   );
 }
