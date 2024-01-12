@@ -5,7 +5,7 @@ import { client } from '@/config/client';
 import {BlogPostsQuery} from '../config/quries';
 import Footer from '../components/footer';
 
-function ErrorPage({blogs}) {
+function ErrorPage() {
   return (
     <>
       <Head>
@@ -38,15 +38,3 @@ function ErrorPage({blogs}) {
 
 export default ErrorPage;
 
-export async function getServerSideProps() {
-  const blog = await client.query({
-    query: BlogPostsQuery,
-  });
-
-  const blogs = blog.data.posts.nodes;
-  return {
-    props: {
-      blogs,
-    },
-  };
-}
