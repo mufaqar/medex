@@ -11,6 +11,7 @@ import Footer from '../components/footer'
 import YoastSeo from '@/components/YoastSeo'
 
 function Filler_botox({ Featured_box_fillers, blogs }) {
+console.log("🚀 ~ Filler_botox 132:", Featured_box_fillers)
 
   //console.log(Featured_box_fillers);
   const seoMeta = {
@@ -18,8 +19,8 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
     description: "Medex Worldwide is a global wholesaler and distributor of high quality reconditioned/refurbished ultrasound, endoscopy systems"
   }
 
-  const FillerProducys = Featured_box_fillers.slice(0, 3);
-  const BotoxProducts = Featured_box_fillers.slice(3, 6);
+  // const FillerProducys = Featured_box_fillers.slice(0, 3);
+  // const BotoxProducts = Featured_box_fillers.slice(3, 6);
   return (
     <>
       <YoastSeo {...seoMeta} />
@@ -40,6 +41,7 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
                 on this journey to discover the perfect solution for your
                 aesthetic needs.
               </p>
+              
             </div>
           </div>
         </div>
@@ -51,23 +53,15 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
         <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
           <div className="mb-10">
             <h2 className="md:text-5xl text-2xl capitalize text-title-color text-center mb-5">
-              Our Botox Products
+              Our Botox and Filler Products
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
-            <div className="md:mb-0 mb-10 md:order-1 order-2">
-              <div className="border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] mr-auto relative">
-                <Image
-                  src={botox}
-                  alt="img"
-                  className="h-full absolute top-[40px] right-[-50px] rounded-[15px] shadow-lg border border-black/5 "
-                />
-              </div>
-            </div>
-            <div className="grid gap-8 md:order-2 order-1">
-              {FillerProducys?.map((item, index) => (
+          <div className=" gap-16">
+            
+            <div className="grid grid-cols-3 gap-8 md:order-2 order-1">
+              {Featured_box_fillers?.map((item, index) => (
                 <div key={index} className="flex gap-5 ">
-                  <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
+                  <div className="md:w-1/3 w-1/2 h-[110px] rounded-[15px] border border-black/50">
                     <Image
                       src={item?.featuredImage?.node?.mediaItemUrl}
                       alt={item.title}
@@ -97,53 +91,6 @@ function Filler_botox({ Featured_box_fillers, blogs }) {
 
 
 
-      <section>
-        <div className="mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 py-12">
-          <div className="mb-10">
-            <h2 className="md:text-5xl text-2xl capitalize text-title-color text-center mb-5">
-              Our Filler Products
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
-            <div className="md:mb-0 mb-10 md:order-1 order-2">
-              <div className="border border-black/10 rounded-[15px] h-[310px] md:max-w-[80%] max-w-[80%] mr-auto relative">
-                <Image
-                  src={filler}
-                  alt="img"
-                  className="h-full absolute top-[40px] right-[-50px] rounded-[15px] shadow-lg border border-black/5 "
-                />
-              </div>
-            </div>
-            <div className="grid gap-8 md:order-2 order-1">
-              {BotoxProducts?.map((item, index) => (
-                <div key={index} className="flex gap-5 ">
-                  <div className="md:w-1/4 w-1/2 h-[110px] rounded-[15px] border border-black/50">
-                    <Image
-                      src={item?.featuredImage?.node?.mediaItemUrl}
-                      alt={item.title}
-                      width={300}
-                      height={300}
-                      className="rounded-[15px] object-cover h-full w-full"
-                    />
-                  </div>
-                  <div className="md:w-3/4 w-1/2 h-full">
-                    <Link
-                      href={`/product/${item.slug}`}
-                      className="text-lg leading-5 text-title-color hover:text-Brown font-medium uppercase"
-                    >
-                      {item.title}
-                    </Link>
-                    <p className="text-sm mt-2 text-body-color">
-                      {item?.types.nodes[0]?.name}
-                    </p>
-                  </div>
-                </div>
-              ))}
-
-            </div>
-          </div>
-        </div>
-      </section>
       <Appointment />
       <Footer blogs={blogs} />
 
@@ -160,7 +107,7 @@ export async function getServerSideProps() {
   const blog = await client.query({
     query: BlogPostsQuery,
   });
-  const Featured_box_fillers = response.data.products.nodes;
+  const Featured_box_fillers = response?.data?.types?.nodes[0].products.nodes;
   const blogs = blog.data.posts.nodes;
   return {
     props: {

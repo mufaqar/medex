@@ -1,28 +1,32 @@
 import { gql } from "@apollo/client";
 
 export const FillerProducts = gql`
-  query AllProducts {
-    products(first: 100) {
-      nodes {
-        title
-        slug
-        seo {
-          fullHead
-        }
-        featuredImage {
-          node {
-            mediaItemUrl
+query BFProducts {
+  types(where: {slug: "botox-and-fillers"}) {
+    nodes {
+      products(first: 100, where: {}) {
+        nodes {
+          title
+          slug
+          seo {
+            fullHead
           }
-        }
-        types {
-          nodes {
-            slug
-            name
+          featuredImage {
+            node {
+              mediaItemUrl
+            }
+          }
+          types {
+            nodes {
+              slug
+              name
+            }
           }
         }
       }
     }
   }
+}
 `;
 
 export const Products = gql`
