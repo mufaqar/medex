@@ -4,7 +4,7 @@ export const FillerProducts = gql`
 query BFProducts {
   types(where: {slug: "botox-and-fillers"}) {
     nodes {
-      products(first: 100, where: {}) {
+      products(first: 999, where: {}) {
         nodes {
           title
           slug

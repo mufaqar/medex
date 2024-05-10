@@ -35,7 +35,7 @@ export default function Home({ AllProducts, AllCategories, HomePage, blogs }) {
 
 export async function getServerSideProps() {
   const response = await client.query({
-    query: FillerProducts,
+    query: Products,
   });
   const categories = await client.query({
     query: ProductsCategories,
