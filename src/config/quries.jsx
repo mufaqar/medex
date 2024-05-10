@@ -85,6 +85,7 @@ export const ProductsCategories = gql`
           title
         }
         name
+        slug
       }
     }
   }

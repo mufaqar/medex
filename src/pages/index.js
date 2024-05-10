@@ -35,7 +35,7 @@ export default function Home({ AllProducts, AllCategories, HomePage, blogs }) {
 
 export async function getServerSideProps() {
   const response = await client.query({
-    query: Products,
+    query: FillerProducts,
   });
   const categories = await client.query({
     query: ProductsCategories,
@@ -47,7 +47,7 @@ export async function getServerSideProps() {
     query: BlogPostsQuery,
   });
 
-  const AllProducts = response.data.products.nodes;
+  const AllProducts = response?.data?.types?.nodes[0].products.nodes;
   const AllCategories = categories.data.types.nodes;
   const HomePage = FrontPageseo.data.page;
   const blogs = blog.data.posts.nodes;
