@@ -30,7 +30,7 @@ function Header() {
                         <div className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 md:flex flex-wrap justify-between items-center'>
                             <ul className='flex flex-col text-sm font-medium md:flex-row md:space-x-5 md:mt-0'>
                                 <li>
-                                    <Link href="https://www.facebook.com/medexworlwide/" target="_blank" className='block rounded-full text-white hover:text-Brown '>
+                                    <Link href="https://www.facebook.com/profile.php?id=61570114155518" target="_blank" className='block rounded-full text-white hover:text-Brown '>
                                         <BsFacebook />
                                     </Link>
                                 </li>

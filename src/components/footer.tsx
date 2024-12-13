@@ -202,7 +202,7 @@ export default function Footer({ blogs }: any) {
                 <div className='mx-auto max-w-[1730px] px-4 md:px-6 lg:px-8 2xl:px-20 grid md:grid-cols-2 grid-cols-1 gap-5 items-center'>
                     <div>
                         <p className="text-white text-sm lg:text-base">
-                            © 2010-2023 Medex World Wide. Design & Developed by Mufaqar.com
+                            © 2010-2025 Medex World Wide. Design & Developed by <Link href="https://mufaqar.com">Mufaqar</Link>
                         </p>
                     </div>
                     <div>
